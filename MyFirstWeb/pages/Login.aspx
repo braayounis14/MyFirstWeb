@@ -24,7 +24,7 @@
 
 				<div class="login__field">
 				<i class="login__icon fas fa-user"></i>
-				<asp:TextBox ID="user_txt" class="login__input" placeholder="User name / Email" runat="server"></asp:TextBox>
+				<asp:TextBox ID="user_txt" class="login__input" placeholder="User name / Email" runat="server"></asp:TextBox>	
 </div>
 
 

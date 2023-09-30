@@ -74,6 +74,7 @@
     <Content Include="pages\test.aspx" />
     <Content Include="pages\test1.aspx" />
     <Content Include="pages\WebForm1.aspx" />
+    <Content Include="scripts\birthdatecheck.js" />
     <Content Include="scripts\Scripts.js" />
     <Content Include="styles\style.css" />
     <Content Include="styles\style2.css" />

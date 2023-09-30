@@ -21,9 +21,6 @@ namespace MyFirstWeb
 
         }
 
-        protected void Icon_Home_Click(object sender, ImageClickEventArgs e)
-        {
-            Response.Redirect("test.aspx");
-        }
+   
     }
 }

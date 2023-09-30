@@ -22,7 +22,7 @@
 
             <div class="top_navbar">
                 <div class="icon_home">
-                    <asp:ImageButton ID="Icon_Home" runat="server" Width="65px" Height="60px" ImageUrl="~/Images/GitHub-Mark.png" OnClick="Icon_Home_Click" />
+                    <asp:ImageButton ID="Icon_Home" runat="server" Width="65px" Height="60px" ImageUrl="~/Images/GitHub-Mark.png"  PostBackUrl="~/pages/home.aspx" />
                 </div>
 
 
