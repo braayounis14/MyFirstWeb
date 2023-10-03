@@ -25,6 +25,43 @@
         </script>
 
 
+
+<script>
+    function checkDate() {
+        // Get the input field value
+        const birthdateInput = document.querySelector('input[id=txt_birthdate]');
+        const birthdateString = birthdateInput.value;
+
+        // Parse the entered birthdate string into a Date object
+        const birthdateParts = birthdateString.split('/');
+        const birthdateObj = new Date(
+            parseInt(birthdateParts[2], 10),
+            parseInt(birthdateParts[1], 10) - 1,
+            parseInt(birthdateParts[0], 10)
+        );
+
+        // Get the current date
+        const currentDate = new Date();
+
+        // Compare the birthdate with the current date
+        if (birthdateObj <= currentDate) {
+            // Birthdate is in the past
+            birthdateInput.setCustomValidity('');
+        } else {
+            // Birthdate is in the future
+            birthdateInput.setCustomValidity('Birthdate must be in the past.');
+        }
+    }
+
+    // Attach the function to the input's change event
+    const birthdateInput = document.querySelector('input[id=txt_birthdate]');
+    birthdateInput.addEventListener('change', checkDate);
+</script>
+
+
+
+
+
     <script>   
 
 
@@ -77,7 +114,7 @@
 
         <div class="login__field">
     <i class="login__icon fas fa-user"></i>
-            <asp:TextBox ID="txt_birthdate"  required="true" pattern="^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$" title="set your  birthday date format:1:(dd/mm/yyyy)  date should be real (past)!! " Class="login__input" placeholder="dd/mm/yyyy" runat="server" ClientIDMode="Static"></asp:TextBox>
+            <asp:TextBox ID="txt_birthdate" onChange="onChange1()"  required="true" pattern="^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$" title="set your  birthday date format:1:(dd/mm/yyyy)  date should be real (past)!! " Class="login__input" placeholder="dd/mm/yyyy" runat="server" ClientIDMode="Static"></asp:TextBox>
                
 </div>
 
