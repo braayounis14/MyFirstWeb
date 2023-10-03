@@ -118,40 +118,206 @@ Password should have at least one special character ( @, #, %, &, !, $, *)   .)"
 
                             placeholder="Password" runat="server" TextMode="Password" MinLength="8" MaxLength="32"></asp:TextBox>
                     </div>
-
-
-                        
+                  
                     <div class="login__field">
     <i class="login__icon fas fa-lock"></i>
     <asp:TextBox ID="pswConfirm" class="login__input" placeholder="Confirm Password" MinLength="8" MaxLength="32" required="true" autocomplete="off" runat="server" TextMode="Password"></asp:TextBox>
 </div>
+                    <div class="login__field">
+                       <i class="login__icon fas fa-flag"></i>
+                    <asp:DropDownList  class="login__input" ID="ddlGroupedDropDown" runat="server" >
+    <asp:ListItem Text="Select a Category" Value="0" Disabled="true" style="font-weight: bold;"></asp:ListItem>
+    <asp:ListItem Text="North America" Value="North America" Disabled="true" style="color: #0000FF; font-weight: bold;"></asp:ListItem>
+  
+        <asp:ListItem Text="United States" Value="United States"></asp:ListItem>
+        <asp:ListItem Text="Canada" Value="Canada"></asp:ListItem>
 
-<asp:DropDownList ID="ddlGroupedDropDown" runat="server">
-    <asp:ListItem Text="Select a Category" Value="" Disabled="true" style="font-weight: bold;"></asp:ListItem>
-    <asp:ListItem Text="Fruits" Value="Fruits" Disabled="true" style="background-color: #f0f0f0;"></asp:ListItem>
-    <asp:ListItem Text="Apple" Value="Apple"></asp:ListItem>
-    <asp:ListItem Text="Banana" Value="Banana"></asp:ListItem>
-    <asp:ListItem Text="Orange" Value="Orange"></asp:ListItem>
-    <asp:ListItem Text="Vegetables" Value="Vegetables" Disabled="true" style="color: #000000; font-weight: bold;"></asp:ListItem>
-    <asp:ListItem Text="Carrot" Value="Carrot"></asp:ListItem>
-    <asp:ListItem Text="Broccoli" Value="Broccoli"></asp:ListItem>
-    <asp:ListItem Text="Cucumber" Value="Cucumber"></asp:ListItem>
-</asp:DropDownList>
-                    <select>
-  <optgroup label="Group 1">
-    <option value="item1">Item 1</option>
-    <option value="item2">Item 2</option>
-    <option value="item3">Item 3</option>
-  </optgroup>
-  <optgroup label="Group 2">
-    <option value="item4">Item 4</option>
-    <option value="item5">Item 5</option>
-    <option value="item6">Item 6</option>
-  </optgroup>
-</select>
+    <asp:ListItem Text="South America" Value="South America" Disabled="true" style="color: #0000FF; font-weight: bold; "></asp:ListItem>
 
-    
-  <asp:Button ID="SignUp_Btn"  runat="server" Text="SignUp"  class="button login__submit" OnClick="SignUp_Btn_Click" />
+        <asp:ListItem Text="Argentina" Value="Argentina"></asp:ListItem>
+        <asp:ListItem Text="Bolivia" Value="Bolivia"></asp:ListItem>
+        <asp:ListItem Text="Brazil" Value="Brazil"></asp:ListItem>
+        <asp:ListItem Text="Chile" Value="Chile"></asp:ListItem>
+        <asp:ListItem Text="Colombia" Value="Colombia"></asp:ListItem>
+        <asp:ListItem Text="Ecuador" Value="Ecuador"></asp:ListItem>
+        <asp:ListItem Text="Guyana" Value="Guyana"></asp:ListItem>
+        <asp:ListItem Text="Paraguay" Value="Paraguay"></asp:ListItem>
+        <asp:ListItem Text="Peru" Value="Peru"></asp:ListItem>
+        <asp:ListItem Text="Suriname" Value="Suriname"></asp:ListItem>
+        <asp:ListItem Text="Uruguay" Value="Uruguay"></asp:ListItem>
+        <asp:ListItem Text="Venezuela" Value="Venezuela"></asp:ListItem>
+
+   <asp:ListItem Text="Europe" Value="Europe" Disabled="true" style="color: #0000FF; font-weight: bold; "></asp:ListItem>
+
+        <asp:ListItem Text="Albania" Value="Albania"></asp:ListItem>
+        <asp:ListItem Text="Andorra" Value="Andorra"></asp:ListItem>
+        <asp:ListItem Text="Austria" Value="Austria"></asp:ListItem>
+        <asp:ListItem Text="Belgium" Value="Belgium"></asp:ListItem>
+        <asp:ListItem Text="Bulgaria" Value="Bulgaria"></asp:ListItem>
+        <asp:ListItem Text="Croatia" Value="Croatia"></asp:ListItem>
+        <asp:ListItem Text="Cyprus" Value="Cyprus"></asp:ListItem>
+        <asp:ListItem Text="Czech Republic" Value="Czech Republic"></asp:ListItem>
+        <asp:ListItem Text="Denmark" Value="Denmark"></asp:ListItem>
+        <asp:ListItem Text="Estonia" Value="Estonia"></asp:ListItem>
+        <asp:ListItem Text="Finland" Value="Finland"></asp:ListItem>
+        <asp:ListItem Text="France" Value="France"></asp:ListItem>
+        <asp:ListItem Text="Germany" Value="Germany"></asp:ListItem>
+        <asp:ListItem Text="Greece" Value="Greece"></asp:ListItem>
+        <asp:ListItem Text="Hungary" Value="Hungary"></asp:ListItem>
+        <asp:ListItem Text="Iceland" Value="Iceland"></asp:ListItem>
+        <asp:ListItem Text="Ireland" Value="Ireland"></asp:ListItem>
+        <asp:ListItem Text="Italy" Value="Italy"></asp:ListItem>
+        <asp:ListItem Text="Latvia" Value="Latvia"></asp:ListItem>
+        <asp:ListItem Text="Liechtenstein" Value="Liechtenstein"></asp:ListItem>
+        <asp:ListItem Text="Lithuania" Value="Lithuania"></asp:ListItem>
+        <asp:ListItem Text="Luxembourg" Value="Luxembourg"></asp:ListItem>
+        <asp:ListItem Text="Macedonia" Value="Macedonia"></asp:ListItem>
+        <asp:ListItem Text="Malta" Value="Malta"></asp:ListItem>
+        <asp:ListItem Text="Monaco" Value="Monaco"></asp:ListItem>
+        <asp:ListItem Text="Netherlands" Value="Netherlands"></asp:ListItem>
+        <asp:ListItem Text="Norway" Value="Norway"></asp:ListItem>
+        <asp:ListItem Text="Poland" Value="Poland"></asp:ListItem>
+        <asp:ListItem Text="Portugal" Value="Portugal"></asp:ListItem>
+        <asp:ListItem Text="Romania" Value="Romania"></asp:ListItem>
+        <asp:ListItem Text="Russian Federation" Value="Russian Federation"></asp:ListItem>
+        <asp:ListItem Text="San Marino" Value="San Marino"></asp:ListItem>
+        <asp:ListItem Text="Slovakia (Slovak Republic)" Value="Slovakia"></asp:ListItem>
+        <asp:ListItem Text="Slovenia" Value="Slovenia"></asp:ListItem>
+        <asp:ListItem Text="Spain" Value="Spain"></asp:ListItem>
+        <asp:ListItem Text="Sweden" Value="Sweden"></asp:ListItem>
+        <asp:ListItem Text="Switzerland" Value="Switzerland"></asp:ListItem>
+        <asp:ListItem Text="United Kingdom" Value="United Kingdom"></asp:ListItem>
+
+  <asp:ListItem Text="Asia" Value="Asia" Disabled="true" style="color: #0000FF; font-weight: bold; "></asp:ListItem>
+
+        <asp:ListItem Text="Afghanistan" Value="Afghanistan"></asp:ListItem>
+        <asp:ListItem Text="Armenia" Value="Armenia"></asp:ListItem>
+        <asp:ListItem Text="Azerbaijan" Value="Azerbaijan"></asp:ListItem>
+        <asp:ListItem Text="Bahrain" Value="Bahrain"></asp:ListItem>
+        <asp:ListItem Text="Bangladesh" Value="Bangladesh"></asp:ListItem>
+        <asp:ListItem Text="Bhutan" Value="Bhutan"></asp:ListItem>
+        <asp:ListItem Text="Brunei Darussalam" Value="Brunei Darussalam"></asp:ListItem>
+        <asp:ListItem Text="Cambodia" Value="Cambodia"></asp:ListItem>
+        <asp:ListItem Text="China" Value="China"></asp:ListItem>
+        <asp:ListItem Text="Christmas Island" Value="Christmas Island"></asp:ListItem>
+        <asp:ListItem Text="Cocos (Keeling) Islands" Value="Cocos (Keeling) Islands"></asp:ListItem>
+        <asp:ListItem Text="East Timor" Value="East Timor"></asp:ListItem>
+        <asp:ListItem Text="Georgia" Value="Georgia"></asp:ListItem>
+        <asp:ListItem Text="Hong Kong" Value="Hong Kong"></asp:ListItem>
+        <asp:ListItem Text="India" Value="India"></asp:ListItem>
+        <asp:ListItem Text="Indonesia" Value="Indonesia"></asp:ListItem>
+        <asp:ListItem Text="Iran (Islamic Republic Of)" Value="Iran"></asp:ListItem>
+        <asp:ListItem Text="Iraq" Value="Iraq"></asp:ListItem>
+        <asp:ListItem Text="Israel" Value="Israel"></asp:ListItem>
+        <asp:ListItem Text="Japan" Value="Japan"></asp:ListItem>
+        <asp:ListItem Text="Jordan" Value="Jordan"></asp:ListItem>
+        <asp:ListItem Text="Kazakhstan" Value="Kazakhstan"></asp:ListItem>
+        <asp:ListItem Text="Kuwait" Value="Kuwait"></asp:ListItem>
+        <asp:ListItem Text="Kyrgyzstan" Value="Kyrgyzstan"></asp:ListItem>
+        <asp:ListItem Text="Lao People'S Dem Republic" Value="Lao People'S Dem Republic"></asp:ListItem>
+        <asp:ListItem Text="Lebanon" Value="Lebanon"></asp:ListItem>
+        <asp:ListItem Text="Malaysia" Value="Malaysia"></asp:ListItem>
+        <asp:ListItem Text="Maldives" Value="Maldives"></asp:ListItem>
+        <asp:ListItem Text="Mongolia" Value="Mongolia"></asp:ListItem>
+        <asp:ListItem Text="Myanmar" Value="Myanmar"></asp:ListItem>
+        <asp:ListItem Text="Nepal" Value="Nepal"></asp:ListItem>
+        <asp:ListItem Text="Oman" Value="Oman"></asp:ListItem>
+        <asp:ListItem Text="Pakistan" Value="Pakistan"></asp:ListItem>
+        <asp:ListItem Text="Palestine (West Bank and Gaza Strip)" Value="Palestine"></asp:ListItem>
+        <asp:ListItem Text="Philippines" Value="Philippines"></asp:ListItem>
+        <asp:ListItem Text="Qatar" Value="Qatar"></asp:ListItem>
+        <asp:ListItem Text="Saudi Arabia" Value="Saudi Arabia"></asp:ListItem>
+        <asp:ListItem Text="Singapore" Value="Singapore"></asp:ListItem>
+        <asp:ListItem Text="Sri Lanka" Value="Sri Lanka"></asp:ListItem>
+        <asp:ListItem Text="Syria" Value="Syria"></asp:ListItem>
+        <asp:ListItem Text="Taiwan" Value="Taiwan"></asp:ListItem>
+        <asp:ListItem Text="Tajikistan" Value="Tajikistan"></asp:ListItem>
+        <asp:ListItem Text="Thailand" Value="Thailand"></asp:ListItem>
+        <asp:ListItem Text="Turkey" Value="Turkey"></asp:ListItem>
+        <asp:ListItem Text="Turkmenistan" Value="Turkmenistan"></asp:ListItem>
+        <asp:ListItem Text="United Arab Emirates" Value="United Arab Emirates"></asp:ListItem>
+        <asp:ListItem Text="Uzbekistan" Value="Uzbekistan"></asp:ListItem>
+        <asp:ListItem Text="Vietnam" Value="Vietnam"></asp:ListItem>
+        <asp:ListItem Text="Yemen" Value="Yemen"></asp:ListItem>
+
+    <asp:ListItem Text="Australia/Oceania" Value="Asia" Disabled="true" style="color: #0000FF; font-weight: bold; "></asp:ListItem>
+
+        <asp:ListItem Text="American Samoa" Value="American Samoa"></asp:ListItem>
+        <asp:ListItem Text="Australia" Value="Australia"></asp:ListItem>
+        <asp:ListItem Text="Fiji" Value="Fiji"></asp:ListItem>
+        <asp:ListItem Text="Kiribati" Value="Kiribati"></asp:ListItem>
+        <asp:ListItem Text="Marshall Islands" Value="Marshall Islands"></asp:ListItem>
+        <asp:ListItem Text="Micronesia, Federated States" Value="Micronesia, Federated States"></asp:ListItem>
+        <asp:ListItem Text="Nauru" Value="Nauru"></asp:ListItem>
+        <asp:ListItem Text="New Zealand" Value="New Zealand"></asp:ListItem>
+        <asp:ListItem Text="Palau" Value="Palau"></asp:ListItem>
+        <asp:ListItem Text="Papua New Guinea" Value="Papua New Guinea"></asp:ListItem>
+        <asp:ListItem Text="Samoa" Value="Samoa"></asp:ListItem>
+        <asp:ListItem Text="Solomon Islands" Value="Solomon Islands"></asp:ListItem>
+        <asp:ListItem Text="Tonga" Value="Tonga"></asp:ListItem>
+        <asp:ListItem Text="Tuvalu" Value="Tuvalu"></asp:ListItem>
+        <asp:ListItem Text="Vanuatu" Value="Vanuatu"></asp:ListItem>
+        <asp:ListItem Text="Wallis And Futuna Islands" Value="Wallis And Futuna Islands"></asp:ListItem>
+
+   <asp:ListItem Text="Caribbean" Value="Caribbean" Disabled="true" style="color: #0000FF; font-weight: bold; "></asp:ListItem>
+
+        <asp:ListItem Text="Anguilla" Value="Anguilla"></asp:ListItem>
+        <asp:ListItem Text="Antigua And Barbuda" Value="Antigua And Barbuda"></asp:ListItem>
+        <asp:ListItem Text="Aruba" Value="Aruba"></asp:ListItem>
+        <asp:ListItem Text="Bahamas" Value="Bahamas"></asp:ListItem>
+        <asp:ListItem Text="Barbados" Value="Barbados"></asp:ListItem>
+        <asp:ListItem Text="Bermuda" Value="Bermuda"></asp:ListItem>
+        <asp:ListItem Text="British Virgin Islands" Value="British Virgin Islands"></asp:ListItem>
+        <asp:ListItem Text="Cayman Islands" Value="Cayman Islands"></asp:ListItem>
+        <asp:ListItem Text="Cuba" Value="Cuba"></asp:ListItem>
+        <asp:ListItem Text="Dominica" Value="Dominica"></asp:ListItem>
+        <asp:ListItem Text="Dominican Republic" Value="Dominican Republic"></asp:ListItem>
+        <asp:ListItem Text="Grenada" Value="Grenada"></asp:ListItem>
+        <asp:ListItem Text="Guadeloupe" Value="Guadeloupe"></asp:ListItem>
+        <asp:ListItem Text="Haiti" Value="Haiti"></asp:ListItem>
+        <asp:ListItem Text="Jamaica" Value="Jamaica"></asp:ListItem>
+        <asp:ListItem Text="Martinique" Value="Martinique"></asp:ListItem>
+        <asp:ListItem Text="Montserrat" Value="Montserrat"></asp:ListItem>
+        <asp:ListItem Text="Netherlands Antilles (now dissolved)" Value="Netherlands Antilles"></asp:ListItem>
+        <asp:ListItem Text="Puerto Rico" Value="Puerto Rico"></asp:ListItem>
+        <asp:ListItem Text="Saint Kitts And Nevis" Value="Saint Kitts And Nevis"></asp:ListItem>
+        <asp:ListItem Text="Saint Lucia" Value="Saint Lucia"></asp:ListItem>
+        <asp:ListItem Text="Saint Vincent, The Grenadines" Value="Saint Vincent, The Grenadines"></asp:ListItem>
+        <asp:ListItem Text="Trinidad And Tobago" Value="Trinidad And Tobago"></asp:ListItem>
+        <asp:ListItem Text="Turks And Caicos Islands" Value="Turks And Caicos Islands"></asp:ListItem>
+        <asp:ListItem Text="Virgin Islands (U.S.)" Value="Virgin Islands (U.S.)"></asp:ListItem>
+
+   <asp:ListItem Text="Antarctica" Value="Antarctica" Disabled="true" style="color: #0000FF; font-weight: bold; "></asp:ListItem>
+
+        <asp:ListItem Text="Antarctica" Value="Antarctica"></asp:ListItem>
+        <asp:ListItem Text="Bouvet Island" Value="Bouvet Island"></asp:ListItem>
+        <asp:ListItem Text="French Southern Territories" Value="French Southern Territories"></asp:ListItem>
+        <asp:ListItem Text="South Georgia and the South Sandwich Islands" Value="South Georgia and the South Sandwich Islands"></asp:ListItem>
+
+
+
+
+                </asp:DropDownList>
+                        
+      </div>
+
+
+
+
+                    <div class="login__field">
+   <i class="login__icon fas fa-flag"></i>
+                        <asp:DropDownList class="login__input" ID="DpGender" runat="server">
+                <asp:ListItem Text="Choose Your Gender" Value="0" Disabled="true" style="font-weight: bold;"></asp:ListItem>
+                            <asp:ListItem>Male</asp:ListItem>
+                            <asp:ListItem>Female</asp:ListItem>
+                        </asp:DropDownList>
+
+  </div>
+
+
+
+
+            <asp:Button ID="SignUp_Btn"  runat="server" Text="SignUp"  class="button login__submit" OnClick="SignUp_Btn_Click" />
 
               
                  
