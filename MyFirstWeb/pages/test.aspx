@@ -125,8 +125,9 @@ Password should have at least one special character ( @, #, %, &, !, $, *)   .)"
 </div>
                     <div class="login__field">
                        <i class="login__icon fas fa-flag"></i>
-                    <asp:DropDownList  class="login__input" ID="ddlGroupedDropDown" runat="server" >
-    <asp:ListItem Text="Select a Category" Value="0" Disabled="true" style="font-weight: bold;"></asp:ListItem>
+                    <asp:DropDownList  class="login__input" required="true" ID="ddlGroupedDropDown" runat="server" >
+                        <asp:ListItem Text="Select a Category" Value="0" style="font-weight: bold; "></asp:ListItem>
+   
     <asp:ListItem Text="North America" Value="North America" Disabled="true" style="color: #0000FF; font-weight: bold;"></asp:ListItem>
   
         <asp:ListItem Text="United States" Value="United States"></asp:ListItem>
@@ -306,14 +307,30 @@ Password should have at least one special character ( @, #, %, &, !, $, *)   .)"
 
                     <div class="login__field">
    <i class="login__icon fas fa-flag"></i>
-                        <asp:DropDownList class="login__input" ID="DpGender" runat="server">
-                <asp:ListItem Text="Choose Your Gender" Value="0" Disabled="true" style="font-weight: bold;"></asp:ListItem>
+                        <asp:DropDownList class="login__input" title="Gender choose" required="true" ID="DpGender" runat="server">
+                            <asp:ListItem Text="Choose Your Gender" Value="Choose Your Gender" style="font-weight: bold; color:blue"></asp:ListItem>
+             
                             <asp:ListItem>Male</asp:ListItem>
                             <asp:ListItem>Female</asp:ListItem>
                         </asp:DropDownList>
 
   </div>
 
+                                      <div class="login__field">
+   <i class="login__icon fas fa-flag"></i>
+                        <asp:DropDownList class="login__input" title="Password Quastion to recover your Password" required="true" ID="DP_Pass_quastion" runat="server">
+                         <asp:ListItem Text="Choose Your Password Quastion" Value="Choose Your Password Quastion" style="font-weight: bold; color:blue"></asp:ListItem>
+                            <asp:ListItem>What is your mother's maiden name?</asp:ListItem>
+                            <asp:ListItem>What is the name of your first pet?</asp:ListItem>
+                            <asp:ListItem>What elementary school did you attend?</asp:ListItem>
+                            <asp:ListItem>What is the name of the town where you were born?</asp:ListItem>
+                            <asp:ListItem>Who was your childhood hero?</asp:ListItem>
+                            <asp:ListItem>Where was your best family vacation as a kid?</asp:ListItem>
+                            <asp:ListItem>What was your favorite food as a child?</asp:ListItem>
+                                   <asp:ListItem>What year was your father (or mother) born?</asp:ListItem>
+                        </asp:DropDownList>
+                                          
+  </div>
 
 
 
