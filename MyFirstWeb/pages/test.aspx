@@ -61,6 +61,39 @@
 
 
 
+<script> 
+    function checkCountryChoose() {
+            const DpCountry = document.querySelector('input[id=DpCountry]');
+            const CountryString = DpCountry.value;
+            if (countryString = "0")
+                DpCountry.setCustomValidity('Birthdate must be in the past.');
+            else
+                DpCountry.setCustomValidity('000');
+        }
+        
+</script>
+
+    <script> 
+        function checkGenderChoose() {
+            const DpGender = document.querySelector('input[id=DpGender]');
+            const GenderString = DpCountry.value;
+            if (GenderString = "0")
+                birthdateInput.setCustomValidity('Birthdate must be in the past.');
+            else
+                birthdateInput.setCustomValidity('');
+        }
+    </script>
+
+    <script> 
+        function checkQuastionChoose() {
+            const DpQuastion = document.querySelector('input[id=DPPassQuastion]');
+            const QuastionString = DpCountry.value;
+            if (QuastionString = "0")
+                birthdateInput.setCustomValidity('');
+            else
+                birthdateInput.setCustomValidity('');
+        }
+    </script>
 
 
 
@@ -125,7 +158,7 @@ Password should have at least one special character ( @, #, %, &, !, $, *)   .)"
 </div>
                     <div class="login__field">
                        <i class="login__icon fas fa-flag"></i>
-                    <asp:DropDownList  class="login__input" required="true" ID="ddlGroupedDropDown" runat="server" >
+                    <asp:DropDownList  class="login__input" required="true" ID="DpCountry" runat="server" >
                         <asp:ListItem Text="Select a Category" Value="0" style="font-weight: bold; "></asp:ListItem>
    
     <asp:ListItem Text="North America" Value="North America" Disabled="true" style="color: #0000FF; font-weight: bold;"></asp:ListItem>
@@ -308,7 +341,7 @@ Password should have at least one special character ( @, #, %, &, !, $, *)   .)"
                     <div class="login__field">
    <i class="login__icon fas fa-flag"></i>
                         <asp:DropDownList class="login__input" title="Gender choose" required="true" ID="DpGender" runat="server">
-                            <asp:ListItem Text="Choose Your Gender" Value="Choose Your Gender" style="font-weight: bold; color:blue"></asp:ListItem>
+                            <asp:ListItem Text="Choose Your Gender" Value="0" style="font-weight: bold; color:blue"></asp:ListItem>
              
                             <asp:ListItem>Male</asp:ListItem>
                             <asp:ListItem>Female</asp:ListItem>
@@ -318,8 +351,8 @@ Password should have at least one special character ( @, #, %, &, !, $, *)   .)"
 
                                       <div class="login__field">
    <i class="login__icon fas fa-flag"></i>
-                        <asp:DropDownList class="login__input" title="Password Quastion to recover your Password" required="true" ID="DP_Pass_quastion" runat="server">
-                         <asp:ListItem Text="Choose Your Password Quastion" Value="Choose Your Password Quastion" style="font-weight: bold; color:blue"></asp:ListItem>
+                        <asp:DropDownList class="login__input" title="Password Quastion to recover your Password" required="true" ID="DPPassQuastion" runat="server">
+                         <asp:ListItem Text="Choose Your Password Quastion" Value="0" style="font-weight: bold; color:blue"></asp:ListItem>
                             <asp:ListItem>What is your mother's maiden name?</asp:ListItem>
                             <asp:ListItem>What is the name of your first pet?</asp:ListItem>
                             <asp:ListItem>What elementary school did you attend?</asp:ListItem>
@@ -338,7 +371,12 @@ Password should have at least one special character ( @, #, %, &, !, $, *)   .)"
 
               
                  
-
+                    <script> 
+                        function myfunction() {
+                            alert("test");
+                        }
+                     
+                    </script>
 
 
 

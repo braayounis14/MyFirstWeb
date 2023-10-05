@@ -20,8 +20,9 @@ namespace MyFirstWeb.pages
         protected void SignUp_Btn_Click(object sender, EventArgs e)
         {
             Response.Redirect("home.aspx");
+         
         }
 
-     
+
     }
 }
