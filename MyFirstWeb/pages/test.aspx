@@ -350,7 +350,7 @@ Password should have at least one special character ( @, #, %, &, !, $, *)   .)"
   </div>
 
                                       <div class="login__field">
-   <i class="login__icon fas fa-flag"></i>
+   <i class="login__icon fas fa-question"></i>
                         <asp:DropDownList class="login__input" title="Password Quastion to recover your Password" required="true" ID="DPPassQuastion" runat="server">
                          <asp:ListItem Text="Choose Your Password Quastion" Value="0" style="font-weight: bold; color:blue"></asp:ListItem>
                             <asp:ListItem>What is your mother's maiden name?</asp:ListItem>
@@ -364,7 +364,13 @@ Password should have at least one special character ( @, #, %, &, !, $, *)   .)"
                         </asp:DropDownList>
                                           
   </div>
+                  
+        <div class="login__field">
+   <i class="login__icon fas fa-info"></i>
 
+          <asp:TextBox ID="PassQuastionAnswer" required="true"  title="Type your answer to the past Password Quastion" Class="login__input" placeholder="Password |Quastion Answer" runat="server" ></asp:TextBox>
+                     
+</div>
 
 
             <asp:Button ID="SignUp_Btn"  runat="server" Text="SignUp"  class="button login__submit" OnClick="SignUp_Btn_Click" />

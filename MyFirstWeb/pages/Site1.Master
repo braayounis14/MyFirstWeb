@@ -47,7 +47,7 @@
                         <li><a href="#">
                             <i class="fas fa-bell"></i>
                         </a></li>
-                        <li class="tooltip" ><a class="tooltiptext" href="Login.aspx" >
+                         <li><a href="#">
                             <i  class="fas fa-user"></i>
                         </a></li>
 
