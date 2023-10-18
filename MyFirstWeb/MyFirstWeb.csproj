@@ -71,17 +71,18 @@
     <Content Include="pages\ContactUs.aspx" />
     <Content Include="pages\ForgetPassword.aspx" />
     <Content Include="pages\home.aspx" />
-    <Content Include="pages\Home1.aspx" />
+    <Content Include="pages\home1.aspx" />
+    <Content Include="pages\Index.aspx" />
     <Content Include="pages\Login.aspx" />
     <Content Include="pages\SignUp.aspx" />
     <Content Include="pages\test.aspx" />
-    <Content Include="pages\test1.aspx" />
-    <Content Include="pages\WebForm1.aspx" />
     <Content Include="scripts\birthdatecheck.js" />
+    <Content Include="scripts\Script.js" />
     <Content Include="scripts\Scripts.js" />
     <Content Include="styles\ForgetStyle.css" />
+    <Content Include="styles\JustTest.css" />
     <Content Include="styles\style.css" />
-    <Content Include="styles\lol.css" />
+    <Content Include="styles\lol1.css" />
     <Content Include="styles\style2.css" />
     <Content Include="styles\Style1.css" />
     <Content Include="styles\test.css" />
@@ -110,12 +111,19 @@
     <Compile Include="pages\home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\Home1.aspx.cs">
-      <DependentUpon>Home1.aspx</DependentUpon>
+    <Compile Include="pages\home1.aspx.cs">
+      <DependentUpon>home1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\Home1.aspx.designer.cs">
-      <DependentUpon>Home1.aspx</DependentUpon>
+    <Compile Include="pages\home1.aspx.designer.cs">
+      <DependentUpon>home1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -144,20 +152,6 @@
     </Compile>
     <Compile Include="pages\test.aspx.designer.cs">
       <DependentUpon>test.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="pages\test1.aspx.cs">
-      <DependentUpon>test1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\test1.aspx.designer.cs">
-      <DependentUpon>test1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="pages\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebForm1.aspx.cs">

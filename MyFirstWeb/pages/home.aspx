@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/56446077d3.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <link href="../styles/style.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
 </head>
 
 
@@ -23,16 +23,22 @@
         <div class="wrapper">
 
             <div class="top_navbar">
-                <div class="icon_home">
-                    <asp:ImageButton ID="Icon_Home" runat="server" Width="65px" Height="60px" ImageUrl="~/Images/GitHub-Mark.png" PostBackUrl="~/pages/home.aspx" />
-                </div>
+                <style> .topnav a.active {
+        color: white;
+        }
+
+                </style>
+
+
+
+                <div class="active">
+                     </div>
 
                 <div class="top_menu">
                     <div class="logo">
                         <div>
-                            logo
-                        </div>
-                        <i class="fa-brands fa-instagram"></i>
+                            <a href="#" style=""><i class="fa-brands fa-github fa-2xl"></i></a>
+                        </div> 
                     </div>
 
                     <ul>
@@ -55,6 +61,13 @@
 
     </form>
 
-    <div></div>
+
+
+
+
+    <div>
+
+        <p>     </p>
+    </div>
 </body>
 </html>

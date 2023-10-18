@@ -61,24 +61,26 @@
 
 
 
-<script> 
+<script>
     function checkCountryChoose() {
-            const DpCountry = document.querySelector('input[id=DpCountry]');
-            const CountryString = DpCountry.value;
-            if (countryString = "0")
-                DpCountry.setCustomValidity('Birthdate must be in the past.');
-            else
-                DpCountry.setCustomValidity('000');
+        console.log("checkCountryChoose script worked");
+        const DpCountry = document.querySelector('select[id=DpCountry]');
+        const CountryString = DpCountry.value;
+        if (CountryString === "0") { // Use triple equal (===) for strict comparison, and "0" as a string
+            DpCountry.setCustomValidity('Birthdate must be in the past.');
+        } else {
+            DpCountry.setCustomValidity('000');
         }
-        
+    }
 </script>
+
 
     <script> 
         function checkGenderChoose() {
             const DpGender = document.querySelector('input[id=DpGender]');
-            const GenderString = DpCountry.value;
-            if (GenderString = "0")
-                birthdateInput.setCustomValidity('Birthdate must be in the past.');
+            const GenderString = DpGender.value;
+            if (GenderString === '0')
+                birthdateInput.setCustomValidity('You must choose Gender.');
             else
                 birthdateInput.setCustomValidity('');
         }
@@ -87,9 +89,9 @@
     <script> 
         function checkQuastionChoose() {
             const DpQuastion = document.querySelector('input[id=DPPassQuastion]');
-            const QuastionString = DpCountry.value;
-            if (QuastionString = "0")
-                birthdateInput.setCustomValidity('');
+            const QuastionString = DpQuastion.value;
+            if (QuastionString = 0)
+                birthdateInput.setCustomValidity('You must choose Psssword Quastion');
             else
                 birthdateInput.setCustomValidity('');
         }
@@ -99,12 +101,8 @@
 
 </head>
 <body>
-
-
-
-    <link href="../styles/lol.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
-
+    <link href="../styles/lol1.css" rel="stylesheet" />
+   
     <div class="container">
         <div class="screen">
             <div class="screen__content">
@@ -125,7 +123,7 @@
                     </div>
 
                      <div class="login__field">
-     <i class="login__icon fas fa-user"></i>
+                         <i class="login__icon fas fa-envelope"></i>
   <asp:TextBox ID="email_txt" class="login__input" required="true" title="Please enter a valid email address (user@domain.com)" placeholder="Email" pattern="^.+@[^@]+\.[^@]+$" runat="server" TextMode="Email"></asp:TextBox>
  </div>
 
@@ -158,7 +156,7 @@ Password should have at least one special character ( @, #, %, &, !, $, *)   .)"
 </div>
                     <div class="login__field">
                        <i class="login__icon fas fa-flag"></i>
-                    <asp:DropDownList  class="login__input" required="true" ID="DpCountry" runat="server" >
+                    <asp:DropDownList  class="login__input" required="true" onblur="checkCountryChoose()" ID="DpCountry" runat="server" >
                         <asp:ListItem Text="Select a Category" Value="0" style="font-weight: bold; "></asp:ListItem>
    
     <asp:ListItem Text="North America" Value="North America" Disabled="true" style="color: #0000FF; font-weight: bold;"></asp:ListItem>
@@ -377,12 +375,7 @@ Password should have at least one special character ( @, #, %, &, !, $, *)   .)"
 
               
                  
-                    <script> 
-                        function myfunction() {
-                            alert("test");
-                        }
-                     
-                    </script>
+         
 
 
 
@@ -391,11 +384,7 @@ Password should have at least one special character ( @, #, %, &, !, $, *)   .)"
                         <div class="social-login">
             
             <h5>Have an account? <a href="Login.aspx">Login</a></h5>
-            <div class="social-icons">
-                <a href="#" class="social-login__icon fab fa-instagram"></a>
-                <a href="#" class="social-login__icon fab fa-facebook"></a>
-                <a href="#" class="social-login__icon fab fa-twitter"></a>
-            </div>
+         
         </div>
     </div>
     <div class="screen__background">

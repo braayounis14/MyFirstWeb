@@ -14,15 +14,17 @@ namespace MyFirstWeb.pages
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        
+       
+
         }
 
         protected void SignUp_Btn_Click(object sender, EventArgs e)
         {
+
             Response.Redirect("home.aspx");
-         
+
         }
 
-
+    
     }
 }

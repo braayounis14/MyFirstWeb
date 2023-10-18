@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyFirstWeb {
-    
-    
-    public partial class home {
-        
+namespace MyFirstWeb
+{
+
+
+    public partial class home
+    {
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -20,14 +22,5 @@ namespace MyFirstWeb {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
-        /// Icon_Home control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton Icon_Home;
     }
 }
