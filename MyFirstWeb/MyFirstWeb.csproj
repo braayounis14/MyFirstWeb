@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\GitHub-Mark.png" />
+    <Content Include="pages\ChangePassword.aspx" />
     <Content Include="pages\ContactUs.aspx" />
     <Content Include="pages\ForgetPassword.aspx" />
     <Content Include="pages\home.aspx" />
@@ -79,6 +80,7 @@
     <Content Include="scripts\birthdatecheck.js" />
     <Content Include="scripts\Script.js" />
     <Content Include="scripts\Scripts.js" />
+    <Content Include="styles\ContactStyle.css" />
     <Content Include="styles\ForgetStyle.css" />
     <Content Include="styles\JustTest.css" />
     <Content Include="styles\style.css" />
@@ -90,6 +92,13 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pages\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pages\ContactUs.aspx.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -146,6 +155,13 @@
     <Compile Include="pages\Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
+    <Compile Include="pages\Site1AfterSign.Master.cs">
+      <DependentUpon>Site1AfterSign.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Site1AfterSign.Master.designer.cs">
+      <DependentUpon>Site1AfterSign.Master</DependentUpon>
+    </Compile>
     <Compile Include="pages\test.aspx.cs">
       <DependentUpon>test.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -165,6 +181,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="pages\Site1.Master" />
+    <Content Include="pages\Site1AfterSign.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

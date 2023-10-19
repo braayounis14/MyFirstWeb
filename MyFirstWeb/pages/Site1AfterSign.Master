@@ -1,14 +1,14 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MyFirstWeb.pages.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1AfterSign.master.cs" Inherits="MyFirstWeb.pages.Site1AfterSign" %>
 
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
-    <title>test</title>
+    <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
 
     </asp:ContentPlaceHolder>
-
+    
         <script src="https://kit.fontawesome.com/56446077d3.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 <script src="../scripts/Scripts.js"></script>
@@ -33,7 +33,7 @@
 
 </head>
 <body>
-      <script src="../scripts/Scripts.js"></script>
+       <script src="../scripts/Scripts.js"></script>
 
        <form id="form1" runat="server">
 
@@ -54,7 +54,7 @@
       <li class="nav-item"><a href="#">Home</a></li>
       <li class="nav-item"><a href="#">About</a></li>
       <li class="nav-item"><a href="#">Work</a></li>
-      <li class="nav-item"><a href="#">Careers`</a></li>
+      <li class="nav-item"><a href="#">Careers</a></li>
       <li class="nav-item"><a href="#">Contact Us</a></li>
       <i class="fas fa-user" id="search-icon"></i>
      <asp:TextBox ID="TextBox1" class="search-input" placeholder="Search.."  runat="server"></asp:TextBox>
