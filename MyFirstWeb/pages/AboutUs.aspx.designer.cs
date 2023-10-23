@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyFirstWeb
+namespace MyFirstWeb.pages
 {
 
 
-    public partial class WebForm1
+    public partial class AboutUs
     {
     }
 }

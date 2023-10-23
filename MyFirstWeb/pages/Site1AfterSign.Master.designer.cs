@@ -11,7 +11,7 @@ namespace MyFirstWeb.pages
 {
 
 
-    public partial class Site1
+    public partial class Site1AfterSign
     {
 
         /// <summary>

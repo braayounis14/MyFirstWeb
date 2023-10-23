@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace MyFirstWeb.pages
 {
-    public partial class ContactUs : System.Web.UI.Page
+    public partial class ChangePassword : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Page.Title = "Contact US";
+
         }
     }
 }
