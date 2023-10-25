@@ -9,11 +9,6 @@
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 <body>
-
-
-
-
-
      
     <link href="../styles/Style1.css" rel="stylesheet" />
     <div class="container">
@@ -38,7 +33,7 @@
 
 			</form>
 			<div class="social-login">
-				<h3>log in via</h3>
+				<h3>Register via</h3>
 				<div class="social-icons">
 					<a href="#" class="social-login__icon fab fa-instagram"></a>
 					<a href="#" class="social-login__icon fab fa-facebook"></a>
