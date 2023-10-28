@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.OleDb;
 
 namespace MyFirstWeb.pages
 {
@@ -14,39 +16,39 @@ namespace MyFirstWeb.pages
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+      
+
+        protected void BtnSubmit_Click(object sender, EventArgs e)
         {
-            string targetPageUrl = "home.aspx"; // Change this to the URL of the page you want to navigate to
 
-            string username = user_txt.Text;
-            string password = psw_txt.Text;
 
-            if (username.Length != 0 && password.Length >= 8) // Changed || to &&
+            String Email = this.user_txt.Text;
+            String Password = this.psw_txt.Text;
+
+
+
+            Session["email"] = Email;
+            if (Email == "admin@admin.com" && Password == "admin1212!")
+                Response.Redirect("https://www.codingnepalweb.com/demos/admin-dashboard-panel-html-css-javascript/");
+
+            String st = "select * from [USERS] where [Email]='"+Email+"' and [Password]='"+Password+"'";
+            DataTable dt = DBFunction.SelectFromTable(st, "Clients.accdb");
+            if (dt.Rows.Count > 0)
             {
-                if (username == "admin" && password == "password")
-                {
-                    // The user's credentials are valid
-                    // Redirect the user to the main page of the application
-                    Response.Redirect(targetPageUrl);
-                }
-                else
-                {
-                    // The user's credentials are invalid
-                    // Display an error message
-                    Response.Redirect("test.aspx");
-                }
+                Response.Redirect("Home2.aspx");
             }
             else
             {
-                // Short password
-                string script = "alert('Password should be at least 8 characters long.');";
-                ScriptManager.RegisterStartupScript(this, GetType(), "ServerMessage", script, true);
-
-
+                this.Label1.Text = "<h5>Don't have an account?<a href=\"SignUp.aspx\"><span>Sign up</span></a> </h5>\r\n";
             }
+                
+
+
         }
 
-        
+
+
+
     }
 
 

@@ -52,18 +52,21 @@
         <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
       
         <div class="input-box">
-            <asp:TextBox ID="TextBox1" placeholder="Enter your name" runat="server"></asp:TextBox>
+            <asp:TextBox ID="Txt_Email" required="true" placeholder="Enter your Email" runat="server"></asp:TextBox>
         </div>
         <div class="input-box">
-        <asp:TextBox ID="TextBox2" placeholder="enter your name" runat="server"></asp:TextBox>
+        <asp:TextBox ID="Txt_Subject" required="true" placeholder="enter your Subject" runat="server"></asp:TextBox>
         </div>
         <div class="input-box message-box">
-           <asp:TextBox ID="TextBox3" placeholder="enter your Issue Details" runat="server" TextMode="MultiLine"></asp:TextBox>
+           <asp:TextBox ID="Txt_Body" required="true" placeholder="enter your Issue Details" runat="server" TextMode="MultiLine"></asp:TextBox>
         </div>
+           <div class="input-box">
+ <asp:TextBox ID="Txt_file" type="file" style="padding:10px" placeholder="enter your Subject" runat="server"></asp:TextBox>
+ </div>
         <div class="button">
-            <asp:Button ID="Button1" CssClass="buttonSubmit" runat="server" Text="Send Now" />
+            <asp:Button ID="Submit" CssClass="buttonSubmit" runat="server" Text="Send Now" OnClick="Button1_Click" />
         </div>
-      
+          <asp:Label ID="lbl_Stuts" runat="server" Text=""></asp:Label>
     </div>
     </div>
   </div>

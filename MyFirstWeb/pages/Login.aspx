@@ -7,6 +7,7 @@
     <title>Sign in</title>
 
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
 </head>
 <body>
      
@@ -28,18 +29,13 @@
                        <asp:TextBox ID="psw_txt" class="login__input" placeholder="Password" runat="server"></asp:TextBox>
 	</div>
 
-                <asp:Button ID="Button1" runat="server" Text="Log In Now" OnClick="Button1_Click" class="button login__submit" />
+                <asp:Button ID="BtnSubmit" runat="server" Text="Log In Now" class="button login__submit" OnClick="BtnSubmit_Click" />
 
 
 			</form>
 			<div class="social-login">
-				<h3>Register via</h3>
-				<div class="social-icons">
-					<a href="#" class="social-login__icon fab fa-instagram"></a>
-					<a href="#" class="social-login__icon fab fa-facebook"></a>
-					<a href="#" class="social-login__icon fab fa-twitter"></a>
-				</div>
-			</div>
+				<asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+	</div>
 		</div>
 		<div class="screen__background">
 			<span class="screen__background__shape screen__background__shape4"></span>

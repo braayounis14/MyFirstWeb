@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Clients.accdb" />
+    <Content Include="App_Data\ContactUs.accdb" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
     <Content Include="bin\MyFirstWeb.dll" />
@@ -118,21 +119,21 @@
     <Content Include="obj\Debug\TempPE\Resource1.Designer.cs.dll" />
     <Content Include="pages\AboutUs.aspx" />
     <Content Include="pages\AboutUs1.aspx" />
+    <Content Include="pages\AdminDashboard.aspx" />
     <Content Include="pages\ChangePassword.aspx" />
     <Content Include="pages\ContactUs.aspx" />
     <Content Include="pages\ForgetPassword.aspx" />
-    <Content Include="pages\home.aspx" />
-    <Content Include="pages\home1.aspx" />
-    <Content Include="pages\Index.aspx" />
+    <Content Include="pages\Home.aspx" />
+    <Content Include="pages\Home2.aspx" />
     <Content Include="pages\Login.aspx" />
     <Content Include="pages\SignUp.aspx" />
-    <Content Include="pages\test.aspx" />
     <Content Include="scripts\birthdatecheck.js" />
     <Content Include="scripts\Script.js" />
+    <Content Include="scripts\Script1.js" />
     <Content Include="scripts\Scripts.js" />
+    <Content Include="styles\AdminDash.css" />
     <Content Include="styles\ContactStyle.css" />
     <Content Include="styles\ForgetStyle.css" />
-    <Content Include="styles\JustTest.css" />
     <Content Include="styles\MasterFooter.css" />
     <Content Include="styles\style.css" />
     <Content Include="styles\lol1.css" />
@@ -160,6 +161,20 @@
     <Compile Include="pages\AboutUs1.aspx.designer.cs">
       <DependentUpon>AboutUs1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pages\AdminDashboard.aspx.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\AdminDashboard.aspx.designer.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\SiteAdminPage.Master.cs">
+      <DependentUpon>SiteAdminPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\SiteAdminPage.Master.designer.cs">
+      <DependentUpon>SiteAdminPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="pages\ChangePassword.aspx.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -182,26 +197,19 @@
     <Compile Include="pages\ForgetPassword.aspx.designer.cs">
       <DependentUpon>ForgetPassword.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\home.aspx.cs">
-      <DependentUpon>home.aspx</DependentUpon>
+    <Compile Include="pages\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\home.aspx.designer.cs">
-      <DependentUpon>home.aspx</DependentUpon>
+    <Compile Include="pages\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\home1.aspx.cs">
-      <DependentUpon>home1.aspx</DependentUpon>
+    <Compile Include="pages\Home2.aspx.cs">
+      <DependentUpon>Home2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\home1.aspx.designer.cs">
-      <DependentUpon>home1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="pages\Index.aspx.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\Index.aspx.designer.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
+    <Compile Include="pages\Home2.aspx.designer.cs">
+      <DependentUpon>Home2.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -231,13 +239,6 @@
     <Compile Include="pages\Site1AfterSign.Master.designer.cs">
       <DependentUpon>Site1AfterSign.Master</DependentUpon>
     </Compile>
-    <Compile Include="pages\test.aspx.cs">
-      <DependentUpon>test.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\test.aspx.designer.cs">
-      <DependentUpon>test.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Code\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -263,6 +264,7 @@
     <None Include="packages.config" />
     <Content Include="pages\Site1.Master" />
     <Content Include="pages\Site1AfterSign.Master" />
+    <Content Include="pages\SiteAdminPage.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

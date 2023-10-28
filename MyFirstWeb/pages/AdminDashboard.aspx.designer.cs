@@ -11,7 +11,7 @@ namespace MyFirstWeb.pages
 {
 
 
-    public partial class home1
+    public partial class AdminDashboard
     {
     }
 }

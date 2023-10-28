@@ -1,73 +1,28 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="MyFirstWeb.home" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/Site1.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="MyFirstWeb.pages.home1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-<!DOCTYPE html>
+      <section class="headline">
+    <h1>Responsive Navigation</h1>
+    <p>Using CSS grid and flexbox to easily build navbars!</p>
+  </section>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>home</title>
-    <script src="https://kit.fontawesome.com/56446077d3.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-    <link href="../styles/style.css" rel="stylesheet" />
-
-</head>
-
-
-
-<body>
-
-    <form id="form1" runat="server">
-
-
-
-
-        <div class="wrapper">
-
-            <div class="top_navbar">
-                <style> .topnav a.active {
-        color: white;
-        }
-
-                </style>
-
-
-
-                <div class="active">
-                     </div>
-
-                <div class="top_menu">
-                    <div class="logo">
-                        <div>
-                            <a href="#" style=""><i class="fa-brands fa-github fa-2xl"></i></a>
-                        </div> 
-                    </div>
-
-                    <ul>
-                        <li><a href="#">
-                            <i class="fas fa-search"></i>
-                        </a></li>
-                        <li><a href="#">
-                            <i class="fas fa-bell"></i>
-                        </a></li>
-                        <li><a href="Login.aspx">
-                            <i class="fas fa-user"></i>
-                        </a></li>
-                    </ul>
-                </div>
-            </div>
-
-
-
-        </div>
-
-    </form>
-
-
-
-
-
-    <div>
-
-        <p>     </p>
+  <section class="features">
+    <div class="feature-container">
+      <img src="https://cdn-images-1.medium.com/max/2000/1*HFAEJvVOq4AwFuBivNu_OQ.png" alt="Flexbox Feature">
+      <h2>Flexbox Featured</h2>
+      <p>This pen contains use of flexbox for the headline and feature section! We use it in our mobile navbar and show the power of mixing css grid and flexbox.</p>
     </div>
-</body>
-</html>
+    <div class="feature-container">
+      <img src="https://blog.webix.com/wp-content/uploads/2017/06/20170621-CSS-Grid-Layout-710x355-tiny.png" alt="Flexbox Feature">
+      <h2>CSS Grid Navigation</h2>
+      <p>While flexbox is used for the the mobile navbar, CSS grid is used for the desktop navbar showing many ways we can use both.</p>
+    </div>
+    <div class="feature-container">
+      <img src="https://www.graycelltech.com/wp-content/uploads/2015/06/GCT-HTML5.jpg" alt="Flexbox Feature">
+      <h2>Basic HTML5</h2>
+      <p>This pen contains basic html to setup the page to display the responsive navbar.</p>
+    </div>
+  </section>
+</asp:Content>
