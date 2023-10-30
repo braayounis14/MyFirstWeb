@@ -30,7 +30,7 @@ namespace MyFirstWeb.pages
             String PassQuastion = this.DPPassQuastion.Text;
             String PassAnswer = this.PassQuastionAnswer.Text;
 
-            string st1 = "insert into [Users] ([ID],[FullName],[Email],[Birthday],[Password],[State],[Gender],[PassQuastion],[PassAnswer]) values ('"+ID+"','"+FullName+"','"+Email+"','"+Birthday+ "','" +Password+ "','" +State+ "','"+Gender+ "','"+PassQuastion+"','"+PassAnswer+"')";
+            string st1 = "insert into [Users] ([MemberJoinedDate],[ID],[FullName],[Email],[Birthday],[Password],[State],[Gender],[PassQuastion],[PassAnswer]) values (#" + DateTime.Now +"#,'" + ID+"','"+FullName+"','"+Email+"','"+Birthday+ "','" +Password+ "','" +State+ "','"+Gender+ "','"+PassQuastion+"','"+PassAnswer+"')";
 
             User user;
             user = new User();

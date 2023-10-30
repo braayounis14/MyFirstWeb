@@ -124,7 +124,7 @@
     <Content Include="pages\ContactUs.aspx" />
     <Content Include="pages\ForgetPassword.aspx" />
     <Content Include="pages\Home.aspx" />
-    <Content Include="pages\Home2.aspx" />
+    <Content Include="pages\Home1.aspx" />
     <Content Include="pages\Login.aspx" />
     <Content Include="pages\SignUp.aspx" />
     <Content Include="scripts\birthdatecheck.js" />
@@ -204,12 +204,12 @@
     <Compile Include="pages\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\Home2.aspx.cs">
-      <DependentUpon>Home2.aspx</DependentUpon>
+    <Compile Include="pages\Home1.aspx.cs">
+      <DependentUpon>Home1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\Home2.aspx.designer.cs">
-      <DependentUpon>Home2.aspx</DependentUpon>
+    <Compile Include="pages\Home1.aspx.designer.cs">
+      <DependentUpon>Home1.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

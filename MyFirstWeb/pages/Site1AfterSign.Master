@@ -71,11 +71,13 @@
 
  <ul class="nav no-search">
       <li class="nav-item"><a href="home1.aspx">Home</a></li>
-      <li class="nav-item"><a href="About.aspx">About</a></li>
+      <li class="nav-item"><a href="AboutUs1.aspx">About</a></li>
       <li class="nav-item"><a href="#">Work</a></li>
       <li class="nav-item"><a href="#">Careers</a></li>
       <li class="nav-item"><a href="ContactUs.aspx">Contact Us</a></li>
-      <a href="MyAccount.aspx"> <i class="fas fa-user" id="search-icon"></i></a>
+      <a style="width:20px; padding-left:5px" href="MyAccount.aspx"> <i style="padding-left:20px" class="fas fa-user"></i> </a>
+
+
     </ul>
 
   </nav>

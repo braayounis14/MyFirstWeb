@@ -20,17 +20,17 @@
                     <div class="box box1">
                         <i class="uil uil-thumbs-up"></i>
                         <span class="text">Total Likes</span>
-                        <span class="number">50,120</span>
+                          <span id="Like" runat="server" class="number">50,120</span>
                     </div>
                     <div class="box box2">
                         <i class="uil uil-comments"></i>
                         <span class="text">Comments</span>
-                        <span class="number">20,120</span>
+                          <span id="Comment" runat="server" class="number">50,120</span>
                     </div>
                     <div class="box box3">
-                        <i class="uil uil-share"></i>
-                        <span class="text">Total Share</span>
-                        <span class="number">10,120</span>
+                        <i class="uil uil-user"></i>
+                        <span class="text">Total Members</span>
+                          <span id="Member" runat="server" class="number">50,120</span>
                     </div>
                 </div>
             </div>

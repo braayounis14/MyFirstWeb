@@ -15,7 +15,7 @@ namespace MyFirstWeb.pages
             Page.Title = "Contact US";
         }
 
-        private bool inCooldown = false;
+        
 
 
         protected void Button1_Click (object sender, EventArgs e)
