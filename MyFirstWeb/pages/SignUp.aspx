@@ -60,40 +60,20 @@
     </script>
 
 
+        <script> 
+            function checkPasswordConfirm() {
+                const psw = document.querySelector('input[id=psw]');
+                const pswString = psw.value;
 
-<script> 
-    function checkCountryChoose() {
-        const DpCountry = document.querySelector('input[id=DpCountry]');
-        const CountryString = DpCountry.value;
-        if (countryString = "0")
-            DpCountry.setCustomValidity('Birthdate must be in the past.');
-        else
-            DpCountry.setCustomValidity('000');
-    }
-</script>
+                const pswConfirm = document.querySelector('input[id=pswConfirm]');
+                const pswConfirmString = pswConfirm.value;
 
-    <script> 
-        function checkGenderChoose() {
-            const DpGender = document.querySelector('input[id=DpGender]');
-            const GenderString = DpCountry.value;
-            if (GenderString = "0")
-                birthdateInput.setCustomValidity('Birthdate must be in the past.');
-            else
-                birthdateInput.setCustomValidity('');
-        }
-    </script>
-
-    <script> 
-        function checkQuastionChoose() {
-            const DpQuastion = document.querySelector('input[id=DPPassQuastion]');
-            const QuastionString = DpCountry.value;
-            if (QuastionString = "0")
-                birthdateInput.setCustomValidity('');
-            else
-                birthdateInput.setCustomValidity('');
-        }
-    </script>
-
+                if (pswConfirmString != pswString)
+                    pswConfirm.setCustomValidity('password confirm is incorrect');
+                else
+                    pswConfirm.setCustomValidity('');
+            }
+        </script>
 
 
 </head>
@@ -149,7 +129,7 @@ Password should have at least one special character ( @, #, %, &, !, $, *)   .)"
                   
                     <div class="login__field">
     <i class="login__icon fas fa-lock"></i>
-    <asp:TextBox ID="pswConfirm" class="login__input" placeholder="Confirm Password" MinLength="8" MaxLength="32" required="true" autocomplete="off" runat="server" TextMode="Password"></asp:TextBox>
+    <asp:TextBox ID="pswConfirm" class="login__input" onChange="checkPasswordConfirm()" placeholder="Confirm Password" MinLength="8" MaxLength="32" required="true" autocomplete="off" runat="server" TextMode="Password"></asp:TextBox>
 </div>
                     <div class="login__field">
                        <i class="login__icon fas fa-flag"></i>
