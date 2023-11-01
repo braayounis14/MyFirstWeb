@@ -135,7 +135,6 @@ public class User
     }
     public string QuestionRecovery()
     {
-
         string sqlStr = "";
         sqlStr = "select [PassQuestion] where [Users] where [Email]='" + this.userEmail + "'";
         DataTable dt = DBFunction.SelectFromTable(sqlStr, "Clients.accdb");

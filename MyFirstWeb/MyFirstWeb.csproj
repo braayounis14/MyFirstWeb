@@ -128,11 +128,13 @@
     <Content Include="pages\Login.aspx" />
     <Content Include="pages\SignUp.aspx" />
     <Content Include="scripts\birthdatecheck.js" />
+    <Content Include="scripts\ForgetPassword.js" />
     <Content Include="scripts\Script.js" />
     <Content Include="scripts\Script1.js" />
     <Content Include="scripts\Scripts.js" />
     <Content Include="styles\AdminDash.css" />
     <Content Include="styles\ContactStyle.css" />
+    <Content Include="styles\Forget.css" />
     <Content Include="styles\ForgetStyle.css" />
     <Content Include="styles\MasterFooter.css" />
     <Content Include="styles\style.css" />
