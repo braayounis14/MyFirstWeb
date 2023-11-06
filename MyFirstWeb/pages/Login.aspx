@@ -26,7 +26,7 @@
 
 					<div class="login__field">
 		<i class="login__icon fas fa-lock"></i>
-                       <asp:TextBox ID="psw_txt" class="login__input" placeholder="Password" runat="server"></asp:TextBox>
+                       <asp:TextBox ID="psw_txt" type="password" class="login__input" placeholder="Password" runat="server"></asp:TextBox>
 	</div>
 
                 <asp:Button ID="BtnSubmit" runat="server" Text="Log In Now" class="button login__submit" OnClick="BtnSubmit_Click" />
@@ -36,6 +36,11 @@
 			<div class="social-login">
 				<asp:Label ID="Label1" runat="server" Text=""></asp:Label>
 	</div>
+
+				<div class="social-login1">
+                    <h6>Dont Have an Account?<a style="text-decoration:none" href="SignUp.aspx">SignUp</a></h6>
+					</div>
+
 		</div>
 		<div class="screen__background">
 			<span class="screen__background__shape screen__background__shape4"></span>

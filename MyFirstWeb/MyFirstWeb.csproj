@@ -126,9 +126,9 @@
     <Content Include="pages\Home.aspx" />
     <Content Include="pages\Home1.aspx" />
     <Content Include="pages\Login.aspx" />
+    <Content Include="pages\products.aspx" />
     <Content Include="pages\SignUp.aspx" />
     <Content Include="scripts\birthdatecheck.js" />
-    <Content Include="scripts\ForgetPassword.js" />
     <Content Include="scripts\Script.js" />
     <Content Include="scripts\Script1.js" />
     <Content Include="scripts\Scripts.js" />
@@ -169,6 +169,13 @@
     </Compile>
     <Compile Include="pages\AdminDashboard.aspx.designer.cs">
       <DependentUpon>AdminDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\products.aspx.cs">
+      <DependentUpon>products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\products.aspx.designer.cs">
+      <DependentUpon>products.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\SiteAdminPage.Master.cs">
       <DependentUpon>SiteAdminPage.Master</DependentUpon>

@@ -176,3 +176,14 @@ body {
     .social-login__icon:hover {
         transform: scale(1.5);
     }
+
+
+.social-login1 {
+    position: absolute;
+    height: 80px;
+    width: 160px;
+    text-align: center;
+    bottom: 0px;
+    right: 200px;
+    text-decoration: none;
+}

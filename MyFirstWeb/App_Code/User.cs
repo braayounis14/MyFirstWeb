@@ -136,7 +136,7 @@ public class User
     public string QuestionRecovery()
     {
         string sqlStr = "";
-        sqlStr = "select [PassQuestion] where [Users] where [Email]='" + this.userEmail + "'";
+        sqlStr = "SELECT [PassQuastion] FROM [USERS] WHERE [Email] ='" + this.userEmail + "'";
         DataTable dt = DBFunction.SelectFromTable(sqlStr, "Clients.accdb");
         if (dt.Rows.Count > 0)
             return dt.Rows[0][0].ToString();
@@ -156,11 +156,27 @@ public class User
     {
         if (this.IsExistUser())
         {
-            string sqlStr = " Upsate [USERS] set [Password]='" + newPassword + "' where [Email]='" + this.userEmail + "'";
-            DataTable dt = DBFunction.SelectFromTable(sqlStr, "Clients.accdb");
+            string sqlStr = "Update [USERS] set [Password]='" + newPassword + "' where [Email]='" + this.userEmail + "'";
+            DBFunction.ChangeTable(sqlStr, "Clients.accdb");
             return true;
         }
         return false;
     }
+
+    public bool PassCheck(string password)
+    {
+
+        String st = "select * from [USERS] where [Email]='" + this.userEmail + "' and [Password]='" + password + "'";
+        DataTable dt = DBFunction.SelectFromTable(st, "Clients.accdb");
+        if (dt.Rows.Count > 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
 
 }

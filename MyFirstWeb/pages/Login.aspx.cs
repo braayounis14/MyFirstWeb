@@ -35,11 +35,11 @@ namespace MyFirstWeb.pages
             DataTable dt = DBFunction.SelectFromTable(st, "Clients.accdb");
             if (dt.Rows.Count > 0)
             {
-                Response.Redirect("Home2.aspx");
+                Response.Redirect("Home1.aspx");
             }
             else
             {
-                this.Label1.Text = "<h5>Don't have an account?<a href=\"SignUp.aspx\"><span>Sign up</span></a> </h5>\r\n";
+                this.Label1.Text = "<h5>Forget Your Password?<a href=\"ForgetPassword.aspx\"><span>Forget Password</span></a> </h5>\r\n";
             }
                 
 

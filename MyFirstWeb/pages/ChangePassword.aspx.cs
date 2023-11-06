@@ -13,5 +13,30 @@ namespace MyFirstWeb.pages
         {
 
         }
+
+        protected void Btn_Check_Click(object sender, EventArgs e)
+        {
+            string msgtxt = "";
+            User userObj = new User();
+            string newpassword = this.txtPswNew.Text;
+            userObj.UserPassword = this.txtPsw.Text;
+            userObj.UserEmail = Session["Email"].ToString();
+            if (userObj.PassCheck(this.txtPsw.Text))
+            {
+                if (userObj.UpdatePassword(this.txtPswNew.Text))
+                    msgtxt = "your password has been changed succefully";
+                else
+                    msgtxt = "your password has not been changed, there is";
+                this.lblAnswer.Visible = true;
+                lblAnswer.Text = msgtxt + "";
+            }
+            else
+            {
+                msgtxt = "Your Current Password is Inncorrect";
+                this.lblAnswer.Visible = true;
+                lblAnswer.Text = msgtxt + "";
+            }
+
+        }
     }
 }
