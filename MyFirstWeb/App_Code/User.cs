@@ -128,7 +128,7 @@ public class User
         // it checks if the user is exist at the Database, and returns true if exist and false if not exist /
         bool found = false;
         string st = "select * from [USERS] where [Email]='" + this.userEmail + "'";
-        DataTable dt = DBFunction.SelectFromTable(st, "Clients.accdb");
+        DataTable dt = DBFunction.SelectFromTable(st, "DB.accdb");
         if (dt.Rows.Count > 0)
             found = true;
         return found;
@@ -137,7 +137,7 @@ public class User
     {
         string sqlStr = "";
         sqlStr = "SELECT [PassQuastion] FROM [USERS] WHERE [Email] ='" + this.userEmail + "'";
-        DataTable dt = DBFunction.SelectFromTable(sqlStr, "Clients.accdb");
+        DataTable dt = DBFunction.SelectFromTable(sqlStr, "DB.accdb");
         if (dt.Rows.Count > 0)
             return dt.Rows[0][0].ToString();
         return "";
@@ -147,7 +147,7 @@ public class User
 
         string sqlStr = "";
         sqlStr = "select [Password] from [USERS] where [Email]='" + this.userEmail + "' and [PassAnswer]='" + this.userPasswordAnswer + "'";
-        DataTable dt = DBFunction.SelectFromTable(sqlStr, "Clients.accdb");
+        DataTable dt = DBFunction.SelectFromTable(sqlStr, "DB.accdb");
         if (dt.Rows.Count > 0)
             return dt.Rows[0][0].ToString();
         return "";
@@ -157,7 +157,7 @@ public class User
         if (this.IsExistUser())
         {
             string sqlStr = "Update [USERS] set [Password]='" + newPassword + "' where [Email]='" + this.userEmail + "'";
-            DBFunction.ChangeTable(sqlStr, "Clients.accdb");
+            DBFunction.ChangeTable(sqlStr, "DB.accdb");
             return true;
         }
         return false;
@@ -167,7 +167,7 @@ public class User
     {
 
         String st = "select * from [USERS] where [Email]='" + this.userEmail + "' and [Password]='" + password + "'";
-        DataTable dt = DBFunction.SelectFromTable(st, "Clients.accdb");
+        DataTable dt = DBFunction.SelectFromTable(st, "DB.accdb");
         if (dt.Rows.Count > 0)
         {
             return true;

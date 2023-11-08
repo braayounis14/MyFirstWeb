@@ -15,7 +15,7 @@ namespace MyFirstWeb.pages
             Like.InnerText = "123";
 
             String st = "select * from [USERS]";
-            DataTable dt = DBFunction.SelectFromTable(st, "Clients.accdb");
+            DataTable dt = DBFunction.SelectFromTable(st, "DB.accdb");
 
             Member.InnerText = dt.Rows.Count + "";
 
@@ -25,7 +25,7 @@ namespace MyFirstWeb.pages
 
 
             String Names = "select FullName from [USERS]";
-            DataTable dtNames = DBFunction.SelectFromTable(Names, "Clients.accdb");
+            DataTable dtNames = DBFunction.SelectFromTable(Names, "DB.accdb");
 
             DataNames1.InnerHtml = ""; // Clear the existing content
 
@@ -45,7 +45,7 @@ namespace MyFirstWeb.pages
 
 
             String emailSt = "select Email from [USERS]";
-            DataTable dtEmail = DBFunction.SelectFromTable(emailSt, "Clients.accdb");
+            DataTable dtEmail = DBFunction.SelectFromTable(emailSt, "DB.accdb");
 
             DataEmail.InnerHtml = ""; // Clear the existing content
 
@@ -65,7 +65,7 @@ namespace MyFirstWeb.pages
             // JoinedDate =>
 
             String JoinedDateSt = "select MemberJoinedDate from [USERS]";
-            DataTable dtJoinedDate = DBFunction.SelectFromTable(JoinedDateSt, "Clients.accdb");
+            DataTable dtJoinedDate = DBFunction.SelectFromTable(JoinedDateSt, "DB.accdb");
 
             DataJoinedDate.InnerHtml = ""; // Clear the existing content
 
@@ -84,7 +84,7 @@ namespace MyFirstWeb.pages
             // Gender =>
 
             String GenderSt = "select Gender from [USERS]";
-            DataTable dtGender = DBFunction.SelectFromTable(GenderSt, "Clients.accdb");
+            DataTable dtGender = DBFunction.SelectFromTable(GenderSt, "DB.accdb");
 
             DataGender.InnerHtml = ""; // Clear the existing content
 
@@ -104,7 +104,7 @@ namespace MyFirstWeb.pages
             // State =>
 
             String StateSt = "select State from [USERS]";
-            DataTable dtState = DBFunction.SelectFromTable(StateSt, "Clients.accdb");
+            DataTable dtState = DBFunction.SelectFromTable(StateSt, "DB.accdb");
 
             DataState.InnerHtml = ""; // Clear the existing content
 

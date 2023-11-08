@@ -14,8 +14,8 @@ namespace MyFirstWeb.pages
         {
             catagory.InnerHtml = "";
 
-            String DtProduct = "select * from [Products]";
-            DataTable dtProduct = DBFunction.SelectFromTable(DtProduct, "Products.accdb");
+            string DtProduct = "select * from [Products]";
+            DataTable dtProduct = DBFunction.SelectFromTable(DtProduct, "DB.accdb");
 
 
             foreach (DataRow row in dtProduct.Rows)

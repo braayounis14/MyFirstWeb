@@ -67,7 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Clients.accdb" />
+    <Content Include="App_Data\DB.accdb" />
     <Content Include="App_Data\ContactUs.accdb" />
     <Content Include="App_Data\Products.accdb" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
@@ -123,10 +123,12 @@
     <Content Include="pages\AdminDashboard.aspx" />
     <Content Include="pages\ChangePassword.aspx" />
     <Content Include="pages\ContactUs.aspx" />
+    <Content Include="pages\ContactUs1.aspx" />
     <Content Include="pages\ForgetPassword.aspx" />
     <Content Include="pages\Home.aspx" />
     <Content Include="pages\Home1.aspx" />
     <Content Include="pages\Login.aspx" />
+    <Content Include="pages\MyAccount.aspx" />
     <Content Include="pages\Products1.aspx" />
     <Content Include="pages\SignUp.aspx" />
     <Content Include="scripts\birthdatecheck.js" />
@@ -170,6 +172,20 @@
     </Compile>
     <Compile Include="pages\AdminDashboard.aspx.designer.cs">
       <DependentUpon>AdminDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ContactUs1.aspx.cs">
+      <DependentUpon>ContactUs1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ContactUs1.aspx.designer.cs">
+      <DependentUpon>ContactUs1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\MyAccount.aspx.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\MyAccount.aspx.designer.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\Products1.aspx.cs">
       <DependentUpon>Products1.aspx</DependentUpon>
