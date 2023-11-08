@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="App_Data\Clients.accdb" />
     <Content Include="App_Data\ContactUs.accdb" />
+    <Content Include="App_Data\Products.accdb" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
     <Content Include="bin\MyFirstWeb.dll" />
@@ -126,7 +127,7 @@
     <Content Include="pages\Home.aspx" />
     <Content Include="pages\Home1.aspx" />
     <Content Include="pages\Login.aspx" />
-    <Content Include="pages\products.aspx" />
+    <Content Include="pages\Products1.aspx" />
     <Content Include="pages\SignUp.aspx" />
     <Content Include="scripts\birthdatecheck.js" />
     <Content Include="scripts\Script.js" />
@@ -170,12 +171,12 @@
     <Compile Include="pages\AdminDashboard.aspx.designer.cs">
       <DependentUpon>AdminDashboard.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\products.aspx.cs">
-      <DependentUpon>products.aspx</DependentUpon>
+    <Compile Include="pages\Products1.aspx.cs">
+      <DependentUpon>Products1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\products.aspx.designer.cs">
-      <DependentUpon>products.aspx</DependentUpon>
+    <Compile Include="pages\Products1.aspx.designer.cs">
+      <DependentUpon>Products1.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\SiteAdminPage.Master.cs">
       <DependentUpon>SiteAdminPage.Master</DependentUpon>
