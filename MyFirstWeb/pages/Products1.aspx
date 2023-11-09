@@ -11,8 +11,10 @@
      <div>
      <div class="card">
         <div class="im">
-           <img class="img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D" alt="Alternate Text" />
-              <div class="save">
+            <a href="#">
+                <img class="img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D" alt="Alternate Text" />
+              </a>
+           <div class="save">
                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 683 683" height="683" width="683" class="svg">
                  <g clip-path="url(#clip0_993_25)">
                <mask height="683" width="683" y="0" x="0" maskUnits="userSpaceOnUse" style="mask-type:luminance" id="mask">
@@ -84,9 +86,11 @@
         <p class="h3">Your product title</p>
         <p class="p">Description</p> 
 
-        <div class="icon-box">
-          <p class="span">Add To Cart</p>
-        </div>
+          <a href="#"><div class="icon-box">
+  <p class="span">Add To Cart</p>
+</div></a>
+        
+
 
       </div>
     </div>
@@ -173,8 +177,11 @@
 }
 
 .icon-box {
-  margin: 10px;
-  padding: 12px;
+padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+
   background-color: #7980c5;
   border-radius: 10px;
   text-align: center;

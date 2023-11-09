@@ -130,6 +130,7 @@
     <Content Include="pages\Login.aspx" />
     <Content Include="pages\MyAccount.aspx" />
     <Content Include="pages\Products1.aspx" />
+    <Content Include="pages\Products1Details.aspx" />
     <Content Include="pages\SignUp.aspx" />
     <Content Include="scripts\birthdatecheck.js" />
     <Content Include="scripts\Script.js" />
@@ -148,6 +149,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\Product.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
@@ -187,12 +189,20 @@
     <Compile Include="pages\MyAccount.aspx.designer.cs">
       <DependentUpon>MyAccount.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pages\Product.cs" />
     <Compile Include="pages\Products1.aspx.cs">
       <DependentUpon>Products1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="pages\Products1.aspx.designer.cs">
       <DependentUpon>Products1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Products1Details.aspx.cs">
+      <DependentUpon>Products1Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Products1Details.aspx.designer.cs">
+      <DependentUpon>Products1Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\SiteAdminPage.Master.cs">
       <DependentUpon>SiteAdminPage.Master</DependentUpon>
