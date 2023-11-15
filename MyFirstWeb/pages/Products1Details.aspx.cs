@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -14,10 +15,35 @@ namespace MyFirstWeb.pages
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            string sql = "select * from [Products] where ([image]='" + (Session["Im"].ToString()) + "')";
+            DataTable dt = DBFunction.SelectFromTable(sql, "Products.accdb");
+            if (dt != null)
+            {
+                if (dt.Rows.Count > 0)
+                {
+                    this.image1.ImageUrl= dt.Rows[0][3].ToString();
+                    this.Label2.Text = dt.Rows[0][0].ToString();
+                    this.Label3.Text = dt.Rows[0][2].ToString();
+                    this.Label4.Text = dt.Rows[0][1].ToString();
+
+
+
+                }
+
+            }
+
+
 
         }
 
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+            string st = "insert into [Cart]([Email],[Price],[Info],[Quantity],[DateBuy],[Image]) values('" + (Session["Email"].ToString()) + "'," + int.Parse(this.Label2.Text) + ",'" + this.Label3.Text + "'," + int.Parse(this.TextBox1.Text) + ",#" + DateTime.Now + "#,'" + Session["Im"].ToString()+"')";
+            DBFunction.ChangeTable(st, "DB.accdb");
+            Response.Redirect("Products1.aspx");
 
 
+        }
     }
 }
