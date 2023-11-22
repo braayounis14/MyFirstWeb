@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ValidVisaDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VisaNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CVV" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="month" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidVisaDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidVisaDetailsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsExpireDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="month" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsExpireDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsExpireDateResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckVisaFunds">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="visanum" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="total" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckVisaFundsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckVisaFundsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Buy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="visanum" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="total" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BuyResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidVisaDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidVisaDetails" />
+  </wsdl:message>
+  <wsdl:message name="ValidVisaDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidVisaDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsExpireDateSoapIn">
+    <wsdl:part name="parameters" element="tns:IsExpireDate" />
+  </wsdl:message>
+  <wsdl:message name="IsExpireDateSoapOut">
+    <wsdl:part name="parameters" element="tns:IsExpireDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckVisaFundsSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckVisaFunds" />
+  </wsdl:message>
+  <wsdl:message name="CheckVisaFundsSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckVisaFundsResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuySoapIn">
+    <wsdl:part name="parameters" element="tns:Buy" />
+  </wsdl:message>
+  <wsdl:message name="BuySoapOut">
+    <wsdl:part name="parameters" element="tns:BuyResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BankSoap">
+    <wsdl:operation name="ValidVisaDetails">
+      <wsdl:input message="tns:ValidVisaDetailsSoapIn" />
+      <wsdl:output message="tns:ValidVisaDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsExpireDate">
+      <wsdl:input message="tns:IsExpireDateSoapIn" />
+      <wsdl:output message="tns:IsExpireDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckVisaFunds">
+      <wsdl:input message="tns:CheckVisaFundsSoapIn" />
+      <wsdl:output message="tns:CheckVisaFundsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Buy">
+      <wsdl:input message="tns:BuySoapIn" />
+      <wsdl:output message="tns:BuySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BankSoap" type="tns:BankSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidVisaDetails">
+      <soap:operation soapAction="http://tempuri.org/ValidVisaDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsExpireDate">
+      <soap:operation soapAction="http://tempuri.org/IsExpireDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckVisaFunds">
+      <soap:operation soapAction="http://tempuri.org/CheckVisaFunds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Buy">
+      <soap:operation soapAction="http://tempuri.org/Buy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BankSoap12" type="tns:BankSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidVisaDetails">
+      <soap12:operation soapAction="http://tempuri.org/ValidVisaDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsExpireDate">
+      <soap12:operation soapAction="http://tempuri.org/IsExpireDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckVisaFunds">
+      <soap12:operation soapAction="http://tempuri.org/CheckVisaFunds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Buy">
+      <soap12:operation soapAction="http://tempuri.org/Buy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Bank">
+    <wsdl:port name="BankSoap" binding="tns:BankSoap">
+      <soap:address location="https://localhost:44333/AppCode/bank.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BankSoap12" binding="tns:BankSoap12">
+      <soap12:address location="https://localhost:44333/AppCode/bank.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
