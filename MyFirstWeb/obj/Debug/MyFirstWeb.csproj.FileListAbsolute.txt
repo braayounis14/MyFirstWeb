@@ -50,7 +50,6 @@ C:\Users\braag\source\repos\MyFirstWeb\MyFirstWeb\bin\roslyn\vbc.exe.config
 C:\Users\braag\source\repos\MyFirstWeb\MyFirstWeb\bin\roslyn\vbc.rsp
 C:\Users\braag\source\repos\MyFirstWeb\MyFirstWeb\bin\roslyn\VBCSCompiler.exe
 C:\Users\braag\source\repos\MyFirstWeb\MyFirstWeb\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\braag\source\repos\MyFirstWeb\MyFirstWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\braag\source\repos\MyFirstWeb\MyFirstWeb\obj\Debug\MyFirstWeb.csproj.AssemblyReference.cache
 C:\Users\braag\source\repos\MyFirstWeb\MyFirstWeb\obj\Debug\MyFirstWeb.csproj.CoreCompileInputs.cache
 C:\Users\braag\source\repos\MyFirstWeb\MyFirstWeb\obj\Debug\MyFirstWeb.csproj.CopyComplete

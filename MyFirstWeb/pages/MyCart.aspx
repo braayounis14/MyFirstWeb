@@ -6,7 +6,7 @@
 
     sdadsaadsadsadsadsadsads
     <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/DB.accdb" SelectCommand="SELECT * FROM [Cart]"></asp:AccessDataSource>
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Email,DateBuy,Code" DataSourceID="AccessDataSource1">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Email,DateBuy,Code" DataSourceID="AccessDataSource1" OnDataBinding="GridView1_DataBinding">
         <Columns>
             <asp:BoundField DataField="Email" HeaderText="Email" ReadOnly="True" SortExpression="Email"></asp:BoundField>
             <asp:BoundField DataField="Info" HeaderText="Info" SortExpression="Info"></asp:BoundField>
@@ -16,6 +16,7 @@
             <asp:BoundField DataField="Code" HeaderText="Code" SortExpression="Code" InsertVisible="False" ReadOnly="True"></asp:BoundField>
             <asp:ImageField></asp:ImageField>
 
+            <asp:CommandField ShowDeleteButton="True"></asp:CommandField>
         </Columns>
     </asp:GridView>
 
@@ -23,5 +24,5 @@
     <asp:Label ID="lblPrice" runat="server" Text="Label"></asp:Label>
     <asp:Label ID="label" runat="server" Text="Label"></asp:Label>
 
-    <asp:Button ID="Button1" runat="server" Text="Check Out" />
+    <asp:Button ID="BtnCheckOut" runat="server" Text="Check Out" Visible="False" OnClick="BtnCheckOut_Click" />
 </asp:Content>
