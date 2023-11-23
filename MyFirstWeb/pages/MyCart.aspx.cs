@@ -14,14 +14,14 @@ namespace MyFirstWeb.pages
         {
 
             Session["price"]=this.lblPrice.Text;
-            this.lblEmail.Text = Session["Email"].ToString();
+            this.lblEmail.Text = Session["email"].ToString();
             this.label.Text = DateTime.Now.ToString();
 
         }
 
         protected void GridView1_DataBinding(object sender, EventArgs e)
         {
-            string sql = "select * from [Cart] where ([Email]='"+Session["Email"].ToString()+"'";
+            string sql = "select * from [Cart] where ([Email]='"+Session["email"].ToString()+"')";
             DataTable dt = DBFunction.SelectFromTable(sql, "DB.accdb");
             if (dt.Rows.Count>0 ) {
             this.BtnCheckOut.Visible = true;
@@ -55,6 +55,11 @@ namespace MyFirstWeb.pages
         protected void BtnCheckOut_Click(object sender, EventArgs e)
         {
             Response.Redirect("Buy.aspx");
+        }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
