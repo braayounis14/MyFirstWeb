@@ -19,20 +19,28 @@ namespace MyFirstWeb.pages
 
         }
 
-        protected void GridView1_DataBinding(object sender, EventArgs e)
+
+
+
+
+
+
+        protected void GridView1_DataBound(object sender, EventArgs e)
         {
-            string sql = "select * from [Cart] where ([Email]='"+Session["email"].ToString()+"')";
+
+            string sql = "select * from [Cart] where ([Email]='" + Session["email"].ToString() + "')";
             DataTable dt = DBFunction.SelectFromTable(sql, "DB.accdb");
-            if (dt.Rows.Count>0 ) {
-            this.BtnCheckOut.Visible = true;
+            if (dt.Rows.Count > 0)
+            {
+                this.BtnCheckOut.Visible = true;
                 GridViewRow footer = GridView1.FooterRow;
                 int sum = 0;
-                foreach  (GridViewRow row in GridView1.Rows ) 
+                foreach (GridViewRow row in GridView1.Rows)
                 {
                     sum = sum + (int.Parse(row.Cells[0].Text)) * (int.Parse(row.Cells[4].Text));
                     this.lblPrice.Text = sum.ToString();
                 }
-                footer.Cells[5].Text = "total price:"+sum.ToString()+"$";
+                footer.Cells[5].Text = "total price:" + sum.ToString() + "$";
                 footer.Cells[0].Visible = false;
                 footer.Cells[1].Visible = false;
                 footer.Cells[2].Visible = false;
@@ -40,26 +48,23 @@ namespace MyFirstWeb.pages
                 footer.Cells[4].Visible = false;
                 footer.Cells[0].ColumnSpan = 6;
                 footer.Cells[5].HorizontalAlign = HorizontalAlign.Center;
-           
+
             }
 
 
             else
             {
-                BtnCheckOut.Visible = false;    
+                BtnCheckOut.Visible = false;
             }
 
-
         }
+
 
         protected void BtnCheckOut_Click(object sender, EventArgs e)
         {
             Response.Redirect("Buy.aspx");
         }
 
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
     }
 }
