@@ -122,6 +122,7 @@
     <Content Include="pages\AboutUs.aspx" />
     <Content Include="pages\AboutUs1.aspx" />
     <Content Include="pages\AdminDashboard.aspx" />
+    <Content Include="pages\Buy.aspx" />
     <Content Include="pages\ChangePassword.aspx" />
     <Content Include="pages\ContactUs.aspx" />
     <Content Include="pages\ContactUs1.aspx" />
@@ -184,6 +185,13 @@
     </Compile>
     <Compile Include="pages\AdminDashboard.aspx.designer.cs">
       <DependentUpon>AdminDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Buy.aspx.cs">
+      <DependentUpon>Buy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Buy.aspx.designer.cs">
+      <DependentUpon>Buy.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\ContactUs1.aspx.cs">
       <DependentUpon>ContactUs1.aspx</DependentUpon>
