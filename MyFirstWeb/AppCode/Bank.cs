@@ -34,9 +34,10 @@ public class Bank : System.Web.Services.WebService
     [WebMethod]
     public bool IsExpireDate(int month, int year)
     {
-        if (int.Parse((DateTime.Now.Year).ToString()) < year)
+        int currentYear =int.Parse((DateTime.Now.Year).ToString());
+        if (currentYear < year)
             return true;
-        if (int.Parse((DateTime.Now.Year).ToString()) == year)
+        if (currentYear == year)
             if (int.Parse((DateTime.Now.Month).ToString()) <= month)
                 return true;
         return false;

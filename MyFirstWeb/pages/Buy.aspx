@@ -1,7 +1,83 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/Site1AfterSign.Master" AutoEventWireup="true" CodeBehind="Buy.aspx.cs" Inherits="MyFirstWeb.pages.Buy" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+
+        <script>    
+
+
+            var cardDrop = document.getElementById('card-dropdown');
+            var activeDropdown;
+            cardDrop.addEventListener('click', function () {
+                var node;
+                for (var i = 0; i < this.childNodes.length - 1; i++)
+                    node = this.childNodes[i];
+                if (node.className === 'dropdown-select') {
+                    node.classList.add('visible');
+                    activeDropdown = node;
+                };
+            })
+
+            window.onclick = function (e) {
+                console.log(e.target.tagName)
+                console.log('dropdown');
+                console.log(activeDropdown)
+                if (e.target.tagName === 'LI' && activeDropdown) {
+                    if (e.target.innerHTML === 'Master Card') {
+                        document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/2vbqk5lcpi7hjoc/MasterCard_Logo.svg.png';
+                        activeDropdown.classList.remove('visible');
+                        activeDropdown = null;
+                        e.target.innerHTML = document.getElementById('current-card').innerHTML;
+                        document.getElementById('current-card').innerHTML = 'Master Card';
+                    }
+                    else if (e.target.innerHTML === 'American Express') {
+                        document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/f5hyn6u05ktql8d/amex-icon-6902.png';
+                        activeDropdown.classList.remove('visible');
+                        activeDropdown = null;
+                        e.target.innerHTML = document.getElementById('current-card').innerHTML;
+                        document.getElementById('current-card').innerHTML = 'American Express';
+                    }
+                    else if (e.target.innerHTML === 'Visa') {
+                        document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png';
+                        activeDropdown.classList.remove('visible');
+                        activeDropdown = null;
+                        e.target.innerHTML = document.getElementById('current-card').innerHTML;
+                        document.getElementById('current-card').innerHTML = 'Visa';
+                    }
+                }
+                else if (e.target.className !== 'dropdown-btn' && activeDropdown) {
+                    activeDropdown.classList.remove('visible');
+                    activeDropdown = null;
+                }
+            }
+
+
+
+        </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var txtDate = document.getElementById("txtDate");
+        txtDate.addEventListener("input", function () {
+            var inputValue = txtDate.value.replace(/\D/g, '');
+            if (inputValue.length > 0) {
+                var formattedValue = inputValue.match(/(\d{1,2})(\d{0,2})/);
+                if (formattedValue) {
+                    txtDate.value = (formattedValue[1] ? formattedValue[1] + (formattedValue[2] ? '/' + formattedValue[2] : '') : '');
+                }
+            }
+        });
+    });
+
+</script>
+
+
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+
+
+
 
     <div class='container'>
   <div class='window'>
@@ -73,9 +149,17 @@
             TOTAL
           </span>
           <span style='float:right; text-align:right;'>
-            <div class='thin dense'>$68.75</div>
-            <div class='thin dense'>$4.95</div>
-            $435.55
+              <div class='thin dense'>
+
+                  <asp:Label ID="Label2" runat="server" Text="$68.75"></asp:Label>
+
+              </div>
+            <div class='thin dense'>   
+
+                <asp:Label ID="lblDilvery" runat="server" Text="$4.95"></asp:Label>
+
+            </div>
+           <asp:Label ID="lblPrice" runat="server" Text="$435.55"></asp:Label>
           </span>
         </div>
 </div>
@@ -94,27 +178,66 @@
             </table>
             <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80' class='credit-card-image' id='credit-card-image'></img>
             Card Number
-            <asp:TextBox class="input-field" ID="txtCardNum" runat="server"></asp:TextBox>
+            <asp:TextBox class="input-field" ID="txtCardNum" pattern="^\d{16}$" MaxLength="16" MinLength="16" required="true" runat="server"></asp:TextBox>
             Card Holder
-            <asp:TextBox class="input-field" ID="txtCardHolder" runat="server"></asp:TextBox>
+            <asp:TextBox class="input-field" ID="txtCardHolder" required="true" runat="server"></asp:TextBox>
               Card  Holder ID
-              <asp:TextBox class="input-field" ID="txtCardHolderID" runat="server"></asp:TextBox>
+              <asp:TextBox class="input-field" ID="txtCardHolderID" required="true" pattern="^\d{9}$" title="Please enter a valid 9-digit ID number" runat="server"></asp:TextBox>
             <table class='half-input-table'>
               <tr>
                 <td> Expires
-                    <asp:TextBox ID="txtDate" class="input-field" required="true"  pattern="^(0[1-9]|[12][0-9]|3[01])/(19|20)\d{2}$" title="set your expiration Card Date format:(mm/yy)" placeholder="mm/yy" runat="server" ClientIDMode="Static"></asp:TextBox>
+                    <asp:TextBox ID="txtDate" class="input-field" required="true"  pattern="^(0[1-9]|1[0-2])/\d{2}$" title="Please enter a valid date in the format mm/yy    set your expiration Card Date format:(mm/yy)" placeholder="mm/yy" runat="server" ClientIDMode="Static"></asp:TextBox>
                 </td>
                 <td>CVC
-                  <input class='input-field'></input>
+                  <asp:TextBox class="input-field" ID="txtCardCvc" pattern="^\d{3}$" MaxLength="3" MinLength="3" required="true" runat="server"></asp:TextBox>
                 </td>
               </tr>
             </table>
-              <asp:Button ID="Button1" style="padding:0px" runat="server" Text="Checkout" Class="pay-btn" />
+              <asp:Button ID="Button1" Style="padding: 0px" runat="server" Text="Checkout" Class="pay-btn" OnClick="Button1_Click" />
           </div>
 
         </div>
       </div>
 </div>
+
+
+
+
+
+
+<asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/DB.accdb" SelectCommand="SELECT * FROM [Cart] where ([Email]=?)" DeleteCommand="DELETE FROM [Cart] WHERE [code] = ?">
+    <DeleteParameters>
+        <asp:Parameter Name="code" Type="String" />
+    </DeleteParameters>
+    <SelectParameters>
+        <asp:SessionParameter SessionField="email" Name="?"></asp:SessionParameter>
+    </SelectParameters>
+</asp:AccessDataSource>
+
+
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="code,Email,datebuy"
+        DataSourceID="AccessDataSource1" ShowFooter="True" Visible="False">
+         <Columns>
+             <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
+             <asp:BoundField DataField="Info" HeaderText="Info" SortExpression="Info" />
+             <asp:TemplateField HeaderText="Image">
+                 <ItemTemplate>
+                     <asp:Image ID="Image1" runat="server" Height="185px" ImageUrl='<%# DataBinder.Eval   (Container.DataItem,"image","{0}") %>' Width="246px" />
+                 </ItemTemplate>
+             </asp:TemplateField>
+             <asp:BoundField DataField="datebuy" HeaderText="datebuy" ReadOnly="True" SortExpression="datebuy" />
+             <asp:BoundField DataField="quantity" HeaderText="quantity" SortExpression="quantity" />
+             <asp:CommandField ShowDeleteButton="True" />
+         </Columns>
+     </asp:GridView>
+
+
+
+
+
+
+
+
 
 
     <style>
@@ -403,72 +526,7 @@ ul li:hover {
     </style>
 
 
-    <script>    
-
-
-        var cardDrop = document.getElementById('card-dropdown');
-        var activeDropdown;
-        cardDrop.addEventListener('click', function () {
-            var node;
-            for (var i = 0; i < this.childNodes.length - 1; i++)
-                node = this.childNodes[i];
-            if (node.className === 'dropdown-select') {
-                node.classList.add('visible');
-                activeDropdown = node;
-            };
-        })
-
-        window.onclick = function (e) {
-            console.log(e.target.tagName)
-            console.log('dropdown');
-            console.log(activeDropdown)
-            if (e.target.tagName === 'LI' && activeDropdown) {
-                if (e.target.innerHTML === 'Master Card') {
-                    document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/2vbqk5lcpi7hjoc/MasterCard_Logo.svg.png';
-                    activeDropdown.classList.remove('visible');
-                    activeDropdown = null;
-                    e.target.innerHTML = document.getElementById('current-card').innerHTML;
-                    document.getElementById('current-card').innerHTML = 'Master Card';
-                }
-                else if (e.target.innerHTML === 'American Express') {
-                    document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/f5hyn6u05ktql8d/amex-icon-6902.png';
-                    activeDropdown.classList.remove('visible');
-                    activeDropdown = null;
-                    e.target.innerHTML = document.getElementById('current-card').innerHTML;
-                    document.getElementById('current-card').innerHTML = 'American Express';
-                }
-                else if (e.target.innerHTML === 'Visa') {
-                    document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png';
-                    activeDropdown.classList.remove('visible');
-                    activeDropdown = null;
-                    e.target.innerHTML = document.getElementById('current-card').innerHTML;
-                    document.getElementById('current-card').innerHTML = 'Visa';
-                }
-            }
-            else if (e.target.className !== 'dropdown-btn' && activeDropdown) {
-                activeDropdown.classList.remove('visible');
-                activeDropdown = null;
-            }
-        }
- 
-
-
-    </script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var txtDate = document.getElementById("txtDate");
-        txtDate.addEventListener("input", function () {
-            var inputValue = txtDate.value.replace(/\D/g, '');
-            if (inputValue.length > 0) {
-                var formattedValue = inputValue.match(/(\d{1,2})(\d{0,2})/);
-                if (formattedValue) {
-                    txtDate.value = (formattedValue[1] ? formattedValue[1] + (formattedValue[2] ? '/' + formattedValue[2] : '') : '');
-                }
-            }
-        });
-    });
-</script>
+   
 
 
 
