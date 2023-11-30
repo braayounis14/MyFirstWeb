@@ -25,7 +25,7 @@ public class Bank : System.Web.Services.WebService
     public bool ValidVisaDetails(string id, string VisaNum, string CVV, int month, int year)
     {
         string st;
-        st = "select * From [CreditCard] where([id]='" + id + "' and [NumOfVisa]='" + VisaNum + "' and [CVV]='" + CVV + "' and [CreditMonth]'" + month + "' and [CreditYear]'" + year + "'";
+        st = "SELECT * FROM [CreditCard] WHERE ([id]='" + id + "' AND [numofvisa]='" + VisaNum + "' AND [cvv]='" + CVV + "' AND [CreditMonth]='" + month + "' AND [CreditYear]='" + year + "')";
         DataTable dt = DBFunction.SelectFromTable(st, "DB.accdb");
         if (dt.Rows.Count > 0)
             return true;

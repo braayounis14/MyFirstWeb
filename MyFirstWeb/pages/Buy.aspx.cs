@@ -27,7 +27,7 @@ namespace MyFirstWeb.pages
             string cvv = this.txtCardCvc.Text;
             string id = this.txtCardHolderID.Text;
             int mon = int.Parse(this.txtDate.Text.Substring(0, 2));
-            int year = int.Parse(this.txtDate.Text.Substring(3, 4));
+            int year = int.Parse(this.txtDate.Text.Substring(3, 2));
             int tot = int.Parse(this.lblPrice.Text);
             if (x.ValidVisaDetails(id, visanum, cvv, mon, year))
                 if (x.IsExpireDate(mon, year))
