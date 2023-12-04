@@ -25,7 +25,7 @@ public class Bank : System.Web.Services.WebService
     public bool ValidVisaDetails(string id, string VisaNum, string CVV, int month, int year)
     {
         string st;
-        st = "SELECT * FROM [CreditCard] WHERE ([id]='" + id + "' AND [numofvisa]='" + VisaNum + "' AND [cvv]='" + CVV + "' AND [CreditMonth]='" + month + "' AND [CreditYear]='" + year + "')";
+        st = "SELECT * FROM [CreditCard] WHERE ([id]='" + id + "' AND [numofvisa]='" + VisaNum + "' AND [cvv]='" + CVV + "' AND [CreditMonth]=" + month + " AND [CreditYear]=" + year + ")";
         DataTable dt = DBFunction.SelectFromTable(st, "DB.accdb");
         if (dt.Rows.Count > 0)
             return true;
@@ -35,6 +35,7 @@ public class Bank : System.Web.Services.WebService
     public bool IsExpireDate(int month, int year)
     {
         int currentYear =int.Parse((DateTime.Now.Year).ToString());
+        currentYear = currentYear % 100;
         if (currentYear < year)
             return true;
         if (currentYear == year)

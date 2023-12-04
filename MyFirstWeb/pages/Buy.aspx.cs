@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 namespace MyFirstWeb.pages
@@ -14,7 +15,9 @@ namespace MyFirstWeb.pages
         {
             this.Label1.Text = Session["email"].ToString();
             this.lblPrice.Text = Session["price"].ToString();
-          
+           // HtmlGenericControl currentCardDiv = (HtmlGenericControl)FindControl("current-card");
+            //string divValue = currentCardDiv.InnerText;
+
         }
 
 

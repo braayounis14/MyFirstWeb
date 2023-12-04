@@ -50,6 +50,8 @@ namespace MyFirstWeb.pages
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblPrice;
 
+
+        
         /// <summary>
         /// txtCardNum control.
         /// </summary>
