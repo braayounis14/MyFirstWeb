@@ -32,9 +32,10 @@
     <div class='container'>
   <div class='window'>
     <div class='order-info'>
-      <div class='order-info-content'>
+            <div class='order-info-content'>
         <h2>Order Summary</h2>
                 <div class='line'></div>
+          <div class="scroller">
         <table class='order-table'>
           <tbody>
             <tr>
@@ -54,6 +55,31 @@
           </tbody>
 
         </table>
+            <div class='line'></div>
+    
+    
+            <table class='order-table'>
+          <tbody>
+            <tr>
+              <td><img src='https://dl.dropboxusercontent.com/s/sim84r2xfedj99n/%24_32.JPG' class='full-width'></img>
+              </td>
+              <td>
+                <br> <span class='thin'>Nike</span>
+                <br> Free Run 3.0 Women<br> <span class='thin small'> Color: Grey/Orange, Size: 10.5<br><br></span>
+              </td>
+
+            </tr>
+            <tr>
+              <td>
+                <div class='price'>$99.95</div>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+    
+
+
         <div class='line'></div>
         <table class='order-table'>
           <tbody>
@@ -91,6 +117,13 @@
             </tr>
           </tbody>
         </table>
+
+
+               </div>
+
+
+
+
         <div class='line'></div>
         <div class='total'>
           <span style='float:left;'>
@@ -307,6 +340,7 @@ ul li:hover {
   color:#4488dd;
 }
 .order-table td:first-of-type {
+    padding-left:4px;
   width:25%;
 }
 .order-table {
@@ -469,6 +503,20 @@ ul li:hover {
   .pay-btn {
     border-radius:0px;
   }
+}
+.table {
+
+
+    border-collapse:
+}
+
+.scroller {
+  
+ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  width: 350px;
+  height: 350px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
 }
 
 
