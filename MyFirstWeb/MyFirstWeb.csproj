@@ -121,6 +121,7 @@
     <Content Include="obj\Debug\TempPE\Resource1.Designer.cs.dll" />
     <Content Include="pages\AboutUs.aspx" />
     <Content Include="pages\AboutUs1.aspx" />
+    <Content Include="pages\AddProduct.aspx" />
     <Content Include="pages\AdminDashboard.aspx" />
     <Content Include="pages\Buy.aspx" />
     <Content Include="pages\ChangePassword.aspx" />
@@ -150,6 +151,7 @@
     <Content Include="styles\lol1.css" />
     <Content Include="styles\style2.css" />
     <Content Include="styles\Style1.css" />
+    <Content Include="styles\templatemo-style.css" />
     <Content Include="styles\test.css" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -179,6 +181,13 @@
     </Compile>
     <Compile Include="pages\AboutUs1.aspx.designer.cs">
       <DependentUpon>AboutUs1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\AdminDashboard.aspx.cs">
       <DependentUpon>AdminDashboard.aspx</DependentUpon>

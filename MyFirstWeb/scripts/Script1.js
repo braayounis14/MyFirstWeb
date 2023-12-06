@@ -30,3 +30,24 @@ sidebarToggle.addEventListener("click", () => {
         localStorage.setItem("status", "open");
     }
 })
+
+// Assuming you have a reference to the form group label element
+const formGroupLabel = document.querySelector('.form-group label');
+
+// Function to update label color based on dark mode status
+function updateLabelColor() {
+    const isDarkModeEnabled = body.classList.contains('dark');
+    formGroupLabel.style.color = isDarkModeEnabled ? 'white' : 'black';
+}
+
+// Initial update on page load
+updateLabelColor();
+
+// Event listener for changes in dark mode
+modeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark');
+    updateLabelColor();
+
+    // Rest of your existing code...
+});
+
