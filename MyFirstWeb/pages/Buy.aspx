@@ -35,91 +35,44 @@
             <div class='order-info-content'>
         <h2>Order Summary</h2>
                 <div class='line'></div>
+
+
           <div class="scroller">
-        <table class='order-table'>
-          <tbody>
-            <tr>
-              <td><img src='https://dl.dropboxusercontent.com/s/sim84r2xfedj99n/%24_32.JPG' class='full-width'></img>
-              </td>
-              <td>
-                <br> <span class='thin'>Nike</span>
-                <br> Free Run 3.0 Women<br> <span class='thin small'> Color: Grey/Orange, Size: 10.5<br><br></span>
-              </td>
 
-            </tr>
-            <tr>
-              <td>
-                <div class='price'>$99.95</div>
-              </td>
-            </tr>
-          </tbody>
+              <asp:DataList ID="DataList1" runat="server" DataSourceID="AccessDataSource1" DataKeyField="Email">
+                  <ItemTemplate>
 
-        </table>
-            <div class='line'></div>
-    
-    
-            <table class='order-table'>
-          <tbody>
-            <tr>
-              <td><img src='https://dl.dropboxusercontent.com/s/sim84r2xfedj99n/%24_32.JPG' class='full-width'></img>
-              </td>
-              <td>
-                <br> <span class='thin'>Nike</span>
-                <br> Free Run 3.0 Women<br> <span class='thin small'> Color: Grey/Orange, Size: 10.5<br><br></span>
-              </td>
+                              <div class='line'></div>
+<table class='order-table'>
+  <tbody>
+    <tr>
+      <td><img src='<%# Eval("Image") %>' class='full-width'></img>
+      </td>
+      <td>
+        <br> <span style="font-weight: bold;" class='thin'><%# Eval("ProductName") %></span>
+        <br> <%# Eval("Info") %> <br> <span class='thin small'> Color: Pink, Size: Medium</span>
+      </td>
 
-            </tr>
-            <tr>
-              <td>
-                <div class='price'>$99.95</div>
-              </td>
-            </tr>
-          </tbody>
-
-        </table>
-    
+    </tr>
+    <tr>
+      <td>
+        <div class='price'>$<%# Eval("Price") %></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 
-        <div class='line'></div>
-        <table class='order-table'>
-          <tbody>
-            <tr>
-              <td><img src='https://dl.dropboxusercontent.com/s/qbj9tsbvthqq72c/Vintage-20L-Backpack-by-Fj%C3%A4llr%C3%A4ven.jpg' class='full-width'> </img>
-              </td>
-              <td>
-                <br> <span class='thin'>Fjällräven</span>
-                <br>Vintage Backpack<br> <span class='thin small'> Color: Olive, Size: 20L</span>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class='price'>$235.95</div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <div class='line'></div>
-        <table class='order-table'>
-          <tbody>
-            <tr>
-              <td><img src='https://dl.dropboxusercontent.com/s/nbr4koso8dpoggs/6136C1p5FjL._SL1500_.jpg' class='full-width'></img>
-              </td>
-              <td>
-                <br> <span class='thin'>Monobento</span>
-                <br>Double Lunchbox<br> <span class='thin small'> Color: Pink, Size: Medium</span>
-              </td>
 
-            </tr>
-            <tr>
-              <td>
-                <div class='price'>$25.95</div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                      <br />
+                  </ItemTemplate>
+              </asp:DataList>
 
+
+                <div class='line'></div>
 
                </div>
+
 
 
 
@@ -200,7 +153,7 @@
 
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="code,Email,datebuy"
         DataSourceID="AccessDataSource1" ShowFooter="True" Visible="False">
-         <Columns>
+        <Columns>
              <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
              <asp:BoundField DataField="Info" HeaderText="Info" SortExpression="Info" />
              <asp:TemplateField HeaderText="Image">
