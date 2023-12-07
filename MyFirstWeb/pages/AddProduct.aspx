@@ -20,22 +20,22 @@
             </div>
             <div class="row tm-edit-product-row">
               <div class="col-xl-6 col-lg-6 col-md-12">
-                <form action="" class="tm-edit-product-form">
+                
                   <div class="form-group mb-3">
                     <label for="name">Product Name
                     </label>
-        <asp:TextBox ID="txtName" type="text" class="form-control validate" required="true" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtName"  type="text" class="form-control validate" required="true" runat="server"></asp:TextBox>
                    
                   </div>
                   <div class="form-group mb-3">
                     <label for="description">Description</label>
-<asp:TextBox ID="txtDetails" class="form-control validate" runat="server" TextMode="MultiLine" Rows="4" Columns="50"></asp:TextBox>
+<asp:TextBox ID="txtDetails" required="true" class="form-control validate" runat="server" TextMode="MultiLine" Rows="4" Columns="50"></asp:TextBox>
 
                   </div>
                   <div class="form-group mb-3">
                     <label for="category">Category</label>
 
-            <asp:DropDownList class="custom-select tm-select-accounts" ID="DropDownList1" runat="server">
+            <asp:DropDownList required="true" class="custom-select tm-select-accounts" ID="DropDownList1" runat="server">
     <asp:ListItem Text="Select a Category" Value="0" Disabled="true" style="color: #0000FF; font-weight: bold;"></asp:ListItem>
                  <asp:ListItem Text="product1" Value="product1"></asp:ListItem>
                  <asp:ListItem Text="CPU category" Value="CPU"></asp:ListItem>
@@ -46,27 +46,29 @@
                   </div>
                   <div class="row">
                       <div class="form-group mb-3 col-xs-12 col-sm-6">
-                          <label for="expire_date">Expire Date
+                          <label for="expire_date">Price
                           </label>
-                          <input id="txtPrice" name="Price" type="text" class="form-control validate hasDatepicker" data-large-mode="true">
+                          <asp:TextBox ID="txtPrice" required="true" type="text" class="form-control validate hasDatepicker" data-large-mode="true" runat="server"></asp:TextBox>
+                
                         </div>
-
                   </div>
                   
-              </form></div>
+              </div>
               <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
                 <div class="tm-product-img-dummy mx-auto">
+
                   <i class="fas fa-cloud-upload-alt tm-upload-icon" onclick="document.getElementById('fileInput').click();"></i>
                 </div>
                 <div class="custom-file mt-3 mb-3">
                 
-                <asp:FileUpload ID="fileInput" type="file" style="display:none;" runat="server" />
+              
                 <asp:FileUpload type="button" class="btn btn-primary btn-block mx-auto" value="UPLOAD PRODUCT IMAGE" onclick="document.getElementById('fileInput').click();" ID="FileUpload1" runat="server" />
                 </div>
               </div>
               <div class="col-12">
-                    <asp:Button ID="BtnAdd"  type="submit" runat="server" class="btn btn-primary btn-block text-uppercase" Text="Add Product Now" />
+                  <asp:Button ID="BtnAdd" type="submit" runat="server" class="btn btn-primary btn-block text-uppercase" Text="Add Product Now" OnClick="BtnAdd_Click" />
                   <asp:Button ID="BtnCheck"  type="Check" runat="server" class="btn btn-primary btn-block text-uppercase" Text="Check" />
+                  <asp:Label ID="lblMsg" runat="server" Text="Label"></asp:Label>
               </div>
             
             </div>
