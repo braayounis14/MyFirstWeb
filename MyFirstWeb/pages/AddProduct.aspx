@@ -70,7 +70,7 @@
                   <asp:Button ID="BtnCheck"  type="Check" runat="server" class="btn btn-primary btn-block text-uppercase" Text="Check" />
                   <asp:Label ID="lblMsg" runat="server" Text="Label"></asp:Label>
               </div>
-            
+
             </div>
           </div>
         </div>

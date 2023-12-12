@@ -13,7 +13,7 @@ namespace MyFirstWeb.pages
         protected void Page_Load(object sender, EventArgs e)
         {
 
-      //     BtnAdd.Visible = false;
+            //     BtnAdd.Visible = false;
             BtnCheck.Visible = false;
 
         }
@@ -25,22 +25,25 @@ namespace MyFirstWeb.pages
             {
                 if (this.FileUpload1.PostedFile.ContentLength > 10485576)
                     lblMsg.Text = "too large this file is not allowed";
-                else {
-                    string destDir = Server.MapPath("./Images");
-                    fileName =Path.GetFileName(this.FileUpload1.PostedFile.FileName);
+                else
+                {
+                    string destDir = Server.MapPath("~/images");
+                    fileName = Path.GetFileName(this.FileUpload1.PostedFile.FileName);
                     string destPath = Path.Combine(destDir, fileName);
                     this.FileUpload1.PostedFile.SaveAs(destPath);
                     lblMsg.Text = "thanks for submitting your file";
 
-
-
+                    string st = "insert into [Products] ([Price],[ProductName],[Details],[Image]) values (" +
+                        this.txtPrice.Text + ",'" + this.txtName.Text + "','" + this.txtDetails.Text + "','~/images/" + fileName + "')";
+                    DBFunction.ChangeTable(st, "DB.accdb");
+                    
                 }
 
 
             }
             else
                 lblMsg.Text = "this file is empty";
-
+            this.Image1.ImageUrl = "~/images/Screenshot 2023-12-06 120541.png";
         }
     }
 }
