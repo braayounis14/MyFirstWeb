@@ -30,17 +30,23 @@
                   <div class="form-group mb-3">
                     <label for="description">Description</label>
 <asp:TextBox ID="txtDetails" required="true" class="form-control validate" runat="server" TextMode="MultiLine" Rows="4" Columns="50"></asp:TextBox>
-
+                      s
                   </div>
                   <div class="form-group mb-3">
                     <label for="category">Category</label>
 
             <asp:DropDownList required="true" class="custom-select tm-select-accounts" ID="DropDownList1" runat="server">
     <asp:ListItem Text="Select a Category" Value="0" Disabled="true" style="color: #0000FF; font-weight: bold;"></asp:ListItem>
-                 <asp:ListItem Text="product1" Value="product1"></asp:ListItem>
                  <asp:ListItem Text="CPU category" Value="CPU"></asp:ListItem>
+                 <asp:ListItem Text="CPU Cooler category" Value="CPUCooler"></asp:ListItem>
+                 <asp:ListItem Text="Motherboard category" Value="Motherboard"></asp:ListItem>
+                 <asp:ListItem Text="Memory category" Value="Memory"></asp:ListItem>
+                 <asp:ListItem Text="Storage category" Value="Storage"></asp:ListItem>
                  <asp:ListItem Text="GPU category" Value="GPU"></asp:ListItem>
-
+                 <asp:ListItem Text="Case category" Value="Case"></asp:ListItem>
+                 <asp:ListItem Text="Power Supply category" Value="PowerSupply"></asp:ListItem>
+                 <asp:ListItem Text="Operating System category" Value="OperatingSystem"></asp:ListItem>
+                 <asp:ListItem Text="Monitor category" Value="Monitor"></asp:ListItem>
             </asp:DropDownList>
 
                   </div>

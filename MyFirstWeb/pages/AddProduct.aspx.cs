@@ -33,7 +33,9 @@ namespace MyFirstWeb.pages
                     this.FileUpload1.PostedFile.SaveAs(destPath);
                     lblMsg.Text = "thanks for submitting your file";
 
-                    string st = "insert into [Products] ([Price],[ProductName],[Details],[Image]) values (" +
+                    string category = this.DropDownList1.SelectedValue;
+                    string st = $"insert into [{category}]";
+                    st = st+ "([Price],[ProductName],[Details],[Image]) values (" +
                         this.txtPrice.Text + ",'" + this.txtName.Text + "','" + this.txtDetails.Text + "','~/images/" + fileName + "')";
                     DBFunction.ChangeTable(st, "DB.accdb");
                     
@@ -43,7 +45,7 @@ namespace MyFirstWeb.pages
             }
             else
                 lblMsg.Text = "this file is empty";
-            this.Image1.ImageUrl = "~/images/Screenshot 2023-12-06 120541.png";
+           // this.Image1.ImageUrl = "~/images/Screenshot 2023-12-06 120541.png";
         }
     }
 }
