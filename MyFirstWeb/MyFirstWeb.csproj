@@ -138,6 +138,7 @@
     <Content Include="pages\SignUp.aspx" />
     <Content Include="pages\WebForm1.aspx" />
     <Content Include="scripts\birthdatecheck.js" />
+    <Content Include="scripts\main.js" />
     <Content Include="scripts\Script.js" />
     <Content Include="scripts\Script1.js" />
     <Content Include="scripts\Scripts.js" />
@@ -146,6 +147,7 @@
     <Content Include="styles\Forget.css" />
     <Content Include="styles\ForgetStyle.css" />
     <Content Include="styles\MasterFooter.css" />
+    <Content Include="styles\NewNav.css" />
     <Content Include="styles\Product.css" />
     <Content Include="styles\style.css" />
     <Content Include="styles\lol1.css" />
@@ -157,6 +159,12 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Content Include="scss\base\_base.scss" />
+    <Content Include="scss\components\_breakpoints.scss" />
+    <Content Include="scss\components\_header.scss" />
+    <Content Include="scss\config\_variables.scss" />
+    <Content Include="scss\layout\_layout.scss" />
+    <Content Include="scss\styles.scss" />
     <None Include="Web References\localhost\bank.disco" />
     <Content Include="Web.config" />
   </ItemGroup>
