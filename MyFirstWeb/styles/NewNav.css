@@ -102,9 +102,10 @@ a {
     }
 
 .nav__toggle {
-    position: relative;
+    position: fixed;
     width: 32px;
     height: 32px;
+    padding-right:190%;
 }
 
 .nav__burger,

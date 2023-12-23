@@ -46,7 +46,7 @@
 <table class='order-table'>
   <tbody>
     <tr>
-      <td><img src='<%# Eval("Image") %>' class='full-width'></img>
+      <td> <asp:Image ID="Image1" runat="server" class="full-width" Height="95.97px" ImageUrl='<%# DataBinder.Eval   (Container.DataItem,"image","{0}") %>' Width="83.64px" />
       </td>
       <td>
         <br> <span style="font-weight: bold;" class='thin'><%# Eval("ProductName") %></span>

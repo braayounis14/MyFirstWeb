@@ -15,7 +15,7 @@ namespace MyFirstWeb.pages
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string sql = "select * from [Products] where ([image]='" + (Session["Im"].ToString()) + "')";
+            string sql = "select * from [GPU] where ([image]='" + (Session["Im"].ToString()) + "')";
             DataTable dt = DBFunction.SelectFromTable(sql, "DB.accdb");
             if (dt != null)
             {

@@ -18,7 +18,7 @@
             <div>
 
 
-                <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/DB.accdb" SelectCommand="SELECT * FROM [Products]"></asp:AccessDataSource>
+                <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/DB.accdb" SelectCommand="SELECT * FROM [GPU]"></asp:AccessDataSource>
                 <asp:DataList ID="DataList1" runat="server" DataSourceID="AccessDataSource1" DataKeyField="image" OnItemCommand="DataList1_ItemCommand" RepeatDirection="Horizontal">
                     <ItemTemplate>
 
@@ -72,43 +72,7 @@
 
 
 
-                <link href="../styles/Product.css" rel="stylesheet" />
 
-                <div class="short-video-box grid gap-20px col-w-4 goods-list is-vertical is-trending">
-  <div class="grid-col">
-    <div class="goods-container" data-itemnumber="34-156-561">
-      <div class="tag-list at-top-left">
-        <div class="tag tag-s is-skewed bg-red">
-          <div class="tag-text">Black Friday Deal</div>
-        </div>
-      </div>
-      <a href="https://www.newegg.com/black-msi-gf-series-thin-gf63-12vf-848us-gaming/p/N82E16834156561?Item=N82E16834156561&amp;cm_sp=Homepage_TRENDINGNOW-_-P1_34-156-561-_-11182023" class="goods-img radius-m bg-lightgray">
-        <img src="https://c1.neweggimages.com/ProductImageCompressAll300/34-156-561-01.png" title="MSI GF Series Thin GF63 12VF-848US 15.6&quot; 144 Hz IPS Intel Core i7 12th Gen 12650H (2.30GHz) NVIDIA GeForce RTX 4060 Laptop GPU 32GB Memory 1 TB PCIe SSD Windows 11 Home 64-bit Gaming Laptop" alt="MSI GF Series Thin GF63 12VF-848US 15.6&quot; 144 Hz IPS Intel Core i7 12th Gen 12650H (2.30GHz) NVIDIA GeForce RTX 4060 Laptop GPU 32GB Memory 1 TB PCIe SSD Windows 11 Home 64-bit Gaming Laptop" orgsrc="https://c1.neweggimages.com/ProductImageCompressAll300/34-156-561-01.png">
-      </a>
-      <div class="goods-info">
-        <div class="goods-branding has-brand-store">
-          <a href="https://www.newegg.com/black-msi-gf-series-thin-gf63-12vf-848us-gaming/p/N82E16834156561?Item=N82E16834156561&amp;cm_sp=Homepage_TRENDINGNOW-_-P1_34-156-561-_-11182023#IsFeedbackTab" class="goods-rating" title="Rating + 4.5">
-            <i class="rating rating-4-5" aria-label="rated 4.5 out of 5"></i><span class="goods-rating-num font-s text-gray">(164)</span>
-          </a>
-        </div>
-        <a href="https://www.newegg.com/black-msi-gf-series-thin-gf63-12vf-848us-gaming/p/N82E16834156561?Item=N82E16834156561&amp;cm_sp=Homepage_TRENDINGNOW-_-P1_34-156-561-_-11182023" class="goods-title" title="View Details">MSI Thin GF63 12VF-848US Gaming Laptop Intel Core i7-12650H 2.30 GHz 15.6" Windows 11 Home 64-bit</a>
-        <div class="tag-list">
-          <div class="tag is-skewed bg-darkorange">
-            <div class="tag-text font-s">Save 22%</div>
-          </div>
-        </div>
-        <div class="goods-price is-horizontal">
-          <div class="goods-price-current">
-            <span class="goods-price-label"></span><span class="goods-price-symbol">$</span><span class="goods-price-value"><strong>849</strong><sup>.00</sup></span>
-          </div>
-          <div class="goods-price-was text-gray font-s">$1,099.00</div>
-          <div class="goods-price-ship text-gray font-s"><span class="goods-price-ship-eligible text-blue">Free Shipping</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Repeat the structure for other items -->
-</div>
 
 
             </div>
