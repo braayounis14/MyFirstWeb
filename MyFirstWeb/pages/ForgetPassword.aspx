@@ -32,7 +32,7 @@
 <asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
 <link href="../styles/MasterFooter.css" rel="stylesheet" />
     <link href="../styles/ForgetStyle.css" rel="stylesheet" />
-
+    
 
 
     <div class="features">
@@ -40,7 +40,7 @@
      <div class="row">
          <div class="col-md-4 offset-md-4 form">
              
-                 <h2 class="text-center">Forgot Password</h2>
+                 <h2 class="text-center" style="padding-top:50%;">Forgot Password</h2>
                  <p class="text-center">Enter your email address</p>
              <asp:Label ID="lblAnswer" class="text-center" runat="server"></asp:Label>
              

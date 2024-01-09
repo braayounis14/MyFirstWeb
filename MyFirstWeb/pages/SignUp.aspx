@@ -78,12 +78,23 @@
 
 </head>
 <body>
+
+    <link href="../styles/CreationSucceeded.css" rel="stylesheet" />
     <link href="../styles/lol1.css" rel="stylesheet" />
-   
-    <div class="container">
+    <link href="../styles/Notifications.css" rel="stylesheet" />
+           <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+
+
+
+
+           <form id="form1" class="" runat="server">
+
+    <div runat="server" id="AllCode" class="container">
         <div class="screen">
             <div class="screen__content">
-                <form id="form1" class="login" runat="server">
+                <div class="login">
 
                                         <div class="login__field">
     <i class="login__icon fas fa-user"></i>
@@ -361,8 +372,8 @@ Password should have at least one special character ( @, #, %, &, !, $, *)   .)"
 
 
 
-
-                </form>
+ </div>
+               
                         <div class="social-login">
             
             <h5>Have an account? <a href="Login.aspx">Login</a></h5>
@@ -379,9 +390,13 @@ Password should have at least one special character ( @, #, %, &, !, $, *)   .)"
 
 
 
-
+        <div runat="server" id="help"></div>
 
     </div>
+
+     </form>
+
+
 
 </body>
 </html>

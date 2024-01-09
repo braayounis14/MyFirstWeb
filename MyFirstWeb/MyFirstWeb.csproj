@@ -114,7 +114,9 @@
     <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="Images\check-circle.svg" />
     <Content Include="Images\GitHub-Mark.png" />
+    <Content Include="Images\CreationSucceeded.svg" />
     <Content Include="obj\Debug\MyFirstWeb.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\MyFirstWeb.dll" />
     <Content Include="obj\Debug\MyFirstWeb.pdb" />
@@ -133,6 +135,7 @@
     <Content Include="pages\Login.aspx" />
     <Content Include="pages\MyAccount.aspx" />
     <Content Include="pages\MyCart.aspx" />
+    <Content Include="pages\Notifications.aspx" />
     <Content Include="pages\Products1.aspx" />
     <Content Include="pages\Products1Details.aspx" />
     <Content Include="pages\SignUp.aspx" />
@@ -145,10 +148,12 @@
     <Content Include="scripts\Scripts.js" />
     <Content Include="styles\AdminDash.css" />
     <Content Include="styles\ContactStyle.css" />
+    <Content Include="styles\CreationSucceeded.css" />
     <Content Include="styles\Forget.css" />
     <Content Include="styles\ForgetStyle.css" />
     <Content Include="styles\MasterFooter.css" />
     <Content Include="styles\NewNav.css" />
+    <Content Include="styles\Notifications.css" />
     <Content Include="styles\Product111.css" />
     <Content Include="styles\style.css" />
     <Content Include="styles\lol1.css" />
@@ -233,6 +238,13 @@
     </Compile>
     <Compile Include="pages\MyCart.aspx.designer.cs">
       <DependentUpon>MyCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Notifications.aspx.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Notifications.aspx.designer.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\Products1.aspx.cs">
       <DependentUpon>Products1.aspx</DependentUpon>
