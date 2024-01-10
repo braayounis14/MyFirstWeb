@@ -32,6 +32,17 @@
 <body>
 
 
+    <style>
+            .nav__list {
+        height: 100%;
+        display: grid;
+        column-gap: 3rem;
+        grid-template-columns: repeat(6,1fr);
+    }
+    </style>
+   
+
+
        <form id="form1" runat="server">
 
           <!--=============== HEADER ===============-->
@@ -39,8 +50,8 @@
       <header class="header" style="max-width:">
          <nav class="nav container" style="max-width:none">
             <div class="nav__data">
-               <a href="#" class="nav__logo" style="padding-left:20px">
-                   <img src="../Images/Newegg_full_color_logo_RGB.SVG" alt="Alternate Text" /> Company
+               <a href="Home.aspx" class="nav__logo" style="padding-left:20px">
+                   <img src="../Images/Newegg_full_color_logo_RGB.SVG" alt="Alternate Text" /> NewEgg
                </a>
                
                <div class="nav__toggle" id="nav-toggle">
@@ -59,26 +70,26 @@
                   <!--=============== DROPDOWN 1 ===============-->
                   <li class="dropdown__item">
                      <div class="nav__link">
-                        Analytics <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        Products <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                      </div>
 
                      <ul class="dropdown__menu">
                         <li>
                            <a href="#" class="dropdown__link">
-                              <i class="ri-pie-chart-line"></i> Overview
+                              <i class="ri-pie-chart-line"></i> Monitor
                            </a>                          
                         </li>
 
                         <li>
                            <a href="#" class="dropdown__link">
-                              <i class="ri-arrow-up-down-line"></i> Transactions
+                              <i class="ri-arrow-up-down-line"></i> OperationSystem
                            </a>
                         </li>
 
                         <!--=============== DROPDOWN SUBMENU ===============-->
                         <li class="dropdown__subitem">
                            <div class="dropdown__link">
-                              <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
+                              <i class="ri-bar-chart-line"></i> Cooler&Fans  <i class="ri-add-line dropdown__add"></i>
                            </div>
 
                            <ul class="dropdown__submenu">
@@ -101,37 +112,43 @@
                               </li>
                            </ul>
                         </li>
+
+
+                                                 <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> PC Parts  <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> Documents
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> Payments
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> Refunds
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+
+
+
                      </ul>
                   </li>
                   
                   <li><a href="#" class="nav__link">Products</a></li>
 
                   <!--=============== DROPDOWN 2 ===============-->
-                  <li class="dropdown__item">
-                     <div class="nav__link">
-                        Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                     </div>
-
-                     <ul class="dropdown__menu">
-                        <li>
-                           <a href="#" class="dropdown__link">
-                              <i class="ri-user-line"></i> Profiles
-                           </a>                          
-                        </li>
-
-                        <li>
-                           <a href="#" class="dropdown__link">
-                              <i class="ri-lock-line"></i> Accounts
-                           </a>
-                        </li>
-
-                        <li>
-                           <a href="#" class="dropdown__link">
-                              <i class="ri-message-3-line"></i> Messages
-                           </a>
-                        </li>
-                     </ul>
-                  </li>
+                 
 
                   <li><a href="ContactUs.aspx" class="nav__link">Contact</a></li>
                   <li><a href="Login.aspx" class="nav__link"><i style="padding-left:px" class="fas fa-user" aria-hidden="true"></i></a></li>

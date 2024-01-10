@@ -4,9 +4,7 @@
 
 <html>
 <head runat="server">
-      <title>test</title>
-
-
+    <title>Responsive dropdown menu - Bedimcode</title>
 
 
 
@@ -14,42 +12,20 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
-    <script src="https://kit.fontawesome.com/56446077d3.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-    <script src="../scripts/Scripts.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Make sure you use the correct jQuery URL -->
+              <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="../styles/test.css" rel="stylesheet" />
-    <link href="../styles/MasterFooter.css" rel="stylesheet" />
-    <link rel="ICON" href="https://www.codingnepalweb.com/wp-content/uploads/2023/01/codingnepal-favicon-32x32-1.png" type="image/ico" />
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
-    <script>
-        $(document).ready(function () {
-            /* $("#search-icon").click(function () {
-                 $(".nav").toggleClass("search");
-                 $(".nav").toggleClass("no-search");
-                 $(".search-input").toggleClass("search-active");
-             });*/
-
-            $('.menu-toggle').click(function () {
-                $(".nav").toggleClass("mobile-nav");
-                $(this).toggleClass("is-active");
-            });
-        });
-    </script>
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-     <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--=============== CSS ===============-->
+    <link href="../styles/NewNav.css" rel="stylesheet" />
+     <link href="../styles/MasterFooter.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-
-
+    
 </head>
 
 
@@ -58,44 +34,189 @@
 
        <form id="form1" runat="server">
 
-
-     <div>
-         <div class="page-wrapper">
- <div class="nav-wrapper">
-  <div class="grad-bar"></div>
-  <nav class="navbar">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Bluestar_%28bus_company%29_logo.svg/1280px-Bluestar_%28bus_company%29_logo.svg.png" alt="Company Logo">
-    <div class="menu-toggle" id="mobile-menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-
- <ul style="" class="nav no-search">
-      <li class="nav-item"><a href="home1.aspx">Home</a></li>
-      <li class="nav-item"><a href="AboutUs1.aspx">About</a></li>
-      <li class="nav-item"><a href="#">Work</a></li>
-      <li class="nav-item"><a href="Products1.aspx">Products1</a></li>
-      <li class="nav-item"><a href="ContactUs.aspx">Contact Us</a></li>
-      <li style="padding-left:20px; width:40%;" class="nav-item"><a href="MyCart.aspx"> <i class="fas fa-cart-shopping"></i>  </a>  </li>
-   <li class="nav-item"> <a style="width:20px; padding-left:5px" href="MyAccount.aspx"> <i style="padding-left:20px" class="fas fa-user"></i> </a> </li>
-      
-       
-
-    </ul>
-
-  </nav>
-  </div>
-
-</div>
-
-    </div>
+          <!--=============== HEADER ===============-->
      
+      <header class="header" style="max-width:">
+         <nav class="nav container" style="max-width:none">
+            <div class="nav__data">
+               <a href="Home.aspx" class="nav__logo" style="padding-left:20px">
+                   <img src="../Images/Newegg_full_color_logo_RGB.SVG" alt="Alternate Text" /> NewEgg
+               </a>
+               
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i> 
+                  <i class="ri-close-line nav__close"></i>
+               </div>
+            </div>
 
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="#" class="nav__link">Home</a></li>
+
+                  <li><a href="#" class="nav__link">Company</a></li>
+
+                  <!--=============== DROPDOWN 1 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Products <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-pie-chart-line"></i> Monitor
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-arrow-up-down-line"></i> OperationSystem
+                           </a>
+                        </li>
+
+                        <!--=============== DROPDOWN SUBMENU ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> Cooler&Fans  <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> Documents
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> Payments
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> Refunds
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+
+
+                                                 <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> PC Parts  <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> Documents
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> Payments
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> Refunds
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+
+
+
+                     </ul>
+                  </li>
+                  
+                  <li><a href="#" class="nav__link">Products</a></li>
+
+                  <!--=============== DROPDOWN 2 ===============-->
+
+
+                   <li class="dropdown__item">
+                       <div class="nav__link">
+                           Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                       </div>
+
+                       <ul class="dropdown__menu">
+                           <li>
+                               <a href="#" class="dropdown__link">
+                                   <i class="ri-user-line"></i>Profiles
+                               </a>
+                           </li>
+
+                           <li>
+                               <a href="#" class="dropdown__link">
+                                   <i class="ri-lock-line"></i>Accou
+                               </a>
+                           </li>
+
+                                                   <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> Security  <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> Documents
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> Payments
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> Refunds
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+
+
+                           <li>
+                               <a href="#" class="dropdown__link">
+                                   <i class="ri-message-3-line"></i>Messages
+                               </a>
+                           </li>
+
+
+
+
+                       </ul>
+                   </li>
+
+
+                  <li><a href="ContactUs.aspx" class="nav__link">Contact</a></li>
+                  <li><a href="Login.aspx" class="nav__link"><i style="padding-left:px" class="fas fa-user" aria-hidden="true"></i></a></li>
+
+               </ul>
+            </div>
+         </nav>
+      </header>
+
+      <!--=============== MAIN JS ===============-->
+        <script src="../scripts/main.js"></script>
+      <script src="https://kit.fontawesome.com/56446077d3.js" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+
+
+        
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-</asp:ContentPlaceHolder>
-
-
+            </asp:ContentPlaceHolder>
+     
+        
            <footer class="mainfooter" role="contentinfo">
   <div class="footer-middle">
   <div class="container">
@@ -162,7 +283,8 @@
   </div>
   </div>
 </footer>
-  
+
+
 
          
     </form>
