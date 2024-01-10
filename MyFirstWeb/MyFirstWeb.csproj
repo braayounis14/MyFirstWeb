@@ -117,6 +117,7 @@
     <Content Include="Images\check-circle.svg" />
     <Content Include="Images\GitHub-Mark.png" />
     <Content Include="Images\CreationSucceeded.svg" />
+    <Content Include="Images\Newegg_full_color_logo_RGB.SVG" />
     <Content Include="obj\Debug\MyFirstWeb.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\MyFirstWeb.dll" />
     <Content Include="obj\Debug\MyFirstWeb.pdb" />
@@ -161,7 +162,6 @@
     <Content Include="styles\Style1.css" />
     <Content Include="styles\templatemo-style.css" />
     <Content Include="styles\test.css" />
-    <Content Include="pages\Site2.Master" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -259,13 +259,6 @@
     </Compile>
     <Compile Include="pages\Products1Details.aspx.designer.cs">
       <DependentUpon>Products1Details.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="pages\Site2.Master.cs">
-      <DependentUpon>Site2.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\Site2.Master.designer.cs">
-      <DependentUpon>Site2.Master</DependentUpon>
     </Compile>
     <Compile Include="pages\SiteAdminPage.Master.cs">
       <DependentUpon>SiteAdminPage.Master</DependentUpon>
