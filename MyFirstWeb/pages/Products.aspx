@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/Site1AfterSign.Master" AutoEventWireup="true" CodeBehind="Products1.aspx.cs" Inherits="MyFirstWeb.pages.Products1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/Site1AfterSign.Master" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="MyFirstWeb.pages.Products1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -8,11 +8,6 @@
     <section id="test" class="features">
 
         <div id="catagory" runat="server" style="display: flex;" class="catagory">
-
-
-
-
-
 
 
             <div>
@@ -171,6 +166,32 @@
                 font-weight: 500;
                 color: #fff;
             }
+
+            .features {
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+    display: flex;
+    padding: 50px 20px;
+    justify-content: space-around;
+}
+
+.feature-container {
+    flex-basis: 30%;
+    margin-top: 10px;
+}
+
+    .feature-container p {
+        color: #000;
+        text-align: center;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+
+    .feature-container img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
         /*# sourceMappingURL=index.css.map */
     </style>
 

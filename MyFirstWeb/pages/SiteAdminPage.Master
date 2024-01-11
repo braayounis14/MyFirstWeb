@@ -47,9 +47,9 @@
                     <i class="uil uil-store"></i>
                     <span class="link-name">Add products</span>
                 </a></li>
-                <li><a href="#">
-                    <i class="uil uil-chart"></i>
-                    <span class="link-name">Analytics</span>
+                <li><a href="UsersPanel.aspx">
+                    <i class="uil uil-user"></i>
+                    <span class="link-name">UsersPanel</span>
                 </a></li>
                 <li><a href="#">
                     <i class="uil uil-thumbs-up"></i>
