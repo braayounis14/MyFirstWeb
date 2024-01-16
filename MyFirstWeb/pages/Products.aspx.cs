@@ -22,5 +22,8 @@ namespace MyFirstWeb.pages
             Session["Im"] = st;
             Response.Redirect("Products1Details.aspx");
         }
+
+
+
     }
 }

@@ -137,8 +137,13 @@
     <Content Include="pages\MyAccount.aspx" />
     <Content Include="pages\MyCart.aspx" />
     <Content Include="pages\Notifications.aspx" />
+    <Content Include="pages\ProductsCase.aspx" />
+    <Content Include="pages\ProductsCpu.aspx" />
+    <Content Include="pages\ProductsMonitor.aspx" />
     <Content Include="pages\Products.aspx" />
     <Content Include="pages\Products1Details.aspx" />
+    <Content Include="pages\ProductsMotherboard.aspx" />
+    <Content Include="pages\ProductsPowerSupply.aspx" />
     <Content Include="pages\ProductsStorage.aspx" />
     <Content Include="pages\SignUp.aspx" />
     <Content Include="pages\UsersPanel.aspx" />
@@ -158,6 +163,7 @@
     <Content Include="styles\NewNav.css" />
     <Content Include="styles\Notifications.css" />
     <Content Include="styles\Product111.css" />
+    <Content Include="styles\ProductsPage.css" />
     <Content Include="styles\style.css" />
     <Content Include="styles\lol1.css" />
     <Content Include="styles\style2.css" />
@@ -248,6 +254,27 @@
     <Compile Include="pages\Notifications.aspx.designer.cs">
       <DependentUpon>Notifications.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pages\ProductsCase.aspx.cs">
+      <DependentUpon>ProductsCase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ProductsCase.aspx.designer.cs">
+      <DependentUpon>ProductsCase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ProductsCpu.aspx.cs">
+      <DependentUpon>ProductsCpu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ProductsCpu.aspx.designer.cs">
+      <DependentUpon>ProductsCpu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ProductsMonitor.aspx.cs">
+      <DependentUpon>ProductsMonitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ProductsMonitor.aspx.designer.cs">
+      <DependentUpon>ProductsMonitor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pages\Products.aspx.cs">
       <DependentUpon>Products.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -261,6 +288,20 @@
     </Compile>
     <Compile Include="pages\Products1Details.aspx.designer.cs">
       <DependentUpon>Products1Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ProductsMotherboard.aspx.cs">
+      <DependentUpon>ProductsMotherboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ProductsMotherboard.aspx.designer.cs">
+      <DependentUpon>ProductsMotherboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ProductsPowerSupply.aspx.cs">
+      <DependentUpon>ProductsPowerSupply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ProductsPowerSupply.aspx.designer.cs">
+      <DependentUpon>ProductsPowerSupply.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\ProductsStorage.aspx.cs">
       <DependentUpon>ProductsStorage.aspx</DependentUpon>

@@ -1,12 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/Site1AfterSign.Master" AutoEventWireup="true" CodeBehind="ProductsStorage.aspx.cs" Inherits="MyFirstWeb.pages.ProductsStorage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/Site1AfterSign.Master" AutoEventWireup="true" CodeBehind="ProductsMotherboard.aspx.cs" Inherits="MyFirstWeb.pages.ProductsMotherboard" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-
-
-           <link href="../styles/ProductsPage.css" rel="stylesheet" />
+       <link href="../styles/ProductsPage.css" rel="stylesheet" />
 
    <section id="test" class="features">
 
@@ -82,6 +80,9 @@
 
 
    </section>
+
+
+
 
 
 </asp:Content>

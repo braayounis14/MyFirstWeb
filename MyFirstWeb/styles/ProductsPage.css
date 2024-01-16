@@ -1,0 +1,112 @@
+﻿.card {
+    width: 280px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px -2px #bebebe;
+    transition: 0.2s ease-in-out;
+}
+
+    .card:hover {
+        cursor: pointer;
+    }
+
+.img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: linear-gradient(#7980c5, #9198e5);
+    display: flex;
+    align-items: top;
+    justify-content: right;
+}
+
+.save {
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .save .svg {
+        transition: 0.2s ease-in-out;
+        width: 15px;
+        height: 15px;
+    }
+
+    .save:hover .svg {
+        fill: #ced8de;
+    }
+
+.text {
+    padding: 7px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}
+
+    .text .h3 {
+        font-family: system-ui;
+        font-size: medium;
+        font-weight: 600;
+        color: black;
+        text-align: center;
+    }
+
+    .text .p {
+        font-family: system-ui;
+        color: #999999;
+        font-size: 13px;
+        margin: 0px;
+        text-align: center;
+        padding: 5px;
+    }
+
+.icon-box {
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    background-color: #7980c5;
+    border-radius: 10px;
+    text-align: center;
+}
+
+    .icon-box .span {
+        font-family: system-ui;
+        font-size: small;
+        font-weight: 500;
+        color: #fff;
+    }
+
+.features {
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+    display: flex;
+    padding: 50px 20px;
+    justify-content: space-around;
+    padding-top:100px;
+}
+
+.feature-container {
+    flex-basis: 30%;
+    margin-top: 10px;
+}
+
+    .feature-container p {
+        color: #000;
+        text-align: center;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+
+    .feature-container img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+/*# sourceMappingURL=index.css.map */

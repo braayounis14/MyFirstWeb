@@ -11,7 +11,7 @@ namespace MyFirstWeb.pages
 {
 
 
-    public partial class ProductsStorage
+    public partial class ProductsMonitor
     {
 
         /// <summary>

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace MyFirstWeb.pages
 {
-    public partial class ProductsStorage : System.Web.UI.Page
+    public partial class ProductsPowerSupply : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -21,8 +21,5 @@ namespace MyFirstWeb.pages
             Session["Im"] = st;
             Response.Redirect("Products1Details.aspx");
         }
-
-
-
     }
 }
