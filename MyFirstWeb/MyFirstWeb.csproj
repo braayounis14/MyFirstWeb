@@ -139,6 +139,8 @@
     <Content Include="pages\Notifications.aspx" />
     <Content Include="pages\ProductsCase.aspx" />
     <Content Include="pages\ProductsCpu.aspx" />
+    <Content Include="pages\ProductsCpuCooler.aspx" />
+    <Content Include="pages\ProductsMemory.aspx" />
     <Content Include="pages\ProductsMonitor.aspx" />
     <Content Include="pages\Products.aspx" />
     <Content Include="pages\Products1Details.aspx" />
@@ -267,6 +269,20 @@
     </Compile>
     <Compile Include="pages\ProductsCpu.aspx.designer.cs">
       <DependentUpon>ProductsCpu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ProductsCpuCooler.aspx.cs">
+      <DependentUpon>ProductsCpuCooler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ProductsCpuCooler.aspx.designer.cs">
+      <DependentUpon>ProductsCpuCooler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ProductsMemory.aspx.cs">
+      <DependentUpon>ProductsMemory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ProductsMemory.aspx.designer.cs">
+      <DependentUpon>ProductsMemory.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\ProductsMonitor.aspx.cs">
       <DependentUpon>ProductsMonitor.aspx</DependentUpon>
