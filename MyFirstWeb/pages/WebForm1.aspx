@@ -33,5 +33,7 @@
     <asp:Label ID="label" runat="server" Text="Label"></asp:Label>
 
     
+    <asp:ImageButton class="img" ID="ImageButton2" runat="server" ImageUrl='<%# Eval("Image") %>' />
+<asp:LinkButton ID="LinkBtn" runat="server" OnClick="LinkBtn_Click">Click me</asp:LinkButton>
 
 </asp:Content>

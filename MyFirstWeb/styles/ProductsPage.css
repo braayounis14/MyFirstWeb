@@ -109,4 +109,15 @@
         width: 100%;
         margin-bottom: 15px;
     }
+
+
+.p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient:vertical;
+
+}
+
+
 /*# sourceMappingURL=index.css.map */
