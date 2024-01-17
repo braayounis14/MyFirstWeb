@@ -48,7 +48,7 @@
 
                                 <div class="text">
                                     <p class="h3">
-                                        <asp:Label Text='<%# Eval("ProductName") %>' runat="server" ID="ProductNameLabel" /></p>
+                                        <asp:Label class="line1" Text='<%# Eval("ProductName") %>' runat="server" ID="ProductNameLabel" /></p>
                                     <p class="p">
                                         <asp:Label Text='<%# Eval("Details") %>' runat="server" ID="DetailsLabel" /></p>
 
