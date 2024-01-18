@@ -32,8 +32,13 @@
     <asp:Label ID="lblPrice" runat="server" Text="Label"></asp:Label>
     <asp:Label ID="label" runat="server" Text="Label"></asp:Label>
 
+    sdadsa
+    <br />
     
-    <asp:ImageButton class="img" ID="ImageButton2" runat="server" ImageUrl='<%# Eval("Image") %>' />
-<asp:LinkButton ID="LinkBtn" runat="server" OnClick="LinkBtn_Click">Click me</asp:LinkButton>
+    <br />
+
+    <br /><br /><br /><br />
+    sdadsa
+    <i class="" src="https://cdn-icons-png.freepik.com/512/2432/2432574.png?ga=GA1.1.20119443.1705500421&"></i>
 
 </asp:Content>

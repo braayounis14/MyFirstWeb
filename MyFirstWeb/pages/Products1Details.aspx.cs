@@ -39,9 +39,9 @@ namespace MyFirstWeb.pages
         protected void Button1_Click(object sender, EventArgs e)
         {
 
-            `string st = "insert into [Cart]([Email],[Price],[Info],[ProductName],[Quantity],[DateBuy],[Image]) values('" + (Session["Email"].ToString()) + "'," + int.Parse(this.Label2.Text) + ",'" + this.Label3.Text + "','" + this.Label4.Text + "'," + int.Parse(this.TextBox1.Text) + ",#" + DateTime.Now + "#,'" + Session["Im"].ToString() + "')";
+            string st = "insert into [Cart]([Email],[Price],[Info],[ProductName],[Quantity],[DateBuy],[Image]) values('" + (Session["Email"].ToString()) + "'," + int.Parse(this.Label2.Text) + ",'" + this.Label3.Text + "','" + this.Label4.Text + "'," + int.Parse(this.TextBox1.Text) + ",#" + DateTime.Now + "#,'" + Session["Im"].ToString() + "')";
             DBFunction.ChangeTable(st, "DB.accdb");
-            Response.Redirect("Products1.aspx");
+            Response.Redirect("Products.aspx");
 
 
         }

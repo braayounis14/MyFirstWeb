@@ -14,10 +14,6 @@ namespace MyFirstWeb.pages
 
         }
 
-        protected void LinkBtn_Click(object sender, EventArgs e)
-        {
-            string imageUrl = ImageButton2.ImageUrl;
-
-        }
+      
     }
 }

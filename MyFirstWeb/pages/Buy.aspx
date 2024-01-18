@@ -29,7 +29,7 @@
 
 
 
-    <div class='container'>
+    <div class='container1'>
   <div class='window'>
     <div class='order-info'>
             <div class='order-info-content'>
@@ -49,8 +49,8 @@
       <td> <asp:Image ID="Image1" runat="server" class="full-width" Height="95.97px" ImageUrl='<%# DataBinder.Eval   (Container.DataItem,"image","{0}") %>' Width="83.64px" />
       </td>
       <td>
-        <br> <span style="font-weight: bold;" class='thin'><%# Eval("ProductName") %></span>
-        <br> <%# Eval("Info") %> <br> <span class='thin small'> Color: Pink, Size: Medium</span>
+        <br> <span style="font-weight: bold;" class='thin line1'><%# Eval("ProductName") %></span>
+        <br> <span class="line1" > <%# Eval("Info") %></span> <br> <span class='thin small'> Color: Pink, Size: Medium</span>
       </td>
 
     </tr>
@@ -196,7 +196,8 @@ h2 {
   font-size:1.2rem;
   
 }
-.container {
+.container1 {
+    padding:150px;
   height:100%;
   -webkit-box-pack:center;
   -webkit-justify-content:center;
@@ -472,7 +473,12 @@ ul li:hover {
   scrollbar-width: thin;
 }
 
-
+.line1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
 
     </style>
 
