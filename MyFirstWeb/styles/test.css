@@ -94,7 +94,7 @@ h2 {
     width: 100%;
     height: 50vh;
     min-height: 350px;
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1435224668334-0f82ec57b605?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80');
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('../images/c5527f47-def9-433c-9cce-23f286dbfea2_front.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;

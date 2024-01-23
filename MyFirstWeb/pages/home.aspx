@@ -7,8 +7,8 @@
     
 
         <section class="headline">
-  <h1>Responsive Navigation</h1>
-  <p>Using CSS grid and flexbox to easily build navbars!</p>
+  <h1>Newegg Website</h1>
+  <p> Fueling Your Passion for Powerful Computing</p>
 </section>
 
 <section class="features">
