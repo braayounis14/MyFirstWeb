@@ -134,7 +134,7 @@
                      </ul>
                   </li>
                   
-                  <li><a href="#" class="nav__link">Products</a></li>
+                  <li><a href="MyCart.aspx" class="nav__link">MyCart</a></li>
 
                   <!--=============== DROPDOWN 2 ===============-->
 

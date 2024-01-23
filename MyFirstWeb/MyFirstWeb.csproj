@@ -145,6 +145,7 @@
     <Content Include="pages\Products.aspx" />
     <Content Include="pages\Products1Details.aspx" />
     <Content Include="pages\ProductsMotherboard.aspx" />
+    <Content Include="pages\ProductsOperatingSystem.aspx" />
     <Content Include="pages\ProductsPowerSupply.aspx" />
     <Content Include="pages\ProductsStorage.aspx" />
     <Content Include="pages\SignUp.aspx" />
@@ -311,6 +312,13 @@
     </Compile>
     <Compile Include="pages\ProductsMotherboard.aspx.designer.cs">
       <DependentUpon>ProductsMotherboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ProductsOperatingSystem.aspx.cs">
+      <DependentUpon>ProductsOperatingSystem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ProductsOperatingSystem.aspx.designer.cs">
+      <DependentUpon>ProductsOperatingSystem.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\ProductsPowerSupply.aspx.cs">
       <DependentUpon>ProductsPowerSupply.aspx</DependentUpon>

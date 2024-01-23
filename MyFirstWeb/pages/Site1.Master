@@ -75,13 +75,13 @@
 
                      <ul class="dropdown__menu">
                         <li>
-                           <a href="#" class="dropdown__link">
+                           <a href="Login.aspx" class="dropdown__link">
                               <i class="ri-pie-chart-line"></i> Monitor
                            </a>                          
                         </li>
 
                         <li>
-                           <a href="#" class="dropdown__link">
+                           <a href="Login.aspx" class="dropdown__link">
                               <i class="ri-arrow-up-down-line"></i> OperationSystem
                            </a>
                         </li>
@@ -94,19 +94,19 @@
 
                            <ul class="dropdown__submenu">
                               <li>
-                                 <a href="#" class="dropdown__sublink">
-                                    <i class="ri-file-list-line"></i> Documents
+                                 <a href="Login.aspx" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> CpuCoolers
                                  </a>
                               </li>
       
                               <li>
-                                 <a href="#" class="dropdown__sublink">
+                                 <a href="Login.aspx" class="dropdown__sublink">
                                     <i class="ri-cash-line"></i> Payments
                                  </a>
                               </li>
       
                               <li>
-                                 <a href="#" class="dropdown__sublink">
+                                 <a href="Login.aspx" class="dropdown__sublink">
                                     <i class="ri-refund-2-line"></i> Refunds
                                  </a>
                               </li>
@@ -121,19 +121,19 @@
 
                            <ul class="dropdown__submenu">
                               <li>
-                                 <a href="#" class="dropdown__sublink">
+                                 <a href="Login.aspx" class="dropdown__sublink">
                                     <i class="ri-file-list-line"></i> Documents
                                  </a>
                               </li>
       
                               <li>
-                                 <a href="#" class="dropdown__sublink">
+                                 <a href="Login.aspx" class="dropdown__sublink">
                                     <i class="ri-cash-line"></i> Payments
                                  </a>
                               </li>
       
                               <li>
-                                 <a href="#" class="dropdown__sublink">
+                                 <a href="Login.aspx" class="dropdown__sublink">
                                     <i class="ri-refund-2-line"></i> Refunds
                                  </a>
                               </li>
@@ -145,7 +145,7 @@
                      </ul>
                   </li>
                   
-                  <li><a href="#" class="nav__link">Products</a></li>
+                  <li><a href="Login.aspx" class="nav__link">Products</a></li>
 
                   <!--=============== DROPDOWN 2 ===============-->
                  

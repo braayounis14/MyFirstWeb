@@ -2,52 +2,165 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <link href="../styles/CreationSucceeded.css" rel="stylesheet" />
 
-    <style>
-        .body{
-        background-color:var(--body-color);
-        }
-    </style>
+               <link href="../styles/ProductsPage.css" rel="stylesheet" />
 
-    <div id='card' class="animated fadeIn">
-  <div id='upper-side'>
-    <?xml version="1.0" encoding="utf-8"?>
-      <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-      <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-      <svg version="1.1" id="checkmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
-        <path d="M131.583,92.152l-0.026-0.041c-0.713-1.118-2.197-1.447-3.316-0.734l-31.782,20.257l-4.74-12.65
-	c-0.483-1.29-1.882-1.958-3.124-1.493l-0.045,0.017c-1.242,0.465-1.857,1.888-1.374,3.178l5.763,15.382
-	c0.131,0.351,0.334,0.65,0.579,0.898c0.028,0.029,0.06,0.052,0.089,0.08c0.08,0.073,0.159,0.147,0.246,0.209
-	c0.071,0.051,0.147,0.091,0.222,0.133c0.058,0.033,0.115,0.069,0.175,0.097c0.081,0.037,0.165,0.063,0.249,0.091
-	c0.065,0.022,0.128,0.047,0.195,0.063c0.079,0.019,0.159,0.026,0.239,0.037c0.074,0.01,0.147,0.024,0.221,0.027
-	c0.097,0.004,0.194-0.006,0.292-0.014c0.055-0.005,0.109-0.003,0.163-0.012c0.323-0.048,0.641-0.16,0.933-0.346l34.305-21.865
-	C131.967,94.755,132.296,93.271,131.583,92.152z" />
-        <circle fill="none" stroke="#ffffff" stroke-width="5" stroke-miterlimit="10" cx="109.486" cy="104.353" r="32.53" />
-      </svg>
-      <h3 id='status'>
-      Success
-    </h3>
-  </div>
-  <div id='lower-side'>
-    <p id='message'>
-      Congratulations, your account has been successfully created.
-    </p>
-    <a href="#" id="contBtn">Continue</a>
-  </div>
-</div>
-     <div class="notification">
-            <div class="notification__body">
-                <img
-                    src="assets/check-circle.svg"
-                    alt="Success"
-                    class="notification__icon"
-                >
-                Your account has been created! &#128640; 
-            </div>
-            <div class="notification__progress"></div>
-        </div>
+   <section id="test" class="features">
 
-    <a href="../Images/check-circle.svg">../Images/check-circle.svg</a>
+       <div id="catagory" runat="server" style="display: flex;" class="catagory">
+
+
+           <div>
+
+                           <div>
+                           <div class="card">
+                               <div class="im">
+                                   <asp:ImageButton class="img" ID="ImageButton2" runat="server" ImageUrl="~/images/rtx4090 white.png" />
+                                   <div class="save">
+                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 683 683" height="683" width="683" class="svg">
+                                           <g clip-path="url(#clip0_993_25)">
+                                               <span>
+    <asp:Label Text='11227' runat="server" ID="Label3" />$
+</span>
+                                               <g mask="url(#mask0_993_25)">
+                                                   <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" stroke="#CED8DE" d="M148.535 19.9999C137.179 19.9999 126.256 24.5092 118.223 32.5532C110.188 40.5866 105.689 51.4799 105.689 62.8439V633.382C105.689 649.556 118.757 662.667 134.931 662.667H135.039C143.715 662.667 151.961 659.218 158.067 653.09C186.451 624.728 270.212 540.966 304.809 506.434C314.449 496.741 327.623 491.289 341.335 491.289C355.045 491.289 368.22 496.741 377.859 506.434C412.563 541.074 496.752 625.242 524.816 653.348C530.813 659.314 538.845 662.667 547.308 662.667C563.697 662.667 576.979 649.395 576.979 633.019V62.8439C576.979 51.4799 572.48 40.5866 564.447 32.5532C556.412 24.5092 545.489 19.9999 534.133 19.9999H148.535Z"></path>
+                                               </g>
+                                           </g>
+
+
+                                           <defs>
+                                               <clipPath id="clip">
+                                                   <rect fill="white" height="682.667" width="682.667"></rect>
+                                               </clipPath>
+                                           </defs>
+
+                                       </svg>
+                                   </div>
+                               </div>
+
+                               <div class="text">
+                                   <p class="h3">
+                                       <asp:Label Text='ASUS ROG Strix GeForce RTX 4090 White OC Edition Gaming Graphics Card (PCIe 4.0, 24GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a) ROG-STRIX-RTX4090-O24G-WHITE' runat="server" ID="ProductNameLabel" /></p>
+                                   <p class="p">
+                                       <asp:Label Text='NVIDIA Ada Lovelace Streaming Multiprocessors: Up to 2x performance and power efficiency
+4th Generation Tensor Cores: Up to 2X AI performance
+3rd Generation RT Cores: Up to 2X ray tracing performance
+Axial-tech fans scaled up for 23% more airflow
+New patented vapor chamber with milled heatspreader for lower GPU temps
+3.5-slot design: massive fin array optimized for airflow from the three Axial-tech fans, Diecast shroud, frame, and backplate add rigidity and are vented to further maximize airflow and heat dissipation.
+Digital power control with high-current power stages and 15K capacitors to fuel maximum performance.
+GPU Tweak III software provides intuitive performance tweaking, thermal controls, and system monitoring' runat="server" ID="DetailsLabel" /></p>
+
+                                   <div class="icon-box">
+                                       <p class="span">Add To Cart</p>
+                                   </div>
+
+                               </div>
+                           </div>
+                                                          <div class="card">
+                               <div class="im">
+                                   <asp:ImageButton class="img" ID="ImageButton1" runat="server" ImageUrl="~/images/rtx4090 white.png" />
+                                   <div class="save">
+                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 683 683" height="683" width="683" class="svg">
+                                           <g clip-path="url(#clip0_993_25)">
+                                               <span>
+    <asp:Label Text='11227' runat="server" ID="Label1" />$
+</span>
+                                               <g mask="url(#mask0_993_25)">
+                                                   <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" stroke="#CED8DE" d="M148.535 19.9999C137.179 19.9999 126.256 24.5092 118.223 32.5532C110.188 40.5866 105.689 51.4799 105.689 62.8439V633.382C105.689 649.556 118.757 662.667 134.931 662.667H135.039C143.715 662.667 151.961 659.218 158.067 653.09C186.451 624.728 270.212 540.966 304.809 506.434C314.449 496.741 327.623 491.289 341.335 491.289C355.045 491.289 368.22 496.741 377.859 506.434C412.563 541.074 496.752 625.242 524.816 653.348C530.813 659.314 538.845 662.667 547.308 662.667C563.697 662.667 576.979 649.395 576.979 633.019V62.8439C576.979 51.4799 572.48 40.5866 564.447 32.5532C556.412 24.5092 545.489 19.9999 534.133 19.9999H148.535Z"></path>
+                                               </g>
+                                           </g>
+
+
+                                           <defs>
+                                               <clipPath id="clip">
+                                                   <rect fill="white" height="682.667" width="682.667"></rect>
+                                               </clipPath>
+                                           </defs>
+
+                                       </svg>
+                                   </div>
+                               </div>
+
+                               <div class="text">
+                                   <p class="h3">
+                                       <asp:Label Text='ASUS ROG Strix GeForce RTX 4090 White OC Edition Gaming Graphics Card (PCIe 4.0, 24GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a) ROG-STRIX-RTX4090-O24G-WHITE' runat="server" ID="Label2" /></p>
+                                   <p class="p">
+                                       <asp:Label Text='NVIDIA Ada Lovelace Streaming Multiprocessors: Up to 2x performance and power efficiency
+4th Generation Tensor Cores: Up to 2X AI performance
+3rd Generation RT Cores: Up to 2X ray tracing performance
+Axial-tech fans scaled up for 23% more airflow
+New patented vapor chamber with milled heatspreader for lower GPU temps
+3.5-slot design: massive fin array optimized for airflow from the three Axial-tech fans, Diecast shroud, frame, and backplate add rigidity and are vented to further maximize airflow and heat dissipation.
+Digital power control with high-current power stages and 15K capacitors to fuel maximum performance.
+GPU Tweak III software provides intuitive performance tweaking, thermal controls, and system monitoring' runat="server" ID="Label4" /></p>
+
+                                   <div class="icon-box">
+                                       <p class="span">Add To Cart</p>
+                                   </div>
+
+                               </div>
+                           </div>
+                                                          <div class="card">
+                               <div class="im">
+                                   <asp:ImageButton class="img" ID="ImageButton3" runat="server" ImageUrl="~/images/rtx4090 white.png" />
+                                   <div class="save">
+                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 683 683" height="683" width="683" class="svg">
+                                           <g clip-path="url(#clip0_993_25)">
+                                               <span>
+    <asp:Label Text='11227' runat="server" ID="Label5" />$
+</span>
+                                               <g mask="url(#mask0_993_25)">
+                                                   <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" stroke="#CED8DE" d="M148.535 19.9999C137.179 19.9999 126.256 24.5092 118.223 32.5532C110.188 40.5866 105.689 51.4799 105.689 62.8439V633.382C105.689 649.556 118.757 662.667 134.931 662.667H135.039C143.715 662.667 151.961 659.218 158.067 653.09C186.451 624.728 270.212 540.966 304.809 506.434C314.449 496.741 327.623 491.289 341.335 491.289C355.045 491.289 368.22 496.741 377.859 506.434C412.563 541.074 496.752 625.242 524.816 653.348C530.813 659.314 538.845 662.667 547.308 662.667C563.697 662.667 576.979 649.395 576.979 633.019V62.8439C576.979 51.4799 572.48 40.5866 564.447 32.5532C556.412 24.5092 545.489 19.9999 534.133 19.9999H148.535Z"></path>
+                                               </g>
+                                           </g>
+
+
+                                           <defs>
+                                               <clipPath id="clip">
+                                                   <rect fill="white" height="682.667" width="682.667"></rect>
+                                               </clipPath>
+                                           </defs>
+
+                                       </svg>
+                                   </div>
+                               </div>
+
+                               <div class="text">
+                                   <p class="h3">
+                                       <asp:Label Text='ASUS ROG Strix GeForce RTX 4090 White OC Edition Gaming Graphics Card (PCIe 4.0, 24GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a) ROG-STRIX-RTX4090-O24G-WHITE' runat="server" ID="Label6" /></p>
+                                   <p class="p">
+                                       <asp:Label Text='NVIDIA Ada Lovelace Streaming Multiprocessors: Up to 2x performance and power efficiency
+4th Generation Tensor Cores: Up to 2X AI performance
+3rd Generation RT Cores: Up to 2X ray tracing performance
+Axial-tech fans scaled up for 23% more airflow
+New patented vapor chamber with milled heatspreader for lower GPU temps
+3.5-slot design: massive fin array optimized for airflow from the three Axial-tech fans, Diecast shroud, frame, and backplate add rigidity and are vented to further maximize airflow and heat dissipation.
+Digital power control with high-current power stages and 15K capacitors to fuel maximum performance.
+GPU Tweak III software provides intuitive performance tweaking, thermal controls, and system monitoring' runat="server" ID="Label7" /></p>
+
+                                   <div class="icon-box">
+                                       <p class="span">Add To Cart</p>
+                                   </div>
+
+                               </div>
+                           </div>
+
+
+                       </div>
+
+
+
+               
+           </div>
+
+
+
+       </div>
+
+
+
+   </section>
+
 
 </asp:Content>
