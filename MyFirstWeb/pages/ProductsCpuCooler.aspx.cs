@@ -13,5 +13,13 @@ namespace MyFirstWeb.pages
         {
 
         }
+
+        protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
+        {
+            string st = this.DataList1.DataKeys[e.Item.ItemIndex].ToString();
+            Session["Im"] = st;
+            Response.Redirect("Products1Details.aspx");
+        }
+
     }
 }

@@ -20,7 +20,7 @@
 
 
 
-                        <div>
+                        <div class="grid">
                             <div class="card">
                                 <div class="im">
                                     <asp:ImageButton class="img" ID="ImageButton2" runat="server" ImageUrl='<%# Eval("Image") %>' />
@@ -81,7 +81,16 @@
 
     </section>
 
+    <style>
 
+        .grid {
+               display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+        }
+
+    </style>
 
 
 </asp:Content>
