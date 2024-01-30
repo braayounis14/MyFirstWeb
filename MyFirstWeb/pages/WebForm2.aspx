@@ -20,20 +20,15 @@
 
 
       <div class="pagination">
-        <p>Home > Shop > Women > Jacket </p>
+        <p runat="server" id="href">Home > Shop > Women > Jacket </p>
     </div>
     <!-- product section -->
     <section class="product-container1">
         <!-- left side -->
         <div class="img-card">
-            <img src="img/image-1.png" alt="" id="featured-image">
+            <img src="img/image-1.png" alt="" id="ffds">
             <!-- small img -->
-            <div class="small-Card">
-                <img src="img/image-1.png" alt="" class="small-Img">
-                <img src="img/small-img-2.png" alt="" class="small-Img">
-                <img src="img/small-img-3.png" alt="" class="small-Img">
-                <img src="img/image-1.png" alt="" class="small-Img">
-            </div>
+
         </div>
         <!-- Right side -->
         <div class="product-info">
@@ -42,19 +37,12 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium, aspernatur provident beatae corporis veniam atque facilis, consequuntur assumenda, vitae dignissimos iste exercitationem dolor eveniet alias eos ullam nesciunt voluptatum.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore accusamus natus dolorum. Quaerat nulla quod doloremque, officia quis provident amet adipisci unde esse iure delectus, maxime inventore optio fuga nisi?</p>
 
-            <div class="sizes">
-                <p>Size:</p>
-                <select name="Size" id="size" class="size-option">
-                    <option value="xxl">XXL</option>
-                    <option value="xl">XL</option>
-                    <option value="medium">Medium</option>
-                    <option value="small">Small</option>
-                </select>
-            </div>
 
             <div class="quantity">
                 <input type="number" value="1" min="1">
-                <button>Add to Cart</button>
+
+                <asp:Button ID="Button1" class="button" style="width: 158px; height: 44px;" runat="server" Text="Add to Cart" />
+            
             </div>
 
             <div>

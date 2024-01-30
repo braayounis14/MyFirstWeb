@@ -21,10 +21,12 @@ namespace MyFirstWeb.pages
             {
                 if (dt.Rows.Count > 0)
                 {
-                    this.image1.ImageUrl= dt.Rows[0][3].ToString();
+                    ProductImg.Attributes["src"] = dt.Rows[0][3].ToString();
+                   
                     this.Label2.Text = dt.Rows[0][0].ToString();
-                    this.Label3.Text = dt.Rows[0][2].ToString();
-                    this.Label4.Text = dt.Rows[0][1].ToString();
+                    this.price.InnerText = dt.Rows[0][0].ToString()+"$";
+                    this.info.InnerText = dt.Rows[0][2].ToString();
+                    this.title.InnerText = dt.Rows[0][1].ToString();
 
 
 
