@@ -24,7 +24,7 @@ namespace MyFirstWeb.pages
                     ProductImg.Attributes["src"] = dt.Rows[0][3].ToString();
                    
                     this.Label2.Text = dt.Rows[0][0].ToString();
-                    this.price.InnerText = dt.Rows[0][0].ToString()+"$";
+                    this.price.InnerText = "Price:" + dt.Rows[0][0].ToString()+"$";
                     this.info.InnerText = dt.Rows[0][2].ToString();
                     this.title.InnerText = dt.Rows[0][1].ToString();
 

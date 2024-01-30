@@ -13,7 +13,7 @@
     <asp:Label Visible="false" ID="Label3" runat="server" Text="Label"></asp:Label>
     <br />
     <asp:Label Visible="false" ID="Label4" runat="server" Text="Label"></asp:Label>
-    <asp:TextBox Visible="false" required="true" value="1" ID="TextBox1" runat="server"></asp:TextBox>
+    <asp:TextBox Visible="false" required="true" value="1" ID="TextBox12" runat="server"></asp:TextBox>
     <asp:Button Visible="false" ID="Button111" runat="server" Text="Button" OnClick="Button1_Click" />
 
 
@@ -26,18 +26,18 @@
     <link href="../styles/ProductsDetails.css" rel="stylesheet" />
 
 
-    <div class="body1">
+
 
 
 
       <div class="pagination">
-        <p runat="server" id="href">Home > Shop > Women > Jacket </p>
+        <p runat="server" id="href">Home > Shop > PcParts > Graphics Card </p>
     </div>
     <!-- product section -->
-    <section class="product-container1">
+    <section class="product-container">
         <!-- left side -->
         <div class="img-card">
-            <img runat="server" src="img/image-1.png" alt="" id="ProductImg">
+            <img runat="server" style="width: 100%; flex-shrink: 0; border-radius: 4px; height: 520px; object-fit: cover; " src="img/image-1.png" alt="" id="ProductImg">
             <!-- small img -->
 
         </div>
@@ -49,9 +49,9 @@
 
 
             <div class="quantity">
-                <input type="number" value="1" min="1">
-
-                <asp:Button ID="Button1" class="button" style="width: 158px; height: 44px;" runat="server" Text="Add to Cart" />
+             
+                 <asp:TextBox required="true" value="1" min="1" max="5" ID="TextBox1" type="number" runat="server"></asp:TextBox>
+                <asp:Button ID="Button1" class="button" style="width: 158px; height: 44px;" OnClick="Button1_Click" runat="server" Text="Add to Cart" />
             
             </div>
 
@@ -82,7 +82,7 @@
             </div>
         </div>
     </section>
-        </div>
+   
     <!-- script tags -->
     <script src="js/cart.js"></script>
 

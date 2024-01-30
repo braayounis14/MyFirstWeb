@@ -15,7 +15,7 @@
 
 
                 <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/DB.accdb" SelectCommand="SELECT * FROM [GPU]"></asp:AccessDataSource>
-                <asp:DataList ID="DataList1" runat="server" DataSourceID="AccessDataSource1" DataKeyField="image" OnItemCommand="DataList1_ItemCommand" RepeatDirection="Horizontal">
+                <asp:DataList ID="DataList1" runat="server" DataSourceID="AccessDataSource1" DataKeyField="image" RepeatColumns="4" OnItemCommand="DataList1_ItemCommand" RepeatDirection="Horizontal">
                     <ItemTemplate>
 
 
