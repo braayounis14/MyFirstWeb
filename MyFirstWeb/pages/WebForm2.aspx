@@ -3,164 +3,90 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-               <link href="../styles/ProductsPage.css" rel="stylesheet" />
-
-   <section id="test" class="features">
-
-       <div id="catagory" runat="server" style="display: flex;" class="catagory">
-
-
-           <div>
-
-                           <div>
-                           <div class="card">
-                               <div class="im">
-                                   <asp:ImageButton class="img" ID="ImageButton2" runat="server" ImageUrl="~/images/rtx4090 white.png" />
-                                   <div class="save">
-                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 683 683" height="683" width="683" class="svg">
-                                           <g clip-path="url(#clip0_993_25)">
-                                               <span>
-    <asp:Label Text='11227' runat="server" ID="Label3" />$
-</span>
-                                               <g mask="url(#mask0_993_25)">
-                                                   <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" stroke="#CED8DE" d="M148.535 19.9999C137.179 19.9999 126.256 24.5092 118.223 32.5532C110.188 40.5866 105.689 51.4799 105.689 62.8439V633.382C105.689 649.556 118.757 662.667 134.931 662.667H135.039C143.715 662.667 151.961 659.218 158.067 653.09C186.451 624.728 270.212 540.966 304.809 506.434C314.449 496.741 327.623 491.289 341.335 491.289C355.045 491.289 368.22 496.741 377.859 506.434C412.563 541.074 496.752 625.242 524.816 653.348C530.813 659.314 538.845 662.667 547.308 662.667C563.697 662.667 576.979 649.395 576.979 633.019V62.8439C576.979 51.4799 572.48 40.5866 564.447 32.5532C556.412 24.5092 545.489 19.9999 534.133 19.9999H148.535Z"></path>
-                                               </g>
-                                           </g>
-
-
-                                           <defs>
-                                               <clipPath id="clip">
-                                                   <rect fill="white" height="682.667" width="682.667"></rect>
-                                               </clipPath>
-                                           </defs>
-
-                                       </svg>
-                                   </div>
-                               </div>
-
-                               <div class="text">
-                                   <p class="h3">
-                                       <asp:Label Text='ASUS ROG Strix GeForce RTX 4090 White OC Edition Gaming Graphics Card (PCIe 4.0, 24GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a) ROG-STRIX-RTX4090-O24G-WHITE' runat="server" ID="ProductNameLabel" /></p>
-                                   <p class="p">
-                                       <asp:Label Text='NVIDIA Ada Lovelace Streaming Multiprocessors: Up to 2x performance and power efficiency
-4th Generation Tensor Cores: Up to 2X AI performance
-3rd Generation RT Cores: Up to 2X ray tracing performance
-Axial-tech fans scaled up for 23% more airflow
-New patented vapor chamber with milled heatspreader for lower GPU temps
-3.5-slot design: massive fin array optimized for airflow from the three Axial-tech fans, Diecast shroud, frame, and backplate add rigidity and are vented to further maximize airflow and heat dissipation.
-Digital power control with high-current power stages and 15K capacitors to fuel maximum performance.
-GPU Tweak III software provides intuitive performance tweaking, thermal controls, and system monitoring' runat="server" ID="DetailsLabel" /></p>
-
-                                   <div class="icon-box">
-                                       <p class="span">Add To Cart</p>
-                                   </div>
-
-                               </div>
-                           </div>
-                                                          <div class="card">
-                               <div class="im">
-                                   <asp:ImageButton class="img" ID="ImageButton1" runat="server" ImageUrl="~/images/rtx4090 white.png" />
-                                   <div class="save">
-                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 683 683" height="683" width="683" class="svg">
-                                           <g clip-path="url(#clip0_993_25)">
-                                               <span>
-    <asp:Label Text='11227' runat="server" ID="Label1" />$
-</span>
-                                               <g mask="url(#mask0_993_25)">
-                                                   <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" stroke="#CED8DE" d="M148.535 19.9999C137.179 19.9999 126.256 24.5092 118.223 32.5532C110.188 40.5866 105.689 51.4799 105.689 62.8439V633.382C105.689 649.556 118.757 662.667 134.931 662.667H135.039C143.715 662.667 151.961 659.218 158.067 653.09C186.451 624.728 270.212 540.966 304.809 506.434C314.449 496.741 327.623 491.289 341.335 491.289C355.045 491.289 368.22 496.741 377.859 506.434C412.563 541.074 496.752 625.242 524.816 653.348C530.813 659.314 538.845 662.667 547.308 662.667C563.697 662.667 576.979 649.395 576.979 633.019V62.8439C576.979 51.4799 572.48 40.5866 564.447 32.5532C556.412 24.5092 545.489 19.9999 534.133 19.9999H148.535Z"></path>
-                                               </g>
-                                           </g>
-
-
-                                           <defs>
-                                               <clipPath id="clip">
-                                                   <rect fill="white" height="682.667" width="682.667"></rect>
-                                               </clipPath>
-                                           </defs>
-
-                                       </svg>
-                                   </div>
-                               </div>
-
-                               <div class="text">
-                                   <p class="h3">
-                                       <asp:Label Text='ASUS ROG Strix GeForce RTX 4090 White OC Edition Gaming Graphics Card (PCIe 4.0, 24GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a) ROG-STRIX-RTX4090-O24G-WHITE' runat="server" ID="Label2" /></p>
-                                   <p class="p">
-                                       <asp:Label Text='NVIDIA Ada Lovelace Streaming Multiprocessors: Up to 2x performance and power efficiency
-4th Generation Tensor Cores: Up to 2X AI performance
-3rd Generation RT Cores: Up to 2X ray tracing performance
-Axial-tech fans scaled up for 23% more airflow
-New patented vapor chamber with milled heatspreader for lower GPU temps
-3.5-slot design: massive fin array optimized for airflow from the three Axial-tech fans, Diecast shroud, frame, and backplate add rigidity and are vented to further maximize airflow and heat dissipation.
-Digital power control with high-current power stages and 15K capacitors to fuel maximum performance.
-GPU Tweak III software provides intuitive performance tweaking, thermal controls, and system monitoring' runat="server" ID="Label4" /></p>
-
-                                   <div class="icon-box">
-                                       <p class="span">Add To Cart</p>
-                                   </div>
-
-                               </div>
-                           </div>
-                                                          <div class="card">
-                               <div class="im">
-                                   <asp:ImageButton class="img" ID="ImageButton3" runat="server" ImageUrl="~/images/rtx4090 white.png" />
-                                   <div class="save">
-                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 683 683" height="683" width="683" class="svg">
-                                           <g clip-path="url(#clip0_993_25)">
-                                               <span>
-    <asp:Label Text='11227' runat="server" ID="Label5" />$
-</span>
-                                               <g mask="url(#mask0_993_25)">
-                                                   <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" stroke="#CED8DE" d="M148.535 19.9999C137.179 19.9999 126.256 24.5092 118.223 32.5532C110.188 40.5866 105.689 51.4799 105.689 62.8439V633.382C105.689 649.556 118.757 662.667 134.931 662.667H135.039C143.715 662.667 151.961 659.218 158.067 653.09C186.451 624.728 270.212 540.966 304.809 506.434C314.449 496.741 327.623 491.289 341.335 491.289C355.045 491.289 368.22 496.741 377.859 506.434C412.563 541.074 496.752 625.242 524.816 653.348C530.813 659.314 538.845 662.667 547.308 662.667C563.697 662.667 576.979 649.395 576.979 633.019V62.8439C576.979 51.4799 572.48 40.5866 564.447 32.5532C556.412 24.5092 545.489 19.9999 534.133 19.9999H148.535Z"></path>
-                                               </g>
-                                           </g>
-
-
-                                           <defs>
-                                               <clipPath id="clip">
-                                                   <rect fill="white" height="682.667" width="682.667"></rect>
-                                               </clipPath>
-                                           </defs>
-
-                                       </svg>
-                                   </div>
-                               </div>
-
-                               <div class="text">
-                                   <p class="h3">
-                                       <asp:Label Text='ASUS ROG Strix GeForce RTX 4090 White OC Edition Gaming Graphics Card (PCIe 4.0, 24GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a) ROG-STRIX-RTX4090-O24G-WHITE' runat="server" ID="Label6" /></p>
-                                   <p class="p">
-                                       <asp:Label Text='NVIDIA Ada Lovelace Streaming Multiprocessors: Up to 2x performance and power efficiency
-4th Generation Tensor Cores: Up to 2X AI performance
-3rd Generation RT Cores: Up to 2X ray tracing performance
-Axial-tech fans scaled up for 23% more airflow
-New patented vapor chamber with milled heatspreader for lower GPU temps
-3.5-slot design: massive fin array optimized for airflow from the three Axial-tech fans, Diecast shroud, frame, and backplate add rigidity and are vented to further maximize airflow and heat dissipation.
-Digital power control with high-current power stages and 15K capacitors to fuel maximum performance.
-GPU Tweak III software provides intuitive performance tweaking, thermal controls, and system monitoring' runat="server" ID="Label7" /></p>
-
-                                   <div class="icon-box">
-                                       <p class="span">Add To Cart</p>
-                                   </div>
-
-                               </div>
-                           </div>
-
-
-                       </div>
+            
 
 
 
-               
-           </div>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- css -->
+   
+    <link href="../styles/ProductsDetails.css" rel="stylesheet" />
+
+
+    <div class="body1">
 
 
 
-       </div>
+      <div class="pagination">
+        <p>Home > Shop > Women > Jacket </p>
+    </div>
+    <!-- product section -->
+    <section class="product-container1">
+        <!-- left side -->
+        <div class="img-card">
+            <img src="img/image-1.png" alt="" id="featured-image">
+            <!-- small img -->
+            <div class="small-Card">
+                <img src="img/image-1.png" alt="" class="small-Img">
+                <img src="img/small-img-2.png" alt="" class="small-Img">
+                <img src="img/small-img-3.png" alt="" class="small-Img">
+                <img src="img/image-1.png" alt="" class="small-Img">
+            </div>
+        </div>
+        <!-- Right side -->
+        <div class="product-info">
+            <h3>LEVI'S® WOMEN'S XL TRUCKER JACKET</h3>
+            <h5>Price: $140 <del>$170</del></h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium, aspernatur provident beatae corporis veniam atque facilis, consequuntur assumenda, vitae dignissimos iste exercitationem dolor eveniet alias eos ullam nesciunt voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore accusamus natus dolorum. Quaerat nulla quod doloremque, officia quis provident amet adipisci unde esse iure delectus, maxime inventore optio fuga nisi?</p>
 
+            <div class="sizes">
+                <p>Size:</p>
+                <select name="Size" id="size" class="size-option">
+                    <option value="xxl">XXL</option>
+                    <option value="xl">XL</option>
+                    <option value="medium">Medium</option>
+                    <option value="small">Small</option>
+                </select>
+            </div>
 
+            <div class="quantity">
+                <input type="number" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
 
-   </section>
+            <div>
+                <p>Delivery:</p>
+                <p>Free standard shipping on orders over $35 before tax, plus free returns.</p>
+                <div class="delivery">
+                    <p>TYPE</p> <p>HOW LONG</p> <p>HOW MUCH</p>
+                </div>
+                <hr>
+                <div class="delivery">
+                    <p>World EggSaver Standard</p> 
+                    <p>5-7 Business Days </p> 
+                    <p>$4.50</p>
+                </div>
+                <hr>
+                <div class="delivery">
+                    <p>World EggSaver Express</p> 
+                    <p>3-5 Business Days</p> 
+                    <p>$10.00</p>
+                </div>
+                <hr>
+                <div class="delivery">
+                    <p>Pick up in store</p> 
+                    <p>1-3 business days</p> 
+                    <p>Free</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        </div>
+    <!-- script tags -->
+    <script src="js/cart.js"></script>
 
 
 </asp:Content>

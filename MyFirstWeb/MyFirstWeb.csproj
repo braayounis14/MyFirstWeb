@@ -167,6 +167,7 @@
     <Content Include="styles\NewNav.css" />
     <Content Include="styles\Notifications.css" />
     <Content Include="styles\Product111.css" />
+    <Content Include="styles\ProductsDetails.css" />
     <Content Include="styles\ProductsPage.css" />
     <Content Include="styles\style.css" />
     <Content Include="styles\lol1.css" />

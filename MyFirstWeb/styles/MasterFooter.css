@@ -61,10 +61,20 @@ ul.social-network {
     background-color: #3B5998;
 }
 
+.social-network a.icoDiscord:hover {
+    background-color: #7289da;
+}
+
 .social-network a.icoLinkedin:hover {
     background-color: #007bb7;
 }
+.social-network a.icoYoutube:hover {
+    background-color: #FF0000;
+}
 
+
+    .social-network a.icoYoutube:hover i,
+    .social-network a.icoDiscord:hover i,
     .social-network a.icoFacebook:hover i,
     .social-network a.icoLinkedin:hover i {
         color: #fff;

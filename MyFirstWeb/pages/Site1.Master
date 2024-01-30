@@ -162,7 +162,7 @@
         <script src="../scripts/main.js"></script>
       <script src="https://kit.fontawesome.com/56446077d3.js" crossorigin="anonymous"></script>
       <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-
+           <script src="https://kit.fontawesome.com/56446077d3.js" crossorigin="anonymous"></script>
 
 
         
@@ -221,8 +221,11 @@
     	<div class="col-md-3">
     		<h4>Follow Us</h4>
             <ul class="social-network social-circle">
-             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-             <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+             <li><a href="https://www.facebook.com/Newegg" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="https://www.linkedin.com/company/newegg-com" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+             <li><a href="https://discord.com/invite/newegg" class="icoDiscord" title="Discord"><i class="fa-brands fa-discord"></i></a></li>
+             <li><a href="https://www.youtube.com/user/newegg" class="icoYoutube" title="Youtube"><i class="fa-brands fa-youtube"></i></a></li>
+
             </ul>				
 		</div>
     </div>
