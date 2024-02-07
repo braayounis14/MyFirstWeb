@@ -6,21 +6,26 @@
 
     <link href="../styles/ProductsPage.css" rel="stylesheet" />
 
-    <section id="test" class="features">
 
-        <div id="catagory" runat="server" style="display: flex;" class="catagory">
+    
 
 
-            <div>
+
+    <section id="test" class="features products-page" style="">
+
+
+
+
+
 
 
                 <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/DB.accdb" SelectCommand="SELECT * FROM [GPU]"></asp:AccessDataSource>
-                <asp:DataList ID="DataList1" runat="server" DataSourceID="AccessDataSource1" DataKeyField="image" RepeatColumns="4" OnItemCommand="DataList1_ItemCommand" RepeatDirection="Horizontal">
+                <asp:DataList ID="DataList1" runat="server" style="" DataSourceID="AccessDataSource1" DataKeyField="image" RepeatColumns="4" OnItemCommand="DataList1_ItemCommand" RepeatDirection="Horizontal" CellPadding="40" CellSpacing="40">
                     <ItemTemplate>
 
 
 
-                        <div class="grid">
+                       
                             <div class="card">
                                 <div class="im">
                                     <asp:ImageButton class="img" ID="ImageButton2" runat="server" ImageUrl='<%# Eval("Image") %>' />
@@ -37,7 +42,7 @@
 
 
                                             <defs>
-                                                <clipPath id="clip">
+                                                <clippath id="clip">
                                                     <rect fill="white" height="682.667" width="682.667"></rect>
                                                 </clipPath>
                                             </defs>
@@ -60,7 +65,7 @@
                             </div>
 
 
-                        </div>
+              
 
 
                     </ItemTemplate>
@@ -70,12 +75,6 @@
 
 
 
-
-            </div>
-
-
-
-        </div>
 
 
 

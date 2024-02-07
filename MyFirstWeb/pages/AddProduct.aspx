@@ -30,7 +30,7 @@
                   <div class="form-group mb-3">
                     <label for="description">Description</label>
 <asp:TextBox ID="txtDetails" required="true" class="form-control validate" runat="server" TextMode="MultiLine" Rows="4" Columns="50"></asp:TextBox>
-                      s
+                      
                   </div>
                   <div class="form-group mb-3">
                     <label for="category">Category</label>

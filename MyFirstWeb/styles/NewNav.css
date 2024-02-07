@@ -37,6 +37,10 @@
     margin: 0;
 }
 
+.products-page * {
+    padding: revert-layer; /* or padding: unset; */
+}
+
 body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);

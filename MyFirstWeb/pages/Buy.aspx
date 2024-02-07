@@ -151,21 +151,17 @@
 </asp:AccessDataSource>
 
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="code,Email,datebuy"
-        DataSourceID="AccessDataSource1" ShowFooter="True" Visible="False">
-        <Columns>
-             <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
-             <asp:BoundField DataField="Info" HeaderText="Info" SortExpression="Info" />
-             <asp:TemplateField HeaderText="Image">
-                 <ItemTemplate>
-                     <asp:Image ID="Image1" runat="server" Height="185px" ImageUrl='<%# DataBinder.Eval   (Container.DataItem,"image","{0}") %>' Width="246px" />
-                 </ItemTemplate>
-             </asp:TemplateField>
-             <asp:BoundField DataField="datebuy" HeaderText="datebuy" ReadOnly="True" SortExpression="datebuy" />
-             <asp:BoundField DataField="quantity" HeaderText="quantity" SortExpression="quantity" />
-             <asp:CommandField ShowDeleteButton="True" />
-         </Columns>
-     </asp:GridView>
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Email,dateBuy,Code" DataSourceID="AccessDataSource1">
+            <Columns>
+                <asp:BoundField DataField="Email" HeaderText="Email" ReadOnly="True" SortExpression="Email" />
+                <asp:BoundField DataField="price" HeaderText="price" SortExpression="price" />
+                <asp:BoundField DataField="Info" HeaderText="Info" SortExpression="information" />
+                <asp:BoundField DataField="image" HeaderText="image" SortExpression="image" />
+                <asp:BoundField DataField="dateBuy" HeaderText="dateBuy" ReadOnly="True" SortExpression="dateBuy" />
+                <asp:BoundField DataField="quantity" HeaderText="quantity" SortExpression="quantity" />
+                <asp:BoundField DataField="Code" HeaderText="Code" InsertVisible="False" ReadOnly="True" SortExpression="Code" />
+            </Columns>
+        </asp:GridView>
 
 
 

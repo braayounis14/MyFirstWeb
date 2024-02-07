@@ -8,7 +8,7 @@
 
 
     <br />
-    <asp:Label Visible="false" ID="Label2" runat="server" Text="Label"></asp:Label><span>$</span>
+    <asp:Label Visible="false" ID="Label2" runat="server" Text="Label"></asp:Label><span></span>
     <br />
     <asp:Label Visible="false" ID="Label3" runat="server" Text="Label"></asp:Label>
     <br />
@@ -45,7 +45,13 @@
         <div class="product-info">
             <h3 runat="server" id="title">LEVI'S® WOMEN'S XL TRUCKER JACKET</h3>
             <h5 runat="server" id="price">Price: $140 <del>$170</del></h5>
-            <p runat="server" id="info"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium, aspernatur provident beatae corporis veniam atque facilis, consequuntur assumenda, vitae dignissimos iste exercitationem dolor eveniet alias eos ullam nesciunt voluptatum.</p>
+            <p runat="server" visible="false" id="info"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium, aspernatur provident beatae corporis veniam atque facilis, consequuntur assumenda, vitae dignissimos iste exercitationem dolor eveniet alias eos ullam nesciunt voluptatum.</p>
+            
+            <ul class="details" style="list-style:disc; ">
+                
+            <p runat="server" id="info2"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium, aspernatur provident beatae corporis veniam atque facilis, consequuntur assumenda, vitae dignissimos iste exercitationem dolor eveniet alias eos ullam nesciunt voluptatum.</p>
+
+            </ul>
 
 
             <div class="quantity">
@@ -86,5 +92,17 @@
     <!-- script tags -->
     <script src="js/cart.js"></script>
 
+    <style>
 
+        .details {
+                background-color: #f7f7f7;
+    padding: 15px 15px 15px 33px;
+    margin-left: 0;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+        }
+
+    </style>
 </asp:Content>

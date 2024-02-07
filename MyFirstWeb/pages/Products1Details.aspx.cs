@@ -24,8 +24,15 @@ namespace MyFirstWeb.pages
                     ProductImg.Attributes["src"] = dt.Rows[0][3].ToString();
                    
                     this.Label2.Text = dt.Rows[0][0].ToString();
+                    this.Label4.Text = dt.Rows[0][1].ToString();
+                    this.Label3.Text = dt.Rows[0][2].ToString();
                     this.price.InnerText = "Price:" + dt.Rows[0][0].ToString()+"$";
                     this.info.InnerText = dt.Rows[0][2].ToString();
+                    string details = dt.Rows[0][2].ToString();
+                     details = details.Replace(".", "  <li> ");
+                    this.info2.InnerHtml = "  <li>" + details+ " ";
+
+
                     this.title.InnerText = dt.Rows[0][1].ToString();
 
 
