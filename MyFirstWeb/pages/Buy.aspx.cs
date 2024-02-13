@@ -31,15 +31,6 @@ namespace MyFirstWeb.pages
             int mon = int.Parse(this.txtDate.Text.Substring(0, 2));
             int year = int.Parse(this.txtDate.Text.Substring(3, 2));
             int tot = int.Parse(this.lblPrice.Text);
-
-
-            int rowCount = GridView1.Rows.Count;
-
-            int [] total = new int[rowCount];
-            int [] quantity = new int[rowCount];
-            String [] img = new String[rowCount];
-            int j = 0;
-
             if (x.ValidVisaDetails(id, visanum, cvv, mon, year))
                 if (x.IsExpireDate(mon, year))
                     if (x.CheckVisaFunds(visanum, tot))
@@ -59,11 +50,7 @@ namespace MyFirstWeb.pages
                                     string st = "insert into [Orders] ([Email],[Code],[Quantity],[Price],[BuyDate],[Image],[Delivered])" + "values('" + row.Cells[0].Text + "'," + int.Parse(row.Cells[6].Text) + "," + int.Parse(row.Cells[5].Text) + "," + int.Parse(row.Cells[1].Text) + ",#" + DateTime.Now + "#,'" + dt.Rows[0][0].ToString() + "'," + false + ")";
                                     DBFunction.ChangeTable(st, "DB.accdb");
 
-                                    total [j] = int.Parse(row.Cells[5].Text)* int.Parse(row.Cells[1].Text);
-                                    quantity[j] = int.Parse(row.Cells[5].Text);
-                                    img[j] = dt.Rows[0][0].ToString();
 
-                                    j++;
 
 
                                     string sql;

@@ -2,10 +2,19 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    
+    
+    <style>
+       a {
 
+
+            color:red;
+        }
+
+    </style>
          <div class="dash-content">
 
-             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ID,FullName" DataSourceID="AccessDataSource1">
+             <asp:GridView ID="GridView1" runat="server" style="color:var(--text-color)" AutoGenerateColumns="False" DataKeyNames="ID,FullName" DataSourceID="AccessDataSource1">
                  <Columns>
                     
                      <asp:BoundField DataField="ID" HeaderText="ID" ReadOnly="True" SortExpression="ID"></asp:BoundField>
@@ -18,7 +27,7 @@
                      <asp:BoundField DataField="PassQuastion" HeaderText="PassQuastion" SortExpression="PassQuastion"></asp:BoundField>
                      <asp:BoundField DataField="PassAnswer" HeaderText="PassAnswer" SortExpression="PassAnswer"></asp:BoundField>
                      <asp:BoundField DataField="MemberJoinedDate" HeaderText="MemberJoinedDate" SortExpression="MemberJoinedDate"></asp:BoundField>
-                  <asp:CommandField ShowDeleteButton="True"></asp:CommandField>
+                  <asp:CommandField  ShowDeleteButton="True"></asp:CommandField>
                  </Columns>
              </asp:GridView>
 

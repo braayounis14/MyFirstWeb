@@ -1,19 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/Site1AfterSign.Master" AutoEventWireup="true" CodeBehind="Home1.aspx.cs" Inherits="MyFirstWeb.pages.Home2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
-
-    
-<link href="../styles/test.css" rel="stylesheet" />
-
-
 </asp:Content>
 
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <link href="../styles/test.css" rel="stylesheet" />
+
+
       <section class="headline">
-    <h1>Responsive Navigation</h1>
-    <p>Using CSS grid and flexbox to easily build navbars!</p>
+    <h1>Newegg Website</h1>
+    <p> Fueling Your Passion for Powerful Computing</p>
   </section>
 
   <section class="features">
