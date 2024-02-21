@@ -11,9 +11,14 @@ namespace MyFirstWeb.pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Session["email"] = "dsa@g.sda";
         }
 
-      
+        protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
+        {
+            string st = this.DataList1.DataKeys[e.Item.ItemIndex].ToString();
+            Session["Im"] = st;
+            Response.Redirect("ProductsAllDetails.aspx");
+        }
     }
 }

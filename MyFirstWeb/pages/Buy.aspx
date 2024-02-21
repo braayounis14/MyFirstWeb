@@ -160,6 +160,7 @@
                 <asp:BoundField DataField="dateBuy" HeaderText="dateBuy" ReadOnly="True" SortExpression="dateBuy" />
                 <asp:BoundField DataField="quantity" HeaderText="quantity" SortExpression="quantity" />
                 <asp:BoundField DataField="Code" HeaderText="Code" InsertVisible="False" ReadOnly="True" SortExpression="Code" />
+                 <asp:BoundField DataField="ProductName" HeaderText="ProductName" SortExpression="ProductName" />
             </Columns>
         </asp:GridView>
 

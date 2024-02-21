@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <link href="../styles/Orders.css" rel="stylesheet" />
-
+    
      <div class="container containerCont  mt-4" style="padding-top: 100px;">
       <div class="row">
           <div class="col-lg-3 my-lg-0 my-md-1">
@@ -92,106 +92,10 @@
                       </div>
                   </div>
                   <div class="text-uppercase">My recent orders</div>
-                  <div class="order my-3 bg-light">
-                      <div class="row">
-                          <div class="col-lg-4">
-                              <div class="d-flex flex-column justify-content-between order-summary">
-                                  <div class="d-flex align-items-center">
-                                      <div class="text-uppercase">Order #fur10001</div>
-                                      <div class="blue-label ms-auto text-uppercase">paid</div>
-                                  </div>
-                                  <div class="fs-8">Products #03</div>
-                                  <div class="fs-8">22 August, 2020 | 12:05 PM</div>
-                                  <div class="rating d-flex align-items-center pt-1">
-                                      <img src="https://www.freepnglogos.com/uploads/like-png/like-png-hand-thumb-sign-vector-graphic-pixabay-39.png"
-                                          alt=""><span class="px-2">Rating:</span>
-                                      <span class="fas fa-star"></span>
-                                      <span class="fas fa-star"></span>
-                                      <span class="fas fa-star"></span>
-                                      <span class="fas fa-star"></span>
-                                      <span class="far fa-star"></span>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-lg-8">
-                              <div class="d-sm-flex align-items-sm-start justify-content-sm-between">
-                                  <div class="status">Status : Delivered</div>
-                                  <div class="btn btn-primary text-uppercase">order info</div>
-                              </div>
-                              <div class="progressbar-track">
-                                  <ul class="progressbar">
-                                      <li id="step-1" class="text-muted green">
-                                          <span class="fas fa-gift"></span>
-                                      </li>
-                                      <li id="step-2" class="text-muted green">
-                                          <span class="fas fa-check"></span>
-                                      </li>
-                                      <li id="step-3" class="text-muted green">
-                                          <span class="fas fa-box"></span>
-                                      </li>
-                                      <li id="step-4" class="text-muted green">
-                                          <span class="fas fa-truck"></span>
-                                      </li>
-                                      <li id="step-5" class="text-muted green">
-                                          <span class="fas fa-box-open"></span>
-                                      </li>
-                                  </ul>
-                                  <div id="tracker"></div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="order my-3 bg-light">
-                      <div class="row">
-                          <div class="col-lg-4">
-                              <div class="d-flex flex-column justify-content-between order-summary">
-                                  <div class="d-flex align-items-center">
-                                      <div class="text-uppercase">Order #fur10001</div>
-                                      <div class="green-label ms-auto text-uppercase">cod</div>
-                                  </div>
-                                  <div class="fs-8">Products #03</div>
-                                  <div class="fs-8">22 August, 2020 | 12:05 PM</div>
-                                  <div class="rating d-flex align-items-center pt-1">
-                                      <img src="https://www.freepnglogos.com/uploads/like-png/like-png-hand-thumb-sign-vector-graphic-pixabay-39.png"
-                                          alt=""><span class="px-2">Rating:</span>
-                                      <span class="fas fa-star"></span>
-                                      <span class="fas fa-star"></span>
-                                      <span class="fas fa-star"></span>
-                                      <span class="fas fa-star"></span>
-                                      <span class="far fa-star"></span>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-lg-8">
-                              <div class="d-sm-flex align-items-sm-start justify-content-sm-between">
-                                  <div class="status">Status : Delivered</div>
-                                  <div class="btn btn-primary text-uppercase">order info</div>
-                              </div>
-                              <div class="progressbar-track">
-                                  <ul class="progressbar">
-                                      <li id="step-1" class="text-muted green">
-                                          <span class="fas fa-gift"></span>
-                                      </li>
-                                      <li id="step-2" class="text-muted">
-                                          <span class="fas fa-check"></span>
-                                      </li>
-                                      <li id="step-3" class="text-muted">
-                                          <span class="fas fa-box"></span>
-                                      </li>
-                                      <li id="step-4" class="text-muted">
-                                          <span class="fas fa-truck"></span>
-                                      </li>
-                                      <li id="step-5" class="text-muted">
-                                          <span class="fas fa-box-open"></span>
-                                      </li>
-                                  </ul>
-                                  <div id="tracker"></div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                 
 
-                  <asp:DataList ID="DataList1" runat="server" DataKeyField="Code" style="border-collapse:collapse; width: 500px;" DataSourceID="AccessDataSource1" RepeatLayout="Flow" RepeatDirection="Horizontal">
+
+                  <asp:DataList ID="DataList1" runat="server" DataKeyField="image" style="border-collapse:collapse; width: 500px;" DataSourceID="AccessDataSource1" RepeatLayout="Flow" RepeatDirection="Horizontal" OnItemCommand="DataList1_ItemCommand">
                       <ItemTemplate>
 
 
@@ -203,23 +107,19 @@
                                       <div class="text-uppercase">Order #<%# Eval("Code") %></div>
                                       <div class="blue-label ms-auto text-uppercase">paid</div>
                                   </div>
-                                  <div class="fs-8">Products #03</div>
-                                  <div class="fs-8">22 August, 2020 | 12:05 PM</div>
+                                  <div class="fs-8">Products Quantity:#<%# Eval("Quantity") %></div>
+                                  <div class="fs-8"> <i class="fa-solid fa-calendar-days fa-xl" style="color: #000000;"></i> <%# Convert.ToDateTime(Eval("BuyDate")).ToString("dd MMMM, yyyy | hh:mm tt", new System.Globalization.CultureInfo("en-US")) %></div>
                                   <div class="rating d-flex align-items-center pt-1">
-                                      <img src="https://www.freepnglogos.com/uploads/like-png/like-png-hand-thumb-sign-vector-graphic-pixabay-39.png"
-                                          alt=""><span class="px-2">Rating:</span>
-                                      <span class="fas fa-star"></span>
-                                      <span class="fas fa-star"></span>
-                                      <span class="fas fa-star"></span>
-                                      <span class="fas fa-star"></span>
-                                      <span class="far fa-star"></span>
+                                      <span class=""> <i class="fa-solid fa-sack-dollar fa-xl" style="color: #005eff;"></i> Price: <%# Convert.ToDecimal(Eval("Quantity")) * Convert.ToDecimal(Eval("Price")) %>$</span>
+
                                   </div>
                               </div>
                           </div>
                           <div class="col-lg-8">
                               <div class="d-sm-flex align-items-sm-start justify-content-sm-between">
                                   <div class="status">Status : Delivered</div>
-                                  <div class="btn btn-primary text-uppercase">order info</div>
+                                  
+                                   <asp:Button class="btn btn-primary text-uppercase" ID="Button1" runat="server" Text="Product Info" />
                               </div>
                               <div class="progressbar-track">
                                   <ul class="progressbar">
@@ -232,10 +132,10 @@
                                       <li id="step-3" class="text-muted green">
                                           <span class="fas fa-box"></span>
                                       </li>
-                                      <li id="step-4" class="<%# Eval("Delivered").ToString() == "False" ? "text-muted" : "text-muted green" %>">
+                                      <li id="step-4" class="<%# Eval("DeliveryStatus").ToString() == "Placed" ? "text-muted" : "text-muted green" %>">
                                           <span class="fas fa-truck"></span>
                                       </li>
-                                      <li id="step-5" class="<%# Eval("Delivered").ToString() == "False" ? "text-muted" : "text-muted green" %>">
+                                      <li id="step-5" class="<%# Eval("DeliveryStatus").ToString() == "Placed" ? "text-muted" : "text-muted green" %>">
                                           <span class="fas fa-box-open"></span>
                                       </li>
                                   </ul>
@@ -275,6 +175,12 @@
 .header{
     z-index:1001;
 }
+
+@media screen and (min-width: 1118px) and (max-width: 1200px) {
+      .nav__list {
+        column-gap: 1rem!important; 
+    }
+}
     </style>
 
     <script>    
@@ -312,5 +218,9 @@
 
 
     </script> 
-    <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/DB.accdb" SelectCommand="SELECT * FROM [Orders]"></asp:AccessDataSource>
+    <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/DB.accdb" SelectCommand="SELECT * FROM [Orders] WHERE ([Email] = ?)" >
+                <SelectParameters>
+            <asp:SessionParameter SessionField="Email" Name="Email" Type="String"></asp:SessionParameter>
+        </SelectParameters>
+    </asp:AccessDataSource>
 </asp:Content>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/Site1.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="MyFirstWeb.pages.home1" %>
+﻿   <%@ Page Title="" Language="C#" MasterPageFile="~/pages/Site1.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="MyFirstWeb.pages.home1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -22,7 +22,7 @@
     <h2>CSS Grid Navigation</h2>
     <p>While flexbox is used for the the mobile navbar, CSS grid is used for the desktop navbar showing many ways we can use both.</p>
   </div>
-  <div class="feature-container">
+  <div class="feature-container"> 
     <img src="https://www.graycelltech.com/wp-content/uploads/2015/06/GCT-HTML5.jpg" alt="Flexbox Feature">
     <h2>Basic HTML5</h2>
     <p>This pen contains basic html to setup the page to display the responsive navbar.</p>

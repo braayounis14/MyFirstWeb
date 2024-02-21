@@ -45,9 +45,14 @@ namespace MyFirstWeb.pages
                                 DataTable dt = DBFunction.SelectFromTable(str, "DB.accdb");
                                 if (dt.Rows.Count > 0)
                                 {
-                                   
 
-                                    string st = "insert into [Orders] ([Email],[Code],[Quantity],[Price],[BuyDate],[Image],[Delivered])" + "values('" + row.Cells[0].Text + "'," + int.Parse(row.Cells[6].Text) + "," + int.Parse(row.Cells[5].Text) + "," + int.Parse(row.Cells[1].Text) + ",#" + DateTime.Now + "#,'" + dt.Rows[0][0].ToString() + "'," + false + ")";
+
+                                    string productName = row.Cells[7].Text;
+                                    string productInfo = row.Cells[2].Text;
+
+                                    string st = "insert into [Orders] ([Email],[Code],[Quantity],[Price],[BuyDate],[Image],[ProductName],[ProductInfo],[DeliveryStatus])" +
+                                                "values('" + row.Cells[0].Text + "'," + int.Parse(row.Cells[6].Text) + "," + int.Parse(row.Cells[5].Text) + "," + int.Parse(row.Cells[1].Text) + ",#" + DateTime.Now + "#,'" +
+                                                dt.Rows[0][0].ToString() + "','" + productName + "','" + productInfo + "'," + "'Placed" + "')";
                                     DBFunction.ChangeTable(st, "DB.accdb");
 
 

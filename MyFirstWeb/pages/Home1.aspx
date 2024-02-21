@@ -8,6 +8,13 @@
 
     <link href="../styles/test.css" rel="stylesheet" />
 
+    <style>
+        @media screen and (min-width: 1118px) and (max-width: 1200px) {
+      .nav__list {
+        column-gap: 1.2rem!important; 
+    }
+}
+    </style>
 
       <section class="headline">
     <h1>Newegg Website</h1>

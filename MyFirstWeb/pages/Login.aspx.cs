@@ -27,14 +27,19 @@ namespace MyFirstWeb.pages
 
 
 
-            Session["email"] = Email;
+            
             if (Email == "admin@admin.com" && Password == "admin1212!")
+            {
+                Session["email"] = Email;
                 Response.Redirect("AdminDashboard.aspx");
+            }
+              
 
             String st = "select * from [USERS] where [Email]='"+Email+"' and [Password]='"+Password+"'";
             DataTable dt = DBFunction.SelectFromTable(st, "DB.accdb");
             if (dt.Rows.Count > 0)
             {
+                Session["email"] = Email;
                 Response.Redirect("Home1.aspx");
             }
             else

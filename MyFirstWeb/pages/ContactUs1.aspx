@@ -29,20 +29,20 @@
         <div class="address details">
           <i class="fas fa-map-marker-alt"></i>
           <div class="topic">Address</div>
-          <div class="text-one">Surkhet, NP12</div>
-          <div class="text-two">Birendranagar 06</div>
+          <div class="text-one">Matam parking building</div>
+          <div class="text-two">Google Haifa  Tel Aviv</div>
         </div>
         <div class="phone details">
           <i class="fas fa-phone-alt"></i>
           <div class="topic">Phone</div>
-          <div class="text-one">+0098 9893 5647</div>
-          <div class="text-two">+0096 3434 5678</div>
+          <div class="text-one"> +1 800-390-1119 </div>
+          <div class="text-two"></div>
         </div>
         <div class="email details">
           <i class="fas fa-envelope"></i>
           <div class="topic">Email</div>
-          <div class="text-one">codinglab@gmail.com</div>
-          <div class="text-two">info.codinglab@gmail.com</div>
+          <div class="text-one">newegghelpteam.il@gmail.com</div>
+          <div class="text-two"></div>
         </div>
       </div>
       <div class="right-side">
