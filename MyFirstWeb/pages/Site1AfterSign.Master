@@ -193,7 +193,11 @@
 
 
                   <li><a href="ContactUs.aspx" class="nav__link">Contact</a></li>
-                  <li><a href="Login.aspx" class="nav__link"><i style="padding-left:px" class="fas fa-user" aria-hidden="true"></i></a></li>
+                  <li><a href="MyProfile.aspx" class="nav__link"><img src="https://i.pinimg.com/236x/e7/bd/2d/e7bd2da7c2b310123b6aec5e2955bc65.jpg" alt="" class="profile" style="
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+"></a></li>
 
                </ul>
             </div>

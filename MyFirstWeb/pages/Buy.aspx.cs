@@ -50,8 +50,11 @@ namespace MyFirstWeb.pages
                                     string productName = row.Cells[7].Text;
                                     string productInfo = row.Cells[2].Text;
 
+                                    DateTime now = DateTime.Now;
+                                    string formattedDate = now.ToString("MM/dd/yyyy HH:mm:ss");
+
                                     string st = "insert into [Orders] ([Email],[Code],[Quantity],[Price],[BuyDate],[Image],[ProductName],[ProductInfo],[DeliveryStatus])" +
-                                                "values('" + row.Cells[0].Text + "'," + int.Parse(row.Cells[6].Text) + "," + int.Parse(row.Cells[5].Text) + "," + int.Parse(row.Cells[1].Text) + ",#" + DateTime.Now + "#,'" +
+                                                "values('" + row.Cells[0].Text + "'," + int.Parse(row.Cells[6].Text) + "," + int.Parse(row.Cells[5].Text) + "," + int.Parse(row.Cells[1].Text) + ",#" + formattedDate + "#,'" +
                                                 dt.Rows[0][0].ToString() + "','" + productName + "','" + productInfo + "'," + "'Placed" + "')";
                                     DBFunction.ChangeTable(st, "DB.accdb");
 

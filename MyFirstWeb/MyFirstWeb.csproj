@@ -135,7 +135,7 @@
     <Content Include="pages\Home.aspx" />
     <Content Include="pages\Home1.aspx" />
     <Content Include="pages\Login.aspx" />
-    <Content Include="pages\MyAccount.aspx" />
+    <Content Include="pages\MyProfile.aspx" />
     <Content Include="pages\MyCart.aspx" />
     <Content Include="pages\Notifications.aspx" />
     <Content Include="pages\ProductsCase.aspx" />
@@ -151,7 +151,7 @@
     <Content Include="pages\ProductsStorage.aspx" />
     <Content Include="pages\SignUp.aspx" />
     <Content Include="pages\UsersPanel.aspx" />
-    <Content Include="pages\WebForm1.aspx" />
+    <Content Include="pages\MyAccount.aspx" />
     <Content Include="pages\WebForm2.aspx" />
     <Content Include="pages\ProductsAllDetails.aspx" />
     <Content Include="scripts\birthdatecheck.js" />
@@ -165,6 +165,7 @@
     <Content Include="styles\Forget.css" />
     <Content Include="styles\ForgetStyle.css" />
     <Content Include="styles\MasterFooter.css" />
+    <Content Include="styles\MyProfile.css" />
     <Content Include="styles\NewNav.css" />
     <Content Include="styles\Notifications.css" />
     <Content Include="styles\Orders.css" />
@@ -240,12 +241,12 @@
     <Compile Include="pages\ContactUs1.aspx.designer.cs">
       <DependentUpon>ContactUs1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\MyAccount.aspx.cs">
-      <DependentUpon>MyAccount.aspx</DependentUpon>
+    <Compile Include="pages\MyProfile.aspx.cs">
+      <DependentUpon>MyProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\MyAccount.aspx.designer.cs">
-      <DependentUpon>MyAccount.aspx</DependentUpon>
+    <Compile Include="pages\MyProfile.aspx.designer.cs">
+      <DependentUpon>MyProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\MyCart.aspx.cs">
       <DependentUpon>MyCart.aspx</DependentUpon>
@@ -417,12 +418,12 @@
     <Compile Include="pages\UsersPanel.aspx.designer.cs">
       <DependentUpon>UsersPanel.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="pages\MyAccount.aspx.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="pages\MyAccount.aspx.designer.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
