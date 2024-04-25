@@ -28,7 +28,7 @@ namespace MyFirstWeb.pages
 
 
             
-            if (Email == "admin@admin.com" && Password == "admin1212!")
+            if (Email == "admin@admin.com" && Password == "admin1212")
             {
                 Session["email"] = Email;
                 Response.Redirect("AdminDashboard.aspx");

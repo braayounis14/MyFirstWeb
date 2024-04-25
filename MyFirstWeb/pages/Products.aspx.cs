@@ -23,6 +23,43 @@ namespace MyFirstWeb.pages
             Response.Redirect("Products1Details.aspx");
         }
 
+        protected void ddlSortBy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            BindData();
+        }
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            BindData();
+        }
+
+
+        protected void BindData()
+        {
+            string selectCommand = "SELECT * FROM [GPU]";
+            string sortBy = ddlSortBy.SelectedValue;
+            if (!string.IsNullOrEmpty(txtKeyword.Text))
+            {
+                string keyword = txtKeyword.Text;
+                selectCommand += $" WHERE [ProductName] LIKE '%{keyword}%'";
+            }
+
+            
+
+           else if (sortBy == "ASC" || sortBy == "DESC")
+            {
+                // Sort by price
+                selectCommand += $" ORDER BY [Price] {sortBy}";
+            }
+            else if (sortBy == "ASC_Name" || sortBy == "DESC_Name")
+            {
+                // Sort by name
+                selectCommand += $" ORDER BY [ProductName] {(sortBy.EndsWith("ASC_Name") ? "ASC" : "DESC")}";
+            }
+
+            AccessDataSource1.SelectCommand = selectCommand;
+            AccessDataSource1.DataBind();
+        }
+
 
 
     }

@@ -115,6 +115,7 @@
     <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="Images\1920x120v2%402x.png" />
     <Content Include="Images\c5527f47-def9-433c-9cce-23f286dbfea2_Front.jpg" />
     <Content Include="Images\check-circle.svg" />
     <Content Include="Images\GitHub-Mark.png" />
