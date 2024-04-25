@@ -15,6 +15,7 @@
     --text-color: #000;
     --black-light-color: #707070;
     --border-color: #e6e5e5;
+    --background-color: #f8f9fa;
     --toggle-color: #DDD;
     --box1-color: #4DA3FF;
     --box2-color: #FFE6AC;
@@ -35,6 +36,7 @@ body {
         --primary-color: #3A3B3C;
         --panel-color: #242526;
         --text-color: #CCC;
+        --background-color: #242526;
         --black-light-color: #CCC;
         --border-color: #4D4C4C;
         --toggle-color: #FFF;

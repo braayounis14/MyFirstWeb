@@ -74,7 +74,7 @@
               <div class="col-12">
                   <asp:Button ID="BtnAdd" type="submit" runat="server" class="btn btn-primary btn-block text-uppercase" Text="Add Product Now" OnClick="BtnAdd_Click" />
                   <asp:Button ID="BtnCheck"  type="Check" runat="server" class="btn btn-primary btn-block text-uppercase" Text="Check" />
-                  <asp:Label ID="lblMsg" runat="server" Text="Label"></asp:Label>
+                  <asp:Label ID="lblMsg" runat="server" style="color:var(--black-light-color)" Text=""></asp:Label>
               </div>
 
             </div>

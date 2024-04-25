@@ -30,7 +30,42 @@
 
 
 <body>
+          <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle" style="border-top-color:orange"></div>
+                <div class="preloader-img pere-text">
+                    <img src="../Images/Newegg_full_color_logo_RGB.SVG" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    
+    <link href="../styles/Loader.css" rel="stylesheet" />
    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
+<script>(function ($) {
+        "use strict"
+
+
+        /* 1. Proloder */
+        $(window).on('load', function () {
+            $('#preloader-active').delay(450).fadeOut('slow');
+            $('body').delay(450).css({
+                'overflow': 'visible'
+            });
+        });
+
+
+
+    })(jQuery);
+</script>
 
        <form id="form1" runat="server">
 
@@ -192,7 +227,7 @@
                    </li>
 
 
-                  <li><a href="ContactUs.aspx" class="nav__link">Contact</a></li>
+                  <li><a href="ContactUs1.aspx" class="nav__link">Contact</a></li>
                   <li><a href="MyProfile.aspx" class="nav__link"><img src="https://i.pinimg.com/236x/e7/bd/2d/e7bd2da7c2b310123b6aec5e2955bc65.jpg" alt="" class="profile" style="
     width: 40px;
     height: 40px;

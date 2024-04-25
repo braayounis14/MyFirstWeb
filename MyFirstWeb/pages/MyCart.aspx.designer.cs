@@ -15,15 +15,6 @@ namespace MyFirstWeb.pages
     {
 
         /// <summary>
-        /// AccessDataSource1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.AccessDataSource AccessDataSource1;
-
-        /// <summary>
         /// GridView1 control.
         /// </summary>
         /// <remarks>
@@ -33,31 +24,40 @@ namespace MyFirstWeb.pages
         protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// lblEmail control.
+        /// Order_Price control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEmail;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Order_Price;
 
         /// <summary>
-        /// lblPrice control.
+        /// Shipping_Price control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPrice;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Shipping_Price;
 
         /// <summary>
-        /// label control.
+        /// Tax_Price control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Tax_Price;
+
+        /// <summary>
+        /// Order_Total control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Order_Total;
 
         /// <summary>
         /// BtnCheckOut control.
@@ -67,5 +67,14 @@ namespace MyFirstWeb.pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnCheckOut;
+
+        /// <summary>
+        /// AccessDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.AccessDataSource AccessDataSource1;
     }
 }

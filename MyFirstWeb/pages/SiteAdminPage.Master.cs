@@ -13,5 +13,18 @@ namespace MyFirstWeb.pages
         {
 
         }
-    }
+
+        protected void Btn_Logout(object sender, EventArgs e)
+        { 
+        
+        
+        
+        
+        }
+
+
+
+
+
+        }
 }

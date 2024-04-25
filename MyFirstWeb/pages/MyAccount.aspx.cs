@@ -13,11 +13,16 @@ namespace MyFirstWeb.pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+
+
             Session["email"] = "dsa@g.sda";
             EmailSigned.InnerText = "Logged in as: "+Session["email"].ToString();
             UserName.InnerText = InfoByEmailSession("FullName");
             OrdersPlacedNumber.InnerText = OrdersPlacedNumberBy();
             ItemsCartNumber.InnerText = ItemsInCart();
+
+
         }
 
         protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
@@ -59,36 +64,10 @@ namespace MyFirstWeb.pages
 
         }
 
-        protected void DataList1_ItemDataBound(object sender, DataListItemEventArgs e)
-        {
-            string st = this.DataList1.DataKeys[e.Item.ItemIndex].ToString();
-
-           if (e.Item.ItemIndex >= 10 && OrderRecent(st))
-            {
-               e.Item.Visible = false;
-            }
 
 
-        }
 
 
-        public bool OrderRecent(string Img)
-        
-        {
-
-
-            string st = "select BuyDate from [Orders] where [Email]='" + Session["email"].ToString() + "'AND [Image] = '" + Img + "'";
-            DataTable dt = DBFunction.SelectFromTable(st, "DB.accdb");
-
-            string dateString = dt.Rows[0][0].ToString();
-            DateTime date = DateTime.ParseExact(dateString, "dd/MM/yyyy HH:mm:ss", CultureInfo.InvariantCulture);
-
-            DateTime twoMonthsAgo = DateTime.Now.AddMonths(-2);
-
-            return date < twoMonthsAgo;
-        
-        
-        }
 
 
     }

@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -135,9 +136,11 @@
     <Content Include="pages\Home.aspx" />
     <Content Include="pages\Home1.aspx" />
     <Content Include="pages\Login.aspx" />
+    <Content Include="pages\ManageProducts.aspx" />
     <Content Include="pages\MyProfile.aspx" />
     <Content Include="pages\MyCart.aspx" />
     <Content Include="pages\Notifications.aspx" />
+    <Content Include="pages\Privacy.aspx" />
     <Content Include="pages\ProductsCase.aspx" />
     <Content Include="pages\ProductsCpu.aspx" />
     <Content Include="pages\ProductsCpuCooler.aspx" />
@@ -159,11 +162,13 @@
     <Content Include="scripts\Script.js" />
     <Content Include="scripts\Script1.js" />
     <Content Include="scripts\Scripts.js" />
+    <Content Include="styles\AdminClientes.css" />
     <Content Include="styles\AdminDash.css" />
     <Content Include="styles\ContactStyle.css" />
     <Content Include="styles\CreationSucceeded.css" />
     <Content Include="styles\Forget.css" />
     <Content Include="styles\ForgetStyle.css" />
+    <Content Include="styles\Loader.css" />
     <Content Include="styles\MasterFooter.css" />
     <Content Include="styles\MyProfile.css" />
     <Content Include="styles\NewNav.css" />
@@ -241,6 +246,13 @@
     <Compile Include="pages\ContactUs1.aspx.designer.cs">
       <DependentUpon>ContactUs1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pages\ManageProducts.aspx.cs">
+      <DependentUpon>ManageProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ManageProducts.aspx.designer.cs">
+      <DependentUpon>ManageProducts.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pages\MyProfile.aspx.cs">
       <DependentUpon>MyProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -261,6 +273,13 @@
     </Compile>
     <Compile Include="pages\Notifications.aspx.designer.cs">
       <DependentUpon>Notifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Privacy.aspx.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Privacy.aspx.designer.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\ProductsCase.aspx.cs">
       <DependentUpon>ProductsCase.aspx</DependentUpon>
@@ -523,7 +542,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51043</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44333/</IISUrl>
+          <IISUrl>https://localhost:44381/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

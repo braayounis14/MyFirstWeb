@@ -95,11 +95,10 @@
                  
 
 
-                  <asp:DataList ID="DataList1" runat="server" DataKeyField="image" style="border-collapse:collapse; width: 500px;" DataSourceID="AccessDataSource1" RepeatLayout="Flow" RepeatDirection="Horizontal" OnItemCommand="DataList1_ItemCommand" OnItemDataBound="DataList1_ItemDataBound">
+                  <asp:DataList ID="DataList1" runat="server" DataKeyField="image" style="border-collapse:collapse; width: 500px;" DataSourceID="AccessDataSource1" RepeatLayout="Flow" RepeatDirection="Horizontal" OnItemCommand="DataList1_ItemCommand">
                       <ItemTemplate>
 
-
-                                            <div class="order my-3 bg-light">
+                 <div class="order my-3 bg-light">
                       <div class="row">
                           <div class="col-lg-4">
                               <div class="d-flex flex-column justify-content-between order-summary">
@@ -126,16 +125,16 @@
                                       <li id="step-1" class="text-muted green">
                                           <span class="fas fa-gift"></span>
                                       </li>
-                                      <li id="step-2" class="text-muted green">
+                                      <li id="step-2" class="<%# Eval("DeliveryStatus").ToString() == "Delivered" || Eval("DeliveryStatus").ToString() == "Shipped" || Eval("DeliveryStatus").ToString() == "Packed" || Eval("DeliveryStatus").ToString() == "Accepted" ? "text-muted green" : "text-muted" %>">
                                           <span class="fas fa-check"></span>
                                       </li>
-                                      <li id="step-3" class="text-muted green">
+                                      <li id="step-3" class="<%# Eval("DeliveryStatus").ToString() == "Delivered" || Eval("DeliveryStatus").ToString() == "Shipped" || Eval("DeliveryStatus").ToString() == "Packed" ? "text-muted green" : "text-muted" %>">
                                           <span class="fas fa-box"></span>
                                       </li>
-            0                          <li id="step-4" class="<%# Eval("DeliveryStatus").ToString() == "Placed" ? "text-muted" : "text-muted green" %>">
+                                      <li id="step-4" class="<%# Eval("DeliveryStatus").ToString() == "Delivered" || Eval("DeliveryStatus").ToString() == "Shipped" ? "text-muted green" : "text-muted" %>">
                                           <span class="fas fa-truck"></span>
                                       </li>
-                                      <li id="step-5" class="<%# Eval("DeliveryStatus").ToString() == "Placed" ? "text-muted" : "text-muted green" %>">
+                                      <li id="step-5" class="<%# Eval("DeliveryStatus").ToString() == "Delivered" ? "text-muted green" : "text-muted" %>">
                                           <span class="fas fa-box-open"></span>
                                       </li>
                                   </ul>

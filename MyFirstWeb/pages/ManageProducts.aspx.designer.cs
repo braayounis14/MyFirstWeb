@@ -11,7 +11,7 @@ namespace MyFirstWeb.pages
 {
 
 
-    public partial class UsersPanel
+    public partial class ManageProducts
     {
 
         /// <summary>
@@ -51,6 +51,15 @@ namespace MyFirstWeb.pages
         protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
+        /// GridView2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView2;
+
+        /// <summary>
         /// AccessDataSource1 control.
         /// </summary>
         /// <remarks>
@@ -58,5 +67,14 @@ namespace MyFirstWeb.pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.AccessDataSource AccessDataSource1;
+
+        /// <summary>
+        /// AccessDataSource2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.AccessDataSource AccessDataSource2;
     }
 }
