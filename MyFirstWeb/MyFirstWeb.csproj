@@ -116,8 +116,10 @@
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="Images\1920x120v2%402x.png" />
+    <Content Include="Images\434723771_424932946753279_5729427194507615121_n.jpg" />
     <Content Include="Images\c5527f47-def9-433c-9cce-23f286dbfea2_Front.jpg" />
     <Content Include="Images\check-circle.svg" />
+    <Content Include="Images\download.png" />
     <Content Include="Images\GitHub-Mark.png" />
     <Content Include="Images\CreationSucceeded.svg" />
     <Content Include="Images\Newegg_full_color_logo_RGB.SVG" />
