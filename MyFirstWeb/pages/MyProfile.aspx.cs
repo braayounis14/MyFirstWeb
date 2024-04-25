@@ -12,7 +12,7 @@ namespace MyFirstWeb.pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["email"] = "dsa@g.sda";
+            
 
             this.txt_PassAnswer.Text = InfoByEmailSession("PassAnswer");
             this.Txt_FullName.Text = InfoByEmailSession("FullName");

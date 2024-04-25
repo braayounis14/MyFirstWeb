@@ -16,7 +16,7 @@ namespace MyFirstWeb.pages
 
 
 
-            Session["email"] = "dsa@g.sda";
+            
             EmailSigned.InnerText = "Logged in as: "+Session["email"].ToString();
             UserName.InnerText = InfoByEmailSession("FullName");
             OrdersPlacedNumber.InnerText = OrdersPlacedNumberBy();
