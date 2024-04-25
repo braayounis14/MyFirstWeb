@@ -157,8 +157,8 @@
                               </li>
       
                               <li>
-                                 <a href="#" class="dropdown__sublink">
-                                    <i class="ri-refund-2-line"></i> Refunds
+                                 <a href="Products.aspx" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> Gpu category
                                  </a>
                               </li>
                            </ul>
@@ -228,7 +228,7 @@
 
 
                   <li><a href="ContactUs1.aspx" class="nav__link">Contact</a></li>
-                  <li><a href="MyProfile.aspx" class="nav__link"><img src="https://i.pinimg.com/236x/e7/bd/2d/e7bd2da7c2b310123b6aec5e2955bc65.jpg" alt="" class="profile" style="
+                  <li><a href="MyProfile.aspx" class="nav__link"><img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D" alt="" class="profile" style="
     width: 40px;
     height: 40px;
     border-radius: 50%;
