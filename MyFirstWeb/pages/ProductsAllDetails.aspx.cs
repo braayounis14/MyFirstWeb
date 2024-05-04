@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -30,7 +31,7 @@ namespace MyFirstWeb.pages
                     this.price.InnerText = "Price:" + dt.Rows[0][0].ToString() + "$";
                     this.info.InnerText = dt.Rows[0][2].ToString();
                     string details = dt.Rows[0][2].ToString();
-                    details = details.Replace(".", "  <li> ");
+                    details = Regex.Replace(details, @"\.(\D)", "<li>$1");
                     this.info2.InnerHtml = "  <li>" + details + " ";
 
 

@@ -46,18 +46,16 @@
               <tbody>
 
 
-                  <asp:GridView ID="GridView1" GridLines="None" style="margin-top:-30px;" class="table" runat="server" DataSourceID="AccessDataSource1" AutoGenerateColumns="False" DataKeyNames="Email,ID">
+                  <asp:GridView ID="GridView1" GridLines="None" style="margin-top:-30px;" class="table" runat="server" DataSourceID="AccessDataSource1" AutoGenerateColumns="False" DataKeyNames="ID">
                       
                       <Columns>
 
 
-                                                 <asp:TemplateField>
+                                                 <asp:TemplateField ItemStyle-CssClass="sss">
                                   <HeaderTemplate>
                 <tr>
 
-                     <th scope="col" class="border-0">
-                        <div class="p-2 px-3 text-uppercase"></div>
-                    </th>
+
                     <th scope="col" class="border-0 bg-light">
                         <div class="p-2 px-3 text-uppercase">ID</div>
                     </th>
@@ -98,7 +96,7 @@
             </HeaderTemplate>
                       </asp:TemplateField>
                           <asp:BoundField DataField="ID"  ReadOnly="True" SortExpression="ID"></asp:BoundField>
-                          <asp:BoundField DataField="FullName"  ReadOnly="True" SortExpression="FullName"></asp:BoundField>
+                          <asp:BoundField DataField="FullName" ReadOnly="True" SortExpression="FullName"></asp:BoundField>
                           <asp:BoundField DataField="Email"  SortExpression="Email"></asp:BoundField>
                           <asp:BoundField DataField="Birthday"  SortExpression="Birthday"></asp:BoundField>
                           <asp:BoundField DataField="Password" SortExpression="Password"></asp:BoundField>
@@ -106,7 +104,7 @@
                           <asp:BoundField DataField="Gender" SortExpression="Gender"></asp:BoundField>
                           <asp:BoundField DataField="PassQuastion"  SortExpression="PassQuastion"></asp:BoundField>
                           <asp:BoundField DataField="PassAnswer" SortExpression="PassAnswer"></asp:BoundField>
-                          <asp:BoundField DataField="MemberJoinedDate"  SortExpression="MemberJoinedDate"></asp:BoundField>
+                          <asp:BoundField DataField="MemberJoinedDate" SortExpression="MemberJoinedDate"></asp:BoundField>
                           <asp:CommandField ShowEditButton="True"></asp:CommandField>
                           <asp:CommandField ShowDeleteButton="True"></asp:CommandField>
                       </Columns>
@@ -126,7 +124,68 @@
 
 
 
-    <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/DB.accdb" SelectCommand="SELECT * FROM [USERS]"></asp:AccessDataSource>
+    <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/DB.accdb" SelectCommand="SELECT * FROM [USERS]" ConflictDetection="CompareAllValues" DeleteCommand="DELETE FROM [USERS] WHERE [ID] = ? AND [FullName] = ? AND (([Email] = ?) OR ([Email] IS NULL AND ? IS NULL)) AND (([Birthday] = ?) OR ([Birthday] IS NULL AND ? IS NULL)) AND (([Password] = ?) OR ([Password] IS NULL AND ? IS NULL)) AND (([State] = ?) OR ([State] IS NULL AND ? IS NULL)) AND (([Gender] = ?) OR ([Gender] IS NULL AND ? IS NULL)) AND (([PassQuastion] = ?) OR ([PassQuastion] IS NULL AND ? IS NULL)) AND (([PassAnswer] = ?) OR ([PassAnswer] IS NULL AND ? IS NULL)) AND (([MemberJoinedDate] = ?) OR ([MemberJoinedDate] IS NULL AND ? IS NULL))" InsertCommand="INSERT INTO [USERS] ([ID], [FullName], [Email], [Birthday], [Password], [State], [Gender], [PassQuastion], [PassAnswer], [MemberJoinedDate]) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)" OldValuesParameterFormatString="original_{0}" UpdateCommand="UPDATE [USERS] SET [Email] = ?, [Birthday] = ?, [Password] = ?, [State] = ?, [Gender] = ?, [PassQuastion] = ?, [PassAnswer] = ?, [MemberJoinedDate] = ? WHERE [ID] = ? AND [FullName] = ? AND (([Email] = ?) OR ([Email] IS NULL AND ? IS NULL)) AND (([Birthday] = ?) OR ([Birthday] IS NULL AND ? IS NULL)) AND (([Password] = ?) OR ([Password] IS NULL AND ? IS NULL)) AND (([State] = ?) OR ([State] IS NULL AND ? IS NULL)) AND (([Gender] = ?) OR ([Gender] IS NULL AND ? IS NULL)) AND (([PassQuastion] = ?) OR ([PassQuastion] IS NULL AND ? IS NULL)) AND (([PassAnswer] = ?) OR ([PassAnswer] IS NULL AND ? IS NULL)) AND (([MemberJoinedDate] = ?) OR ([MemberJoinedDate] IS NULL AND ? IS NULL))">
+        <DeleteParameters>
+            <asp:Parameter Name="original_ID" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_FullName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Email" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Email" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Birthday" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Birthday" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Password" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Password" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_State" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_State" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Gender" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Gender" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_PassQuastion" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_PassQuastion" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_PassAnswer" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_PassAnswer" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_MemberJoinedDate" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_MemberJoinedDate" Type="String"></asp:Parameter>
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="ID" Type="String"></asp:Parameter>
+            <asp:Parameter Name="FullName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Email" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Birthday" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Password" Type="String"></asp:Parameter>
+            <asp:Parameter Name="State" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Gender" Type="String"></asp:Parameter>
+            <asp:Parameter Name="PassQuastion" Type="String"></asp:Parameter>
+            <asp:Parameter Name="PassAnswer" Type="String"></asp:Parameter>
+            <asp:Parameter Name="MemberJoinedDate" Type="String"></asp:Parameter>
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="Email" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Birthday" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Password" Type="String"></asp:Parameter>
+            <asp:Parameter Name="State" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Gender" Type="String"></asp:Parameter>
+            <asp:Parameter Name="PassQuastion" Type="String"></asp:Parameter>
+            <asp:Parameter Name="PassAnswer" Type="String"></asp:Parameter>
+            <asp:Parameter Name="MemberJoinedDate" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ID" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_FullName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Email" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Email" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Birthday" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Birthday" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Password" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Password" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_State" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_State" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Gender" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Gender" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_PassQuastion" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_PassQuastion" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_PassAnswer" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_PassAnswer" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_MemberJoinedDate" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_MemberJoinedDate" Type="String"></asp:Parameter>
+        </UpdateParameters>
+    </asp:AccessDataSource>
 
 
 
@@ -179,6 +238,10 @@
 .img-fluid {
     width: 100px;
 }
+}
+
+                    td.sss {
+    display: none;
 }
     </style>
 

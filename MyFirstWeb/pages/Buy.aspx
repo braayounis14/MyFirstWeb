@@ -220,11 +220,7 @@ ul {
   margin:0;
   padding:0;
 }
-ul li {
-  list-style:none;
-  padding-left:10px;
-  cursor:pointer;
-}
+
 ul li:hover {
   background:rgba(255,255,255,0.1);
 }

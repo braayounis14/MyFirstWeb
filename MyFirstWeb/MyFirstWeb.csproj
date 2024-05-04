@@ -119,10 +119,17 @@
     <Content Include="Images\434723771_424932946753279_5729427194507615121_n.jpg" />
     <Content Include="Images\c5527f47-def9-433c-9cce-23f286dbfea2_Front.jpg" />
     <Content Include="Images\check-circle.svg" />
+    <Content Include="Images\computer.png" />
+    <Content Include="Images\cpu.png" />
+    <Content Include="Images\cpuFan.png" />
     <Content Include="Images\download.png" />
+    <Content Include="Images\fan.png" />
     <Content Include="Images\GitHub-Mark.png" />
     <Content Include="Images\CreationSucceeded.svg" />
+    <Content Include="Images\gpu.png" />
+    <Content Include="Images\monitor.png" />
     <Content Include="Images\Newegg_full_color_logo_RGB.SVG" />
+    <Content Include="Images\operative-system.png" />
     <Content Include="obj\Debug\MyFirstWeb.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\MyFirstWeb.dll" />
     <Content Include="obj\Debug\MyFirstWeb.pdb" />
@@ -133,6 +140,7 @@
     <Content Include="pages\AdminDashboard.aspx" />
     <Content Include="pages\Buy.aspx" />
     <Content Include="pages\ChangePassword.aspx" />
+    <Content Include="pages\ClientContact.aspx" />
     <Content Include="pages\ContactUs.aspx" />
     <Content Include="pages\ContactUs1.aspx" />
     <Content Include="pages\ForgetPassword.aspx" />
@@ -167,6 +175,7 @@
     <Content Include="scripts\Scripts.js" />
     <Content Include="styles\AdminClientes.css" />
     <Content Include="styles\AdminDash.css" />
+    <Content Include="styles\Chat.css" />
     <Content Include="styles\ContactStyle.css" />
     <Content Include="styles\CreationSucceeded.css" />
     <Content Include="styles\Forget.css" />
@@ -241,6 +250,13 @@
     </Compile>
     <Compile Include="pages\Buy.aspx.designer.cs">
       <DependentUpon>Buy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ClientContact.aspx.cs">
+      <DependentUpon>ClientContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ClientContact.aspx.designer.cs">
+      <DependentUpon>ClientContact.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\ContactUs1.aspx.cs">
       <DependentUpon>ContactUs1.aspx</DependentUpon>

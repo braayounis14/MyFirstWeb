@@ -67,6 +67,17 @@
     })(jQuery);
 </script>
 
+    <style>
+
+        .iconNav{
+            width:45px;
+            height:45px;
+        }
+
+    </style>
+
+
+
        <form id="form1" runat="server">
 
           <!--=============== HEADER ===============-->
@@ -98,22 +109,15 @@
                      </div>
 
                      <ul class="dropdown__menu">
-                        <li>
-                           <a href="#" class="dropdown__link">
-                              <i class="ri-pie-chart-line"></i> Monitor
-                           </a>                          
-                        </li>
 
-                        <li>
-                           <a href="#" class="dropdown__link">
-                              <i class="ri-arrow-up-down-line"></i> OperationSystem
-                           </a>
-                        </li>
+
+
 
                         <!--=============== DROPDOWN SUBMENU ===============-->
                         <li class="dropdown__subitem">
                            <div class="dropdown__link">
-                              <i class="ri-bar-chart-line"></i> Cooler&Fans  <i class="ri-add-line dropdown__add"></i>
+                              <i>
+                                  <img src="../Images/fan.png" class="iconNav" alt="Cooler&Fans" /></i> Cooler&Fans  <i class="ri-add-line dropdown__add"></i>
                            </div>
 
                            <ul class="dropdown__submenu">
@@ -125,7 +129,7 @@
       
                               <li>
                                  <a href="#" class="dropdown__sublink">
-                                    <i class="ri-cash-line"></i> Payments
+                                    <i><img alt="CpuFan" src="../Images/cpuFan.png" class="iconNav"/></i> CpuFan
                                  </a>
                               </li>
       
@@ -138,9 +142,9 @@
                         </li>
 
 
-                                                 <li class="dropdown__subitem">
+                       <li class="dropdown__subitem">
                            <div class="dropdown__link">
-                              <i class="ri-bar-chart-line"></i> PC Parts  <i class="ri-add-line dropdown__add"></i>
+                             <i>  <img alt="PC Parts" src="../Images/computer.png" class="iconNav"/> </i> PC Parts  <i class="ri-add-line dropdown__add"></i>
                            </div>
 
                            <ul class="dropdown__submenu">
@@ -158,13 +162,24 @@
       
                               <li>
                                  <a href="Products.aspx" class="dropdown__sublink">
-                                    <i class="ri-refund-2-line"></i> Gpu category
+                                   <i class="bi bi-gpu-card"></i>Video Card
                                  </a>
                               </li>
                            </ul>
                         </li>
 
+                    
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i><img alt="Monitors" src="../Images/monitor.png" class="iconNav"/></i> Monitors
+                           </a>                          
+                        </li>
 
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i><img alt="OperationSystem" src="../Images/operative-system.png" class="iconNav"/> </i> OperatingSystem
+                           </a>
+                        </li>
 
                      </ul>
                   </li>

@@ -26,6 +26,7 @@ public class User
     private string userCountry;
     private string userBirthDate;
     private string userGender;
+    private string userJoinedDate;
 
     public string UserFullName
     {
@@ -120,6 +121,19 @@ public class User
         set
         {
             this.userGender = value;
+
+        }
+    }
+
+    public string UserJoinedDate
+    {
+        get
+        {
+            return this.userJoinedDate;
+        }
+        set
+        {
+            this.userJoinedDate = value;
 
         }
     }

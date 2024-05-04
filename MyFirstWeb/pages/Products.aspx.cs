@@ -20,7 +20,7 @@ namespace MyFirstWeb.pages
         {
             string st = this.DataList1.DataKeys[e.Item.ItemIndex].ToString();
             Session["Im"] = st;
-            Response.Redirect("Products1Details.aspx");
+            Response.Redirect("ProductsAllDetails.aspx");
         }
 
         protected void ddlSortBy_SelectedIndexChanged(object sender, EventArgs e)
