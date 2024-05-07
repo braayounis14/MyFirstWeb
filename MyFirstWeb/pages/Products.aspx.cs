@@ -12,8 +12,11 @@ namespace MyFirstWeb.pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-       
-              
+
+            int screenWidth = Request.Browser.ScreenPixelsWidth;
+            if (screenWidth < 2200)
+                this.DataList1.RepeatColumns = 4;
+
         }
 
         protected void DataList1_ItemCommand (object source, DataListCommandEventArgs e)

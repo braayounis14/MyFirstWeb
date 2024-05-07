@@ -101,14 +101,14 @@
                 </div>
                    
             
-        <asp:DataList ID="DataList1" runat="server" class="messages" DataSourceID="AccessDataSource1" DataKeyField="Key" OnItemCommand="DataList1_ItemCommand">
+        <asp:DataList ID="DataList1" runat="server" class="messages" DataSourceID="AccessDataSource1" DataKeyField="Key" on OnItemCommand="DataList1_ItemCommand">
         <ItemTemplate>
 
               
 
             
       <div class="time">
-        <asp:Label Text='<%# Eval("MessageDate") %>' runat="server" ID="lbl_massageTime" />
+         <asp:Label Text='<%# Eval("MessageDate") %>' runat="server" ID="lbl_massageTime" />
       </div>
 
       <div class="<%# Eval("Email").ToString() == "admin@admin.com" ? "message stark" : "message parker" %>">

@@ -127,6 +127,7 @@
     <Content Include="Images\GitHub-Mark.png" />
     <Content Include="Images\CreationSucceeded.svg" />
     <Content Include="Images\gpu.png" />
+    <Content Include="Images\motherboard-64.png" />
     <Content Include="Images\monitor.png" />
     <Content Include="Images\Newegg_full_color_logo_RGB.SVG" />
     <Content Include="Images\operative-system.png" />

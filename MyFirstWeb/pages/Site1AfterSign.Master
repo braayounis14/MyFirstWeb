@@ -150,19 +150,23 @@
                            <ul class="dropdown__submenu">
                               <li>
                                  <a href="#" class="dropdown__sublink">
-                                    <i class="ri-file-list-line"></i> Documents
+                                    <i><img alt="Monitors" src="../Images/motherboard-64.png" class="iconNav"/></i> Motherboard
                                  </a>
                               </li>
       
                               <li>
                                  <a href="#" class="dropdown__sublink">
-                                    <i class="ri-cash-line"></i> Payments
+                                    <i><img alt="Monitors" src="../Images/cpu.png" class="iconNav"/></i> CPUs
                                  </a>
                               </li>
       
                               <li>
                                  <a href="Products.aspx" class="dropdown__sublink">
-                                   <i class="bi bi-gpu-card"></i>Video Card
+                                   <i><img alt="Monitors" src="../Images/gpu.png" class="iconNav"/></i> GPUs
+                                 </a>
+                                                                <li>
+                                 <a href="Products.aspx" class="dropdown__sublink">
+                                   <i><img alt="Monitors" src="https://c1.neweggimages.com/ProductImageCompressAll1280/20-374-436-07.png" class="iconNav"/></i> <span style="display: inline-block;">Memory RAM</span>
                                  </a>
                               </li>
                            </ul>
