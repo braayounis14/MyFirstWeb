@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/Site1.Master" AutoEventWireup="true" CodeBehind="Privacy.aspx.cs" Inherits="MyFirstWeb.pages.Privacy" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/SiteAdminPage.Master" AutoEventWireup="true" CodeBehind="Privacy.aspx.cs" Inherits="MyFirstWeb.pages.Privacy" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
 
@@ -25,9 +25,7 @@
             height: 48rem;
         }
 
-        .messages {
-            height: 48rem;
-        }
+
     </style>
 
 <div class="dash-content" style="padding: 120px">
@@ -38,13 +36,6 @@
 
 
 
-     <br />
-     <br />
-     <br />
-    =====================================================================================
-     <br />
-     <br />
-     <br />
 
 
 
@@ -71,11 +62,11 @@
        <asp:Label Text='<%# Eval("Email") %>' runat="server" ID="Label1" />
       </div>
       <div class="message">
-        <asp:Label Text='<%# Eval("Body") %>' runat="server" ID="Label2" />
+        <asp:Label Text='<%# Eval("Subject") %>' runat="server" ID="Label2" />
       </div>
     </div>
 
-
+           
 </asp:LinkButton>
               
 
@@ -94,36 +85,31 @@
       
                     </div>
                     <div class="seen">
-                        Email:<asp:Label Text='<%# Eval("Email") %>' runat="server" ID="lblEmail" />
+                        Email:<asp:Label Text='' runat="server" ID="lblEmail" />
                         <br />
-                        Today at 12:56
+                        Today at <asp:Label Text='' runat="server" ID="lblDate" />
                     </div>
                 </div>
                    
+
+
+       
             
-        <asp:DataList ID="DataList1" runat="server" class="messages" DataSourceID="AccessDataSource1" DataKeyField="Key" on OnItemCommand="DataList1_ItemCommand">
-        <ItemTemplate>
+        <asp:DataList ID="DataList1" runat="server" class="messages" DataSourceID="AccessDataSource1" DataKeyField="Key" OnItemCommand="DataList1_ItemCommand">
 
-              
+           
+            <ItemTemplate>
 
-            
-      <div class="time">
-         <asp:Label Text='<%# Eval("MessageDate") %>' runat="server" ID="lbl_massageTime" />
-      </div>
-
-      <div class="<%# Eval("Email").ToString() == "admin@admin.com" ? "message stark" : "message parker" %>">
+      <div style="" class="<%# Eval("Email").ToString() == "admin@admin.com" ? "message parker" : "message stark" %>">
         <asp:Label Text='<%# Eval("Body") %>' runat="server" ID="Label2" />
       </div>
 
     
-
-
-
         </ItemTemplate>
     </asp:DataList>
                 
     <div class="input">
-      <i class="fas fa-camera"></i><i class="far fa-laugh-beam"></i> <asp:TextBox ID="txt_send" runat="server" placeholder="Type your message here!" type="text"></asp:TextBox><asp:LinkButton ID="BtnSend" runat="server" OnClick="BtnSend_Click"><i class="fa-solid fa-paper-plane"></i></asp:LinkButton>
+      <i class="fas fa-camera"></i><i class="far fa-laugh-beam"></i> <asp:TextBox ID="txt_send" class="input" runat="server" placeholder="Type your message here!" type="text"></asp:TextBox><asp:LinkButton ID="BtnSend" runat="server" OnClick="BtnSend_Click"><i class="fa-solid fa-paper-plane"></i></asp:LinkButton>
     </div>
 
  </div>
@@ -132,15 +118,7 @@
 
 
     </div>
-         <br />
-     <br />
-         <br />
-     <br />
-     <br />
-         <br />
-     <br />
-     <br />
-     <br />
+
     <asp:AccessDataSource ID="AccessDataSource2" runat="server" DataFile="~/App_Data/DB.accdb" SelectCommand="SELECT * FROM [Messages] ORDER BY MessageDate DESC"></asp:AccessDataSource>
 
 

@@ -22,11 +22,41 @@ namespace MyFirstWeb.pages
             string selectCommand = "SELECT * FROM [UserMessages]";
     
 
-            selectCommand += $" WHERE [Key] = '" + st + "'";
+            selectCommand += $" WHERE [Key] = '" + st + "' ";
 
             AccessDataSource1.SelectCommand = selectCommand;
             AccessDataSource1.DataBind();
         }
+
+        public string FindUserEmail(string key)
+        {
+            string selectCommand = "SELECT Email FROM [UserMessages] WHERE [Key] = '" + key + "' AND [Email] <> 'admin@admin.com'";
+            DataTable dt = DBFunction.SelectFromTable(selectCommand, "DB.accdb");
+
+
+            if (dt.Rows.Count > 0)
+            {
+                return dt.Rows[0]["Email"].ToString();
+            }
+
+            return null; // Email not found
+        }
+
+        public string FindMassageDate(string key)
+        {
+            string selectCommand = "SELECT MessageDate FROM [UserMessages] WHERE [Key] = '" + key + "' ORDER BY MessageDate DESC";
+            DataTable dt = DBFunction.SelectFromTable(selectCommand, "DB.accdb");
+
+
+            if (dt.Rows.Count > 0)
+            {
+                return dt.Rows[0]["MessageDate"].ToString();
+            }
+
+            return null; // Email not found
+        }
+
+
 
         protected void DataList2_ItemCommand(object source, DataListCommandEventArgs e)
         {
@@ -40,9 +70,12 @@ namespace MyFirstWeb.pages
             if (dt.Rows.Count > 0)
             {
                 Session["Subject"] = dt.Rows[0][1].ToString();
-                this.lblEmail.Text= dt.Rows[0][0].ToString();
+
+                this.lblEmail.Text= FindUserEmail(st);
+                this.lblDate.Text = FindMassageDate(st);
+
             }
-            this.DataList1.Visible = true;
+          
             AccessDataSource1.SelectCommand = selectCommand;
             AccessDataSource1.DataBind();
 
@@ -50,17 +83,15 @@ namespace MyFirstWeb.pages
 
         protected void BtnSend_Click(object sender, EventArgs e)
         {
-           string Body= this.txt_send.Text;
            string Email= "admin@admin.com";
-           string Subject = "";
+           string Subject = Session["Subject"].ToString().Replace("'", "''");
+           string Body = this.txt_send.Text.Replace("'", "''");
 
             if (Session["Key"] != null && Body != null) {
             String st = "insert into [UserMessages] ([MessageDate],[Email],[Subject],[Key],[Body],[Read]) values (#" + DateTime.Now + "#,'" + Email + "','" + Subject + "','" + Session["Key"] + "','" + Body + "'," + false + ")";
             DBFunction.ChangeTable(st, "DB.accdb");
             }
             this.txt_send.Text = "";
-
-       
 
     }
 

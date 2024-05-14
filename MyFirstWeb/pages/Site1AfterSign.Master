@@ -149,24 +149,30 @@
 
                            <ul class="dropdown__submenu">
                               <li>
-                                 <a href="#" class="dropdown__sublink">
-                                    <i><img alt="Monitors" src="../Images/motherboard-64.png" class="iconNav"/></i> Motherboard
+                                 <a href="ProductsMotherboard.aspx" class="dropdown__sublink">
+                                    <i><img alt="motherboard" src="../Images/motherboard-64.png" class="iconNav"/></i> Motherboard
                                  </a>
                               </li>
       
                               <li>
-                                 <a href="#" class="dropdown__sublink">
-                                    <i><img alt="Monitors" src="../Images/cpu.png" class="iconNav"/></i> CPUs
+                                 <a href="ProductsCpu.aspx" class="dropdown__sublink">
+                                    <i><img alt="cpu" src="../Images/cpu.png" class="iconNav"/></i> CPUs
                                  </a>
                               </li>
-      
-                              <li>
-                                 <a href="Products.aspx" class="dropdown__sublink">
-                                   <i><img alt="Monitors" src="../Images/gpu.png" class="iconNav"/></i> GPUs
-                                 </a>
-                                                                <li>
-                                 <a href="Products.aspx" class="dropdown__sublink">
-                                   <i><img alt="Monitors" src="https://c1.neweggimages.com/ProductImageCompressAll1280/20-374-436-07.png" class="iconNav"/></i> <span style="display: inline-block;">Memory RAM</span>
+
+                               <li>
+                                   <a href="Products.aspx" class="dropdown__sublink">
+                                       <i><img alt="Video Card" src="../Images/gpu.png" class="iconNav" /></i> GPUs
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="ProductsStorage.aspx" class="dropdown__sublink">
+                                       <i><img alt="Storage" src="../Images/ssdIcon.png" class="iconNav" /></i> Storage
+                                   </a>
+                               </li>
+                               <li>
+                                 <a href="ProductsMemory.aspx" class="dropdown__sublink">
+                                   <i><img alt="Memory" src="https://c1.neweggimages.com/ProductImageCompressAll1280/20-374-436-07.png" class="iconNav"/></i> <span style="display: inline-block;">Memory RAM</span>
                                  </a>
                               </li>
                            </ul>
@@ -174,13 +180,13 @@
 
                     
                         <li>
-                           <a href="#" class="dropdown__link">
+                           <a href="ProductsMonitor.aspx" class="dropdown__link">
                               <i><img alt="Monitors" src="../Images/monitor.png" class="iconNav"/></i> Monitors
                            </a>                          
                         </li>
 
                         <li>
-                           <a href="#" class="dropdown__link">
+                           <a href="ProductsOperatingSystem.aspx" class="dropdown__link">
                               <i><img alt="OperationSystem" src="../Images/operative-system.png" class="iconNav"/> </i> OperatingSystem
                            </a>
                         </li>

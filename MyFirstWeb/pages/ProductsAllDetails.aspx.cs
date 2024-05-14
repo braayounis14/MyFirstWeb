@@ -28,7 +28,7 @@ namespace MyFirstWeb.pages
                     this.Label2.Text = dt.Rows[0][0].ToString();
                     this.Label4.Text = dt.Rows[0][1].ToString();
                     this.Label3.Text = dt.Rows[0][2].ToString();
-                    this.price.InnerText = "Price:" + dt.Rows[0][0].ToString() + "$";
+                    this.price.InnerText = "Price:" + dt.Rows[0][0].ToString() + "₪";
                     this.info.InnerText = dt.Rows[0][2].ToString();
                     string details = dt.Rows[0][2].ToString();
                     details = Regex.Replace(details, @"\.(\D)", "<li>$1");

@@ -24,11 +24,11 @@ namespace MyFirstWeb.pages
 
 
             String Email = this.Txt_Email.Text;
-            String Subject = this.Txt_Subject.Text;
-            String Body = this.Txt_Body.Text;
-         //   String file = this.Txt_file.Text;
+            String Subject = this.Txt_Subject.Text.Replace("'", "''");
+            String Body = this.Txt_Body.Text.Replace("'", "''");
+            //   String file = this.Txt_file.Text;
 
-            
+
 
 
             String st = "insert into [Messages] ([MessageDate],[Email],[Subject],[Body],[Read]) values (#" + DateTime.Now + "#,'"+Email+"','"+Subject+"','"+Body+"',"+false+")";

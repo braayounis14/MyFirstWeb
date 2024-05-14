@@ -1,0 +1,66 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF1E1775-3D50-45EA-A2D0-7C1B04AC803D}|MyFirstWeb\\MyFirstWeb.csproj|c:\\users\\braag\\onedrive\\documents\\github\\myfirstweb\\myfirstweb\\pages\\home1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{AF1E1775-3D50-45EA-A2D0-7C1B04AC803D}|MyFirstWeb\\MyFirstWeb.csproj|solutionrelative:myfirstweb\\pages\\home1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF1E1775-3D50-45EA-A2D0-7C1B04AC803D}|MyFirstWeb\\MyFirstWeb.csproj|C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\myfirstweb\\pages\\site1aftersign.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{AF1E1775-3D50-45EA-A2D0-7C1B04AC803D}|MyFirstWeb\\MyFirstWeb.csproj|solutionrelative:myfirstweb\\pages\\site1aftersign.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 241,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Site1AfterSign.Master",
+              "DocumentMoniker": "C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\MyFirstWeb\\pages\\Site1AfterSign.Master",
+              "RelativeDocumentMoniker": "MyFirstWeb\\pages\\Site1AfterSign.Master",
+              "ToolTip": "C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\MyFirstWeb\\pages\\Site1AfterSign.Master",
+              "RelativeToolTip": "MyFirstWeb\\pages\\Site1AfterSign.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-13T08:07:21.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home1.aspx",
+              "DocumentMoniker": "C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\MyFirstWeb\\pages\\Home1.aspx",
+              "RelativeDocumentMoniker": "MyFirstWeb\\pages\\Home1.aspx",
+              "ToolTip": "C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\MyFirstWeb\\pages\\Home1.aspx",
+              "RelativeToolTip": "MyFirstWeb\\pages\\Home1.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-12T08:55:51.587Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

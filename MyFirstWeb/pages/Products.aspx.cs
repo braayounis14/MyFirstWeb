@@ -10,16 +10,31 @@ namespace MyFirstWeb.pages
 {
     public partial class Products1 : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            int screenWidth = Request.Browser.ScreenPixelsWidth;
-            if (screenWidth < 2200)
-                this.DataList1.RepeatColumns = 4;
+            if (!IsPostBack)
+            {
+                // Check if the user has a preference for ddlView saved in a cookie
+                HttpCookie cookie = Request.Cookies["ddlViewValue"];
+                if (cookie != null)
+                {
+                    string ddlViewValue = cookie.Value;
+                    ddlView.SelectedValue = ddlViewValue;
+                }
+            }
+            int selectedValue;
+            if (int.TryParse(ddlView.SelectedValue, out selectedValue))
+                this.DataList1.RepeatColumns = selectedValue;
+            else
+                this.DataList1.RepeatColumns = 6;
+
+
 
         }
 
-        protected void DataList1_ItemCommand (object source, DataListCommandEventArgs e)
+        protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
         {
             string st = this.DataList1.DataKeys[e.Item.ItemIndex].ToString();
             Session["Im"] = st;
@@ -30,6 +45,14 @@ namespace MyFirstWeb.pages
         {
             BindData();
         }
+        protected void ddlView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Save the selected value of ddlView in a cookie
+            HttpCookie cookie = new HttpCookie("ddlViewValue");
+            cookie.Value = ddlView.SelectedValue;
+            cookie.Expires = DateTime.Now.AddYears(1); // Cookie expires in 1 year
+            Response.Cookies.Add(cookie);
+        }
         protected void btnSearch_Click(object sender, EventArgs e)
         {
             BindData();
@@ -38,7 +61,7 @@ namespace MyFirstWeb.pages
 
         protected void BindData()
         {
-            string selectCommand = "SELECT * FROM [GPU]";
+            string selectCommand = AccessDataSource1.SelectCommand;
             string sortBy = ddlSortBy.SelectedValue;
             if (!string.IsNullOrEmpty(txtKeyword.Text))
             {
@@ -46,9 +69,9 @@ namespace MyFirstWeb.pages
                 selectCommand += $" WHERE [ProductName] LIKE '%{keyword}%'";
             }
 
-            
 
-           else if (sortBy == "ASC" || sortBy == "DESC")
+
+            if (sortBy == "ASC" || sortBy == "DESC")
             {
                 // Sort by price
                 selectCommand += $" ORDER BY [Price] {sortBy}";
@@ -62,7 +85,6 @@ namespace MyFirstWeb.pages
             AccessDataSource1.SelectCommand = selectCommand;
             AccessDataSource1.DataBind();
         }
-
 
 
     }

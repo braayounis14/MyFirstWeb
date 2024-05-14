@@ -39,7 +39,6 @@
         <div class="img-card">
             <img runat="server" style="width: 100%; flex-shrink: 0; border-radius: 4px; height: 520px; object-fit: cover; " src="img/image-1.png" alt="" id="ProductImg">
             <!-- small img -->
-
         </div>
         <!-- Right side -->
         <div class="product-info">
@@ -63,7 +62,7 @@
 
             <div>
                 <p>Delivery:</p>
-                <p>Free standard shipping on orders over $35 before tax, plus free returns.</p>
+                <p>Free standard shipping on orders over ₪500, plus free returns.</p>
                 <div class="delivery">
                     <p>TYPE</p> <p>HOW LONG</p> <p>HOW MUCH</p>
                 </div>
@@ -71,13 +70,7 @@
                 <div class="delivery">
                     <p>World EggSaver Standard</p> 
                     <p>5-7 Business Days </p> 
-                    <p>$4.50</p>
-                </div>
-                <hr>
-                <div class="delivery">
-                    <p>World EggSaver Express</p> 
-                    <p>3-5 Business Days</p> 
-                    <p>$10.00</p>
+                    <p>₪50</p>
                 </div>
                 <hr>
                 <div class="delivery">

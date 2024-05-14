@@ -35,10 +35,16 @@ namespace MyFirstWeb.pages
 
                     string category = this.DropDownList1.SelectedValue;
                     string st = $"insert into [{category}]";
-                    st = st+ "([Price],[ProductName],[Details],[Image]) values (" +
-                        this.txtPrice.Text + ",'" + this.txtName.Text + "','" + this.txtDetails.Text + "','~/images/" + fileName + "')";
+                    string Details = this.txtDetails.Text.Replace("'", "''");
+                    string Name = this.txtName.Text.Replace("'", "''");
+
+                    st = st+ "([Price],[ProductName],[Details],[Image]) values (" + this.txtPrice.Text + ",'" + Name + "','" + Details + "','~/images/" + fileName + "')";
+                   
                     DBFunction.ChangeTable(st, "DB.accdb");
-                    
+                    this.txtPrice.Text = "";
+                    this.txtName.Text = "";
+                    this.txtDetails.Text = "";
+
                 }
 
 

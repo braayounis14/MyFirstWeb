@@ -130,7 +130,9 @@
     <Content Include="Images\motherboard-64.png" />
     <Content Include="Images\monitor.png" />
     <Content Include="Images\Newegg_full_color_logo_RGB.SVG" />
+    <Content Include="Images\OperatingSystemPic.jpg" />
     <Content Include="Images\operative-system.png" />
+    <Content Include="Images\ssdIcon.png" />
     <Content Include="obj\Debug\MyFirstWeb.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\MyFirstWeb.dll" />
     <Content Include="obj\Debug\MyFirstWeb.pdb" />

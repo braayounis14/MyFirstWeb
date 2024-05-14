@@ -17,7 +17,7 @@
 }
     </style>
 
-      <section class="headline">
+  <section class="headline">
     <h1>Newegg Website</h1>
     <p> Fueling Your Passion for Powerful Computing</p>
   </section>

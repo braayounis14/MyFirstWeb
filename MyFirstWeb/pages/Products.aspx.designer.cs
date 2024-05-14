@@ -15,13 +15,13 @@ namespace MyFirstWeb.pages
     {
 
         /// <summary>
-        /// Label1 control.
+        /// lblSort control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblSort;
 
         /// <summary>
         /// ddlSortBy control.
@@ -33,13 +33,13 @@ namespace MyFirstWeb.pages
         protected global::System.Web.UI.WebControls.DropDownList ddlSortBy;
 
         /// <summary>
-        /// Label2 control.
+        /// lblSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lblSearch;
 
         /// <summary>
         /// txtKeyword control.
@@ -58,6 +58,24 @@ namespace MyFirstWeb.pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSearch;
+
+        /// <summary>
+        /// lblItemsPerColumn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblItemsPerColumn;
+
+        /// <summary>
+        /// ddlView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlView;
 
         /// <summary>
         /// AccessDataSource1 control.

@@ -78,9 +78,14 @@
     padding-right: 12px;
     padding-bottom: 12px;
     padding-left: 12px;
-    background-color: #7980c5;
+    background-color: #ffa33a;
     border-radius: 10px;
+    border: 1px solid #d9d9d9;
+    border-color: #c60;
     text-align: center;
+}
+.AddBtn {
+    text-decoration: none !important;
 }
 
     .icon-box .span {
@@ -132,4 +137,106 @@
     -webkit-box-orient: vertical;
 }
 
+
+
+
+form {
+    background-color: #f1f1f1;
+}
+
+.headline {
+    height: auto;
+    margin-top: 100px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: normal;
+    font-family: inherit;
+    text-decoration: none;
+    -webkit-text-size-adjust: none;
+}
+
+.banner-flexible-img {
+    width: 100%;
+    height: auto;
+    max-width: 200%;
+    display: block;
+    vertical-align: top;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    min-width: 100%;
+    border-radius: 8px;
+}
+
+.page-content-inner {
+    max-width: none;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 30px;
+}
+
+.sort {
+    width: 100%;
+    height: auto;
+    max-width: 200%;
+    display: block;
+    vertical-align: top;
+    min-width: 100%;
+    border-radius: 8px;
+    padding-top: 20px;
+}
+
+.features {
+    padding-top: unset;
+    padding: 20px 20px;
+}
+
+.sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ddlView {
+    /* Add your default styles here */
+    margin-left: auto; /* This will push the ddlView div to the right */
+}
+
+.ddlSort {
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .sort {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the left on smaller screens */
+    }
+
+    .ddlView {
+        margin: 10px 0; /* Add some space above and below the ddlView div on smaller screens */
+    }
+
+    .ddlSort {
+        margin: 10px 0;
+        padding-left: 0px;
+    }
+}
+
+.Sortborder {
+    border-top: 1px solid #3b4a65;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid #3b4a65;
+    margin-top: 3px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
 /*# sourceMappingURL=index.css.map */

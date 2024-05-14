@@ -145,7 +145,7 @@ Password should have at least one special character ( @, #, %, &, !, $, *)   .)"
                     <div class="login__field">
                        <i class="login__icon fas fa-flag"></i>
                     <asp:DropDownList  class="login__input" required="true" ID="DpCountry" runat="server" >
-                        <asp:ListItem Text="Select a Category" Value="0" style="font-weight: bold; "></asp:ListItem>
+        <asp:ListItem Text="Select a Category" Value="0" style="font-weight: bold; "></asp:ListItem>
    
     <asp:ListItem Text="North America" Value="North America" Disabled="true" style="color: #0000FF; font-weight: bold;"></asp:ListItem>
   
