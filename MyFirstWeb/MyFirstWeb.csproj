@@ -115,6 +115,7 @@
     <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="Images\MotherBoard.png" />
     <Content Include="Images\1920x120v2%402x.png" />
     <Content Include="Images\434723771_424932946753279_5729427194507615121_n.jpg" />
     <Content Include="Images\c5527f47-def9-433c-9cce-23f286dbfea2_Front.jpg" />
@@ -144,6 +145,7 @@
     <Content Include="pages\Buy.aspx" />
     <Content Include="pages\ChangePassword.aspx" />
     <Content Include="pages\ClientContact.aspx" />
+    <Content Include="pages\ContactSupport.aspx" />
     <Content Include="pages\ContactUs.aspx" />
     <Content Include="pages\ContactUs1.aspx" />
     <Content Include="pages\ForgetPassword.aspx" />
@@ -154,7 +156,6 @@
     <Content Include="pages\MyProfile.aspx" />
     <Content Include="pages\MyCart.aspx" />
     <Content Include="pages\Notifications.aspx" />
-    <Content Include="pages\Privacy.aspx" />
     <Content Include="pages\ProductsCase.aspx" />
     <Content Include="pages\ProductsCpu.aspx" />
     <Content Include="pages\ProductsCpuCooler.aspx" />
@@ -196,7 +197,6 @@
     <Content Include="styles\lol1.css" />
     <Content Include="styles\style2.css" />
     <Content Include="styles\Style1.css" />
-    <Content Include="styles\templatemo-style.css" />
     <Content Include="styles\test.css" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -261,6 +261,13 @@
     <Compile Include="pages\ClientContact.aspx.designer.cs">
       <DependentUpon>ClientContact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pages\ContactSupport.aspx.cs">
+      <DependentUpon>ContactSupport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ContactSupport.aspx.designer.cs">
+      <DependentUpon>ContactSupport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pages\ContactUs1.aspx.cs">
       <DependentUpon>ContactUs1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -295,13 +302,6 @@
     </Compile>
     <Compile Include="pages\Notifications.aspx.designer.cs">
       <DependentUpon>Notifications.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="pages\Privacy.aspx.cs">
-      <DependentUpon>Privacy.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\Privacy.aspx.designer.cs">
-      <DependentUpon>Privacy.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\ProductsCase.aspx.cs">
       <DependentUpon>ProductsCase.aspx</DependentUpon>

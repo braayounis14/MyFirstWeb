@@ -42,15 +42,6 @@ namespace MyFirstWeb.pages
         protected global::System.Web.UI.WebControls.TextBox Txt_Body;
 
         /// <summary>
-        /// Txt_file control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt_file;
-
-        /// <summary>
         /// Submit control.
         /// </summary>
         /// <remarks>

@@ -12,19 +12,32 @@ namespace MyFirstWeb.pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
 
-            this.txt_PassAnswer.Text = InfoByEmailSession("PassAnswer");
-            this.Txt_FullName.Text = InfoByEmailSession("FullName");
-            this.Txt_Email.Text = InfoByEmailSession("Email");
-            this.DpCountry.SelectedIndex = FindIndex(this.DpCountry, InfoByEmailSession("State"));
-            this.DpPassQuestion.SelectedIndex = FindIndex(this.DpPassQuestion, InfoByEmailSession("PassQuastion"));
+            if (!IsPostBack)
+            {
+                Session["Email"] = "dsa@g.dsa";
+                this.txt_PassAnswer.Text = InfoByEmailSession("PassAnswer");
+                this.Txt_FullName.Text = InfoByEmailSession("FullName");
+                this.Txt_Email.Text = InfoByEmailSession("Email");
+                this.DpCountry.SelectedIndex = FindIndex(this.DpCountry, InfoByEmailSession("State"));
+                this.DpPassQuestion.SelectedIndex = FindIndex(this.DpPassQuestion, InfoByEmailSession("PassQuastion"));
 
+            }
 
         }
 
         protected void Btn_Save_Click(object sender, EventArgs e)
         {
+
+
+            User userObj = new User();
+            userObj.UserEmail = Session["Email"].ToString();
+
+             if (userObj.UpdateInfo(this.Txt_FullName.Text, this.Txt_Email.Text, this.DpCountry.SelectedValue.ToString(), this.DpPassQuestion.SelectedValue.ToString(), this.txt_PassAnswer.Text))
+            {
+                this.notfi.Visible = true;
+            }
+
 
         }
 
@@ -48,7 +61,9 @@ namespace MyFirstWeb.pages
 
         }
 
-
-
+        protected void Btn_Cancel_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Home1.aspx");
+        }
     }
 }

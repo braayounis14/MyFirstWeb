@@ -7,7 +7,6 @@
     <link href="../styles/MyProfile.css" rel="stylesheet" />
 
 
-
   <div class="container containerCont  mt-4" style="padding-top: 100px; max-width: 1320px;">
       <div class="row">
           <div class="col-lg-3 my-lg-0 my-md-1">
@@ -83,10 +82,6 @@
                                 <div class="form-group">
                                     <label class="form-label">FullName</label>
                              <asp:TextBox type="text" class="form-control" AutoCompleteType="DisplayName" placeholder="Put Your Full Name" ID="Txt_FullName" runat="server"></asp:TextBox>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label">Name</label>
-                                    <input type="text" class="form-control" value="Nelle Maxwell">
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">E-mail</label>
@@ -324,10 +319,36 @@
           </div>
       </div>
 
+
+        <div runat="server" style="" id="notfi" class="notification" visible="false">
+        <div style="font-family: 'Poppins', sans-serif;" class="notification__body">
+            <i class="fas fa-solid fa-check check" style="    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    min-width: 35px;
+    background-color: #4070f4;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;"></i>
+
+
+    <div class="message">
+      <span class="text text-1">Success</span>
+      <span class="text text-2">Your changes has been saved</span>
+    </div>
+
+
+        </div>
+        <div class="notification__progress"></div>
+    </div>
+
+      <link href="../styles/Notifications.css" rel="stylesheet" />
+
 <div class="text-right mt-3">
 
              <asp:Button ID="Btn_Save" type="button" class="btn btn-primary" runat="server" Text="Save changes" OnClientClick="return validateCountry();" OnClick="Btn_Save_Click" />&nbsp;
-     <asp:Button ID="Btn_Cancel" type="button" class="btn btn-default" runat="server" Text="Cancel" />
+     <asp:Button ID="Btn_Cancel" type="button" class="btn btn-default" runat="server" Text="Cancel" OnClick="Btn_Cancel_Click" />
           
         </div>
 
@@ -393,6 +414,26 @@
       .nav__list {
         column-gap: 1rem!important; 
     }
+}
+
+
+.notification {
+    font-family: 'Poppins', sans-serif; 
+    position: fixed; 
+    transform: translateX(-50%); 
+    padding: 10px;
+    background-color:#fff;
+    color:black;
+    box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+}   
+.notification__progress{
+    background: #4070f4;
+}
+
+.message{
+        display: flex;
+    flex-direction: column;
+    margin: 0 20px;
 }
     </style>
 

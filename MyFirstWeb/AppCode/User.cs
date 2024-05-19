@@ -176,20 +176,66 @@ public class User
         }
         return false;
     }
+    public bool UpdateInfo(string fullName, string email, string country, string PassQuastion, string PassAnswer)
+    {
+        bool updated = false;
+        List<string> updates = new List<string>();
 
-    public bool PassCheck(string password)
+        // Check each parameter and add the update SQL statement to the list if the parameter is not null or empty
+      
+        if (!string.IsNullOrEmpty(fullName))
+        {
+            updates.Add("[FullName]='" + fullName + "'");
+        }
+        if (!string.IsNullOrEmpty(email))
+        {
+            updates.Add("[Email]='" + email + "'");
+        }
+        if (!string.IsNullOrEmpty(country))
+        {
+            updates.Add("[State]='" + country + "'");
+        }
+        if (!string.IsNullOrEmpty(PassQuastion))
+        {
+            updates.Add("[PassQuastion]='" + PassQuastion + "'");
+        }
+        if (!string.IsNullOrEmpty(PassAnswer))
+        {
+            updates.Add("[PassAnswer]='" + PassAnswer + "'");
+        }
+
+
+        string updateFields = string.Join(",", updates);
+        // If there are updates to be made, construct the SQL update statement and execute it
+        if (updates.Count > 0)
+        {
+            string sqlStr = "UPDATE [USERS] SET " + updateFields + " WHERE [Email]='" + this.userEmail + "'";
+            DBFunction.ChangeTable(sqlStr, "DB.accdb");
+            updated = true;
+        }
+
+        return updated;
+    }
+
+
+    public bool PassCheck()
     {
 
-        String st = "select * from [USERS] where [Email]='" + this.userEmail + "' and [Password]='" + password + "'";
+        String st = "select * from [USERS] where [Email]='" + this.userEmail + "' and [Password]='" + this.userPassword + "'";
+        DataTable dt = DBFunction.SelectFromTable(st, "DB.accdb");
+        return dt.Rows.Count > 0; 
+
+    }
+
+
+    public string GetInfoByEmail(string field)
+    {
+
+        String st = "select * from [USERS] where [Email]='" + this.userEmail + "'";
         DataTable dt = DBFunction.SelectFromTable(st, "DB.accdb");
         if (dt.Rows.Count > 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return dt.Rows[0][field].ToString();
+        return null;
     }
 
 

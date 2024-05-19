@@ -11,7 +11,7 @@ namespace MyFirstWeb.pages
 {
 
 
-    public partial class Privacy
+    public partial class ContactSupport
     {
 
         /// <summary>
@@ -24,6 +24,15 @@ namespace MyFirstWeb.pages
         protected global::System.Web.UI.WebControls.DataList DataList2;
 
         /// <summary>
+        /// lblUserName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblUserName;
+
+        /// <summary>
         /// lblEmail control.
         /// </summary>
         /// <remarks>
@@ -33,6 +42,15 @@ namespace MyFirstWeb.pages
         protected global::System.Web.UI.WebControls.Label lblEmail;
 
         /// <summary>
+        /// lblSubject control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSubject;
+
+        /// <summary>
         /// lblDate control.
         /// </summary>
         /// <remarks>
@@ -40,6 +58,15 @@ namespace MyFirstWeb.pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDate;
+
+        /// <summary>
+        /// lblStatus1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblStatus1;
 
         /// <summary>
         /// DataList1 control.
@@ -69,15 +96,6 @@ namespace MyFirstWeb.pages
         protected global::System.Web.UI.WebControls.LinkButton BtnSend;
 
         /// <summary>
-        /// AccessDataSource2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.AccessDataSource AccessDataSource2;
-
-        /// <summary>
         /// AccessDataSource1 control.
         /// </summary>
         /// <remarks>
@@ -85,5 +103,14 @@ namespace MyFirstWeb.pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.AccessDataSource AccessDataSource1;
+
+        /// <summary>
+        /// AccessDataSource2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.AccessDataSource AccessDataSource2;
     }
 }

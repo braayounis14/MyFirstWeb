@@ -15,16 +15,10 @@ namespace MyFirstWeb.pages
         }
 
         protected void Btn_Logout(object sender, EventArgs e)
-        { 
-        
-        
-        
-        
+        {
+            Session["email"] = null ;
+            Response.Redirect("Home.aspx");
         }
 
-
-
-
-
-        }
+    }
 }

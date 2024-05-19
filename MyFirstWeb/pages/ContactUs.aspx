@@ -49,7 +49,7 @@
       </div>
       <div class="right-side">
         <div class="topic-text">Send us a message</div>
-        <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+        <p>Thank you for visiting NewEgg, your go-to online shop for the best PC parts. We're here to help with any questions or concerns you may have. Whether you need assistance with an order, have a product inquiry, or require technical support, our team is ready to provide you with the support you need.</p>
       
         <div class="input-box">
             <asp:TextBox ID="Txt_Email" required="true" placeholder="Enter your Email" runat="server"></asp:TextBox>
@@ -60,13 +60,15 @@
         <div class="input-box message-box">
            <asp:TextBox ID="Txt_Body" required="true" placeholder="enter your Issue Details" runat="server" TextMode="MultiLine"></asp:TextBox>
         </div>
-           <div class="input-box">
- <asp:TextBox ID="Txt_file" type="file" style="padding:10px" placeholder="enter your Subject" runat="server"></asp:TextBox>
- </div>
+
         <div class="button">
             <asp:Button ID="Submit" CssClass="buttonSubmit" runat="server" Text="Send Now" OnClick="Button1_Click" />
         </div>
           <asp:Label ID="lbl_Stuts" runat="server" Text=""></asp:Label>
+
+          <br />
+          <br />
+          <div><h3>Important Notice</h3><p>If you've lost access to your account, avoid using your registered email when contacting us. This can delay issue resolution. Use an alternate email or visit our <a target="_new" rel="noreferrer" href="ForgetPassword.aspx">Account Recovery page</a>.</p></div>
     </div>
     </div>
   </div>

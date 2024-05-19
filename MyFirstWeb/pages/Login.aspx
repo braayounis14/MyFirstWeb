@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Sign in</title>
-
+    <link rel="shortcut icon" href="../Images/Newegg_full_color_logo_RGB.SVG"/>
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 
 </head>

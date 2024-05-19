@@ -21,9 +21,11 @@ namespace MyFirstWeb.pages
             string newpassword = this.txtPswNew.Text;
             userObj.UserPassword = this.txtPsw.Text;
             userObj.UserEmail = Session["Email"].ToString();
-            if (userObj.PassCheck(this.txtPsw.Text))
+          
+            
+            if (userObj.PassCheck())
             {
-                if (userObj.UpdatePassword(this.txtPswNew.Text))
+                if (userObj.UpdatePassword(newpassword))
                     msgtxt = "your password has been changed succefully";
                 else
                     msgtxt = "your password has not been changed, there is";

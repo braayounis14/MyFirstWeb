@@ -26,18 +26,19 @@ namespace MyFirstWeb.pages
             String Password = this.psw_txt.Text;
 
 
+            User userObj = new User();
+            userObj.UserEmail = this.user_txt.Text;
+            userObj.UserPassword = this.psw_txt.Text; 
 
-            
             if (Email == "admin@admin.com" && Password == "admin1212")
             {
                 Session["email"] = Email;
                 Response.Redirect("AdminDashboard.aspx");
             }
-              
-
-            String st = "select * from [USERS] where [Email]='"+Email+"' and [Password]='"+Password+"'";
-            DataTable dt = DBFunction.SelectFromTable(st, "DB.accdb");
-            if (dt.Rows.Count > 0)
+           
+            
+            if (userObj.IsExistUser())
+            if (userObj.PassCheck())
             {
                 Session["email"] = Email;
                 Response.Redirect("Home1.aspx");

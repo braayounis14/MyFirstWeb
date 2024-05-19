@@ -11,7 +11,7 @@ body, html {
 
 .center {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: calc(50% + 12rem);
     transform: translate(-50%, -50%);
 }
@@ -199,6 +199,13 @@ body, html {
         padding: 0 0.5rem 0 1.5rem;
     }
 
+.input {
+    border-bottom-right-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}
         .chat .input i {
             font-size: 1.5rem;
             margin-right: 1rem;

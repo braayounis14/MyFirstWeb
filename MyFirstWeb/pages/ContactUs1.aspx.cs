@@ -12,7 +12,8 @@ namespace MyFirstWeb.pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            this.Txt_Email.Text = Session["email"].ToString();
+            this.Txt_Email.Enabled = false;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -20,15 +21,15 @@ namespace MyFirstWeb.pages
 
 
 
-            String Email = this.Txt_Email.Text;
-            String Subject = this.Txt_Subject.Text.Replace("'", "''");
-            String Body = this.Txt_Body.Text.Replace("'", "''");
+            string Email = Session["email"].ToString();
+            string Subject = this.Txt_Subject.Text.Replace("'", "''");
+            string Body = this.Txt_Body.Text.Replace("'", "''");
             //   String file = this.Txt_file.Text;
 
 
 
             DateTime now = DateTime.Now;
-            String st = "insert into [Messages] ([MessageDate],[Email],[Subject],[Body],[Read]) values (#" + now  + "#,'" + Email + "','" + Subject + "','" + Body + "'," + false + ")";
+            string st = "insert into [Messages] ([MessageDate],[Email],[Subject],[Body],[Read]) values (#" + now  + "#,'" + Email + "','" + Subject + "','" + Body + "'," + false + ")";
             DBFunction.ChangeTable(st, "DB.accdb");
 
 
@@ -61,10 +62,9 @@ namespace MyFirstWeb.pages
             this.Txt_Subject.Text = "";
             this.Txt_Body.Text = "";
 
-
-
-
-
         }
+
+
+
     }
 }

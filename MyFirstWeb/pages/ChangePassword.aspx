@@ -45,9 +45,6 @@
             }
         </script>
 
-
-
-
     <link href="../styles/MasterFooter.css" rel="stylesheet" />
     <link href="../styles/ForgetStyle.css" rel="stylesheet" />
 

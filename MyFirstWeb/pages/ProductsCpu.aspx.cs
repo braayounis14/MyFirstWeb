@@ -58,7 +58,7 @@ namespace MyFirstWeb.pages
 
 
         protected void BindData()
-        {
+            {
             string selectCommand = AccessDataSource1.SelectCommand;
             string sortBy = ddlSortBy.SelectedValue;
             if (!string.IsNullOrEmpty(txtKeyword.Text))

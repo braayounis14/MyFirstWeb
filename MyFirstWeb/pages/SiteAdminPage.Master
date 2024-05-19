@@ -6,7 +6,8 @@
 
 <html>
 <head runat="server">
-
+    <title>NewEgg Admin Dashboard</title>
+    <link rel="shortcut icon" href="../Images/Newegg_full_color_logo_RGB.SVG">
 
 
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -21,7 +22,7 @@
      
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <title>Admin Dashboard Panel</title>
+   
 
     <link href="../styles/AdminDash.css" rel="stylesheet" />
 
@@ -68,10 +69,12 @@
             </ul>
 
             <ul class="logout-mode">
-                <li><a href="Login.aspx">
+                
+                <li><a>
+                     <asp:LinkButton ID="BtnLogout" OnClick="Btn_Logout" runat="server">
                     <i class="uil uil-signout"></i>
                     <span class="link-name">Logout</span>
-                </a></li>
+          </asp:LinkButton>      </a></li>
                 <li class="mode">
                     <a href="#">
                         <i class="uil uil-moon"></i>

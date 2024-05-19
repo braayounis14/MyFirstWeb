@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AF1E1775-3D50-45EA-A2D0-7C1B04AC803D}|MyFirstWeb\\MyFirstWeb.csproj|c:\\users\\braag\\onedrive\\documents\\github\\myfirstweb\\myfirstweb\\pages\\home1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{AF1E1775-3D50-45EA-A2D0-7C1B04AC803D}|MyFirstWeb\\MyFirstWeb.csproj|solutionrelative:myfirstweb\\pages\\home1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{AF1E1775-3D50-45EA-A2D0-7C1B04AC803D}|MyFirstWeb\\MyFirstWeb.csproj|c:\\users\\braag\\onedrive\\documents\\github\\myfirstweb\\myfirstweb\\pages\\clientcontact.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF1E1775-3D50-45EA-A2D0-7C1B04AC803D}|MyFirstWeb\\MyFirstWeb.csproj|solutionrelative:myfirstweb\\pages\\clientcontact.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF1E1775-3D50-45EA-A2D0-7C1B04AC803D}|MyFirstWeb\\MyFirstWeb.csproj|C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\myfirstweb\\pages\\site1aftersign.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{AF1E1775-3D50-45EA-A2D0-7C1B04AC803D}|MyFirstWeb\\MyFirstWeb.csproj|solutionrelative:myfirstweb\\pages\\site1aftersign.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+      "AbsoluteMoniker": "D:0:0:{AF1E1775-3D50-45EA-A2D0-7C1B04AC803D}|MyFirstWeb\\MyFirstWeb.csproj|C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\myfirstweb\\pages\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{AF1E1775-3D50-45EA-A2D0-7C1B04AC803D}|MyFirstWeb\\MyFirstWeb.csproj|solutionrelative:myfirstweb\\pages\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF1E1775-3D50-45EA-A2D0-7C1B04AC803D}|MyFirstWeb\\MyFirstWeb.csproj|C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\myfirstweb\\pages\\clientcontact.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{AF1E1775-3D50-45EA-A2D0-7C1B04AC803D}|MyFirstWeb\\MyFirstWeb.csproj|solutionrelative:myfirstweb\\pages\\clientcontact.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,27 +39,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Site1AfterSign.Master",
-              "DocumentMoniker": "C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\MyFirstWeb\\pages\\Site1AfterSign.Master",
-              "RelativeDocumentMoniker": "MyFirstWeb\\pages\\Site1AfterSign.Master",
-              "ToolTip": "C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\MyFirstWeb\\pages\\Site1AfterSign.Master",
-              "RelativeToolTip": "MyFirstWeb\\pages\\Site1AfterSign.Master",
+              "Title": "Login.aspx",
+              "DocumentMoniker": "C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\MyFirstWeb\\pages\\Login.aspx",
+              "RelativeDocumentMoniker": "MyFirstWeb\\pages\\Login.aspx",
+              "ToolTip": "C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\MyFirstWeb\\pages\\Login.aspx",
+              "RelativeToolTip": "MyFirstWeb\\pages\\Login.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-13T08:07:21.479Z",
+              "WhenOpened": "2024-05-19T12:59:08.063Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Home1.aspx",
-              "DocumentMoniker": "C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\MyFirstWeb\\pages\\Home1.aspx",
-              "RelativeDocumentMoniker": "MyFirstWeb\\pages\\Home1.aspx",
-              "ToolTip": "C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\MyFirstWeb\\pages\\Home1.aspx",
-              "RelativeToolTip": "MyFirstWeb\\pages\\Home1.aspx",
+              "Title": "ClientContact.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\MyFirstWeb\\pages\\ClientContact.aspx.cs",
+              "RelativeDocumentMoniker": "MyFirstWeb\\pages\\ClientContact.aspx.cs",
+              "ToolTip": "C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\MyFirstWeb\\pages\\ClientContact.aspx.cs",
+              "RelativeToolTip": "MyFirstWeb\\pages\\ClientContact.aspx.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAEwHcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T12:07:47.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientContact.aspx",
+              "DocumentMoniker": "C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\MyFirstWeb\\pages\\ClientContact.aspx",
+              "RelativeDocumentMoniker": "MyFirstWeb\\pages\\ClientContact.aspx",
+              "ToolTip": "C:\\Users\\braag\\OneDrive\\Documents\\GitHub\\MyFirstWeb\\MyFirstWeb\\pages\\ClientContact.aspx",
+              "RelativeToolTip": "MyFirstWeb\\pages\\ClientContact.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-12T08:55:51.587Z",
+              "WhenOpened": "2024-05-19T12:00:10.229Z",
               "EditorCaption": ""
             }
           ]
