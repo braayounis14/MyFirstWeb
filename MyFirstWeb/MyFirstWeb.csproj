@@ -115,6 +115,9 @@
     <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="Images\CorsairMemory.jpg" />
+    <Content Include="Images\CpuCoolerCategory.png" />
+    <Content Include="Images\Monitor_Category.png" />
     <Content Include="Images\MotherBoard.png" />
     <Content Include="Images\1920x120v2%402x.png" />
     <Content Include="Images\434723771_424932946753279_5729427194507615121_n.jpg" />
@@ -133,6 +136,8 @@
     <Content Include="Images\Newegg_full_color_logo_RGB.SVG" />
     <Content Include="Images\OperatingSystemPic.jpg" />
     <Content Include="Images\operative-system.png" />
+    <Content Include="Images\Power_Supply.png" />
+    <Content Include="Images\SamsungStorage.jpg" />
     <Content Include="Images\ssdIcon.png" />
     <Content Include="obj\Debug\MyFirstWeb.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\MyFirstWeb.dll" />
@@ -161,7 +166,7 @@
     <Content Include="pages\ProductsCpuCooler.aspx" />
     <Content Include="pages\ProductsMemory.aspx" />
     <Content Include="pages\ProductsMonitor.aspx" />
-    <Content Include="pages\Products.aspx" />
+    <Content Include="pages\ProductsGpu.aspx" />
     <Content Include="pages\Products1Details.aspx" />
     <Content Include="pages\ProductsMotherboard.aspx" />
     <Content Include="pages\ProductsOperatingSystem.aspx" />
@@ -338,12 +343,12 @@
     <Compile Include="pages\ProductsMonitor.aspx.designer.cs">
       <DependentUpon>ProductsMonitor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\Products.aspx.cs">
-      <DependentUpon>Products.aspx</DependentUpon>
+    <Compile Include="pages\ProductsGpu.aspx.cs">
+      <DependentUpon>ProductsGpu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\Products.aspx.designer.cs">
-      <DependentUpon>Products.aspx</DependentUpon>
+    <Compile Include="pages\ProductsGpu.aspx.designer.cs">
+      <DependentUpon>ProductsGpu.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\Products1Details.aspx.cs">
       <DependentUpon>Products1Details.aspx</DependentUpon>

@@ -43,7 +43,7 @@
         <div class="menu-items">
             <ul class="nav-links">
                 <li><a href="AdminDashboard.aspx">
-                    <i class="uil uil-estate"></i>
+                   <i class="uil"> <img style="width: 24px;height: 24px;" src="https://cdn-icons-png.flaticon.com/512/4254/4254577.png" alt="Alternate Text"> </i>
                     <span class="link-name">Dahsboard</span>
                 </a></li>
                 <li><a href="AddProduct.aspx">
@@ -62,9 +62,9 @@
                     <i class="uil uil-comments"></i>
                     <span class="link-name">Comment</span>
                 </a></li>
-                <li><a href="#">
-                    <i class="uil uil-share"></i>
-                    <span class="link-name">Share</span>
+                <li><a href="Home1.aspx">
+                     <i class="uil uil-estate"></i>
+                    <span class="link-name">Home</span>
                 </a></li>
             </ul>
 

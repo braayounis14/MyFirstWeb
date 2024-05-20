@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml.Linq;
 
 namespace MyFirstWeb.pages
 {
@@ -121,11 +122,20 @@ namespace MyFirstWeb.pages
             if (Session["Key"] != null && !string.IsNullOrEmpty(Session["Key"].ToString()))
             {
                 string key = Session["Key"].ToString();
+                string email = this.lblEmail.Text;
                 string deleteQuery = "DELETE FROM [UserMessages] WHERE [Key] = '" + key + "'";
                 DBFunction.ChangeTable(deleteQuery, "DB.accdb");
+
+
+                key = "{"+Session["Key"].ToString().ToUpper()+"}";
+                deleteQuery = $"DELETE FROM Messages WHERE [Key] = '{key}' AND [Email] = '{email}'";
+
+                DBFunction.ChangeTable(deleteQuery, "DB.accdb");
+
+                AccessDataSource1.DataBind();
             }
 
         }
 
    }
-}
+}   

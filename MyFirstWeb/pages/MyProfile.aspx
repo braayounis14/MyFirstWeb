@@ -50,7 +50,7 @@
                           </a>
                       </li>
                       <li>
-                          <a href="#" class="text-decoration-none d-flex align-items-start">
+                          <a href="ContactSupport.aspx" class="text-decoration-none d-flex align-items-start">
                               <div class="fas fa-headset pt-2 me-3" aria-hidden="true"></div>
                               <div class="d-flex flex-column">
                                   <div class="link">Help &amp; Support</div>

@@ -152,7 +152,7 @@
     <div class="messages">
         <asp:DataList ID="DataList1" runat="server" DataSourceID="AccessDataSource1" DataKeyField="Key" OnItemCommand="DataList1_ItemCommand">
             <ItemTemplate>
-                <div class="<%# Eval("Email").ToString() == "admin@admin.com" ? "message stark" : "message parker" %>">
+                <div class="<%# Eval("Email").ToString() == "admin@admin.com" ? "message parker" : "message stark" %>">
                     <asp:Label Text='<%# Eval("Body") %>' runat="server" ID="Label2" />
                 </div>
             </ItemTemplate>

@@ -11,32 +11,15 @@
         <p>Fueling Your Passion for Powerful Computing</p>
     </section>
 
-    <section class="features">
-  <div class="feature-container">
-    <img src="https://c1.neweggimages.com/ProductImageCompressAll1280/14-932-676-02.jpg" alt="Flexbox Feature">
-    <h2>Gpu Category</h2>
-    <p>In Stock Video Cards Upgrade Now!</p>
-  </div>
-  <div class="feature-container">
-    <img src="../Images/download.png" alt="Flexbox Feature">
-    <h2>Build PC Category</h2>
-    <p>You can build your Pc easily </p>
-  </div>
-  <div class="feature-container"> 
-    <img src="../Images/434723771_424932946753279_5729427194507615121_n.jpg" alt="Flexbox Feature">
-    <h2>Our new Products</h2>
-    <p>New At NewEgg</p>
-  </div>
-</section>
-    
 
-      <div style="margin:10px" class="section trending">
+
+      <div style="margin-top:40px" class="section trending">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
           <div class="section-heading">
-            <h6 class="categoryText">Trending</h6>
-            <h2 class="categoryText">Trending Games</h2>
+            <h6 class="categoryText">Featured</h6>
+            <h2 class="categoryText">Featured Items</h2>
           </div>
         </div>
         <div class="col-lg-6">
@@ -47,52 +30,52 @@
         <div class="col-lg-3 col-md-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img class="categoryImg TrendImg" src="https://www.gigabyte.com/Image/2a0b3af92d42cc09236c06c389d0a032/Product/32146/webp/2000" /></a>
-              <span class="price"><em>$28</em>$20</span>
+              <a href="ProductsMotherboard.aspx"><img class="categoryImg TrendImg" src="https://www.gigabyte.com/Image/2a0b3af92d42cc09236c06c389d0a032/Product/32146/webp/2000" /></a>
+             
             </div>
             <div class="down-content">
               <span class="category">Action</span>
               <h4>Assasin Creed</h4>
-              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+              <a href="ProductsMotherboard.aspx"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img class="categoryImg TrendImg" src="https://www.gigabyte.com/Image/2a0b3af92d42cc09236c06c389d0a032/Product/32146/webp/2000" alt=""></a>
-              <span class="price">$44</span>
+              <a href="ProductsPowerSupply.aspx"><img class="categoryImg TrendImg" src="../Images/Power_Supply.png" alt=""></a>
+             
             </div>
             <div class="down-content">
               <span class="category">Action</span>
               <h4>Assasin Creed</h4>
-              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+              <a href="ProductsPowerSupply.aspx"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img class="categoryImg TrendImg" src="../Images/MotherBoard.png" /></a>
-              <span class="price"><em>$64</em>$44</span>
+              <a href="ProductsCase.aspx"><img class="categoryImg TrendImg" src="https://d1q3zw97enxzq2.cloudfront.net/images/3000D_RGB_Main_Visual.width-1000.format-webp.webp" /></a>
+             
             </div>
             <div class="down-content">
               <span class="category">Action</span>
               <h4>Assasin Creed</h4>
-              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+              <a href="ProductsCase.aspx"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img class="categoryImg TrendImg" src="https://dlcdnwebimgs.asus.com/gain/2808AAB9-285F-4F07-A8B9-43C783E92377/w1000/h732" /></a>
-              <span class="price">$32</span>
+              <a href="ProductsGpu.aspx"><img class="categoryImg TrendImg" src="https://dlcdnwebimgs.asus.com/gain/2808AAB9-285F-4F07-A8B9-43C783E92377/w1000/h732" /></a>
+              
             </div>
             <div class="down-content">
               <span class="category">Action</span>
               <h4>Assasin Creed</h4>
-              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+              <a href="ProductsGpu.aspx"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
         </div>
@@ -106,8 +89,8 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="section-heading">
-            <h6 class="categoryText">TOP GAMES</h6>
-            <h2 class="categoryText">Most Played</h2>
+            <h6 class="categoryText">Our Products</h6>
+            <h2 class="categoryText">Most Buyed</h2>
           </div>
         </div>
         <div class="col-lg-6">
@@ -118,11 +101,11 @@
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"> <img class="categoryImg" src="../Images/MotherBoard.png" /> </a>
+              <a href="product-details.html"> <img class="categoryImg" src="../Images/Monitor_Category.png" /> </a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4 class="categoryText">Assasin Creed</h4>
+                <span class="category">Monitor</span>
+                <h4 class="categoryText">Pc Monitors</h4>
                 <a href="product-details.html">Explore</a>
             </div>
           </div>
@@ -130,11 +113,11 @@
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"> <img class="categoryImg" src="../Images/MotherBoard.png" /> </a>
+              <a href="product-details.html"> <img class="categoryImg" src="../images/B1MBS2111150RBMI5BC[1].jpg" /> </a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4 class="categoryText">Assasin Creed</h4>
+                <span class="category">Processors</span>
+                <h4 class="categoryText">Amd&Intel Cpu's</h4>
                 <a href="product-details.html">Explore</a>
             </div>
           </div>
@@ -142,11 +125,11 @@
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"> <img class="categoryImg" src="../Images/MotherBoard.png" /> </a>
+              <a href="product-details.html"> <img class="categoryImg" style="height: 120px;" src="../Images/CpuCoolerCategory.png" /> </a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4 class="categoryText">Assasin Creed</h4>
+                <span class="category">Coolers</span>
+                <h4 class="categoryText">Cpu Coolers & Fans</h4>
                 <a href="product-details.html">Explore</a>
             </div>
           </div>
@@ -155,16 +138,42 @@
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"> <img class="categoryImg" src="../Images/MotherBoard.png" /> </a>
+              <a href="ProductsOperatingSystem.aspx"> <img class="categoryImg" src="../Images/32-351-749-V06.jpg" /> </a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4 class="categoryText">Assasin Creed</h4>
-                <a href="product-details.html">Explore</a>
+                <span class="category">Operating System</span>
+                <h4 class="categoryText">Laptop&Pc OperatingSystem</h4>
+                <a href="ProductsOperatingSystem.aspx">Explore</a>
             </div>
           </div>
         </div>
 
+
+                  <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="ProductsStorage.aspx"> <img class="categoryImg" src="../Images/SamsungStorage.jpg" /> </a>
+            </div>
+            <div class="down-content">
+                <span class="category">Storage</span>
+                <h4 class="categoryText">Pc Storage</h4>
+                <a href="ProductsStorage.aspx">Explore</a>
+            </div>
+          </div>
+        </div>
+
+                  <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"> <img class="categoryImg" style="height: 127px;" src="../Images/CorsairMemory.jpg" /> </a>
+            </div>
+            <div class="down-content">
+                <span class="category">Memory</span>
+                <h4 class="categoryText">Pc Memories</h4>
+                <a href="ProductsMemory.aspx">Explore</a>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
