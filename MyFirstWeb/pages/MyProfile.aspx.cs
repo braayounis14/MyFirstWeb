@@ -28,8 +28,6 @@ namespace MyFirstWeb.pages
 
         protected void Btn_Save_Click(object sender, EventArgs e)
         {
-
-
             User userObj = new User();
             userObj.UserEmail = Session["Email"].ToString();
 
@@ -37,8 +35,6 @@ namespace MyFirstWeb.pages
             {
                 this.notfi.Visible = true;
             }
-
-
         }
 
  

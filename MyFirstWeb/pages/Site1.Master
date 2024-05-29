@@ -105,9 +105,9 @@
             <!--=============== NAV MENU ===============-->
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
-                  <li><a href="#" class="nav__link">Home</a></li>
+                  <li><a href="Home.aspx" class="nav__link">Home</a></li>
 
-                  <li><a href="#" class="nav__link">Company</a></li>
+                  <li><a href="AboutUs.aspx" class="nav__link">Company</a></li>
 
                   <!--=============== DROPDOWN 1 ===============-->
                   <li class="dropdown__item">

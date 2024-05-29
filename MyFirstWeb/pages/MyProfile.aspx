@@ -23,7 +23,7 @@
                           </a>
                       </li>
                       <li>
-                          <a href="#" class="text-decoration-none d-flex align-items-start">
+                          <a href="MyOrders.aspx" class="text-decoration-none d-flex align-items-start">
                               <div class="fas fa-box-open pt-2 me-3" aria-hidden="true"></div>
                               <div class="d-flex flex-column">
                                   <div class="link">My Orders</div>
@@ -32,19 +32,10 @@
                           </a>
                       </li>
                       <li>
-                          <a href="#" class="text-decoration-none d-flex align-items-start">
-                              <div class="far fa-address-book pt-2 me-3" aria-hidden="true"></div>
-                              <div class="d-flex flex-column">
-                                  <div class="link">Address Book</div>
-                                  <div class="link-desc">View &amp; Manage Addresses</div>
-                              </div>
-                          </a>
-                      </li>
-                      <li>
                           <a href="MyAccount.aspx" class="text-decoration-none d-flex align-items-start">
-                              <div class="fas fa-box pt-2 me-3"></div>
+                              <div class="fas fa-box-open pt-2 me-3"></div>
                               <div class="d-flex flex-column">
-                                  <div class="link">My Account</div>
+                                  <div class="link">My Orders</div>
                                   <div class="link-desc">View & Manage orders and returns</div>
                               </div>
                           </a>

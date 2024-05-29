@@ -109,7 +109,8 @@ namespace MyFirstWeb.pages
 
             if (Session["Key"] != null && Body != null)
             {
-                String st = "insert into [UserMessages] ([MessageDate],[Email],[Subject],[Key],[Body],[Read]) values (#" + DateTime.Now + "#,'" + Email + "','" + Subject + "','" + Session["Key"] + "','" + Body + "'," + false + ")";
+                String st = "insert into [UserMessages] ([MessageDate],[Email],[Subject],[Key],[Body],[Read])" +
+                    " values (#" + DateTime.Now + "#,'" + Email + "','" + Subject + "','" + Session["Key"] + "','" + Body + "'," + false + ")";
                 DBFunction.ChangeTable(st, "DB.accdb");
             }
             this.txt_send.Text = "";

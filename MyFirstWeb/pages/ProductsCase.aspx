@@ -11,7 +11,7 @@
 
    <section class="headline">
        <div class="page-content-inner">
-           <img src="//promotions.newegg.com/vga/23-0766/1920x120v2@2x.png" class="banner-flexible-img" alt="Video Cards" title="" style="">
+           <img src="https://promotions.newegg.com/nepro/24-0299/1920x120@2x.jpg" class="banner-flexible-img" alt="Video Cards" title="" style="">
        </div>
    </section>
 

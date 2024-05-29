@@ -15,11 +15,33 @@ namespace MyFirstWeb.pages
         {
             this.Label1.Text = Session["email"].ToString();
             this.lblPrice.Text = Session["price"].ToString();
-           // HtmlGenericControl currentCardDiv = (HtmlGenericControl)FindControl("current-card");
-            //string divValue = currentCardDiv.InnerText;
-
         }
 
+
+        public void Prices()
+        {
+
+            int OrderPrice = int.Parse(Session["price"].ToString());
+            if (OrderPrice < 650 && OrderPrice != 0)
+            {
+                this.lblDilvery.Text = $" {50:C}";
+
+                OrderPrice = OrderPrice - 50;
+                double OrderTax = OrderPrice * 0.17;
+                this.lblOrderSubtotal.Text = $" {OrderPrice - OrderTax:C}";
+                this.lblPrice.Text = $" {OrderPrice + 50:C}";
+            }
+            else
+
+            {
+                this.lblDilvery.Text = $" {0:C}";
+                double OrderTax = OrderPrice * 0.17;
+                this.lblOrderSubtotal.Text = $" {OrderPrice - OrderTax:C}";
+                this.lblPrice.Text = $" {OrderPrice:C}";
+            }
+
+
+        }
 
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -36,7 +58,7 @@ namespace MyFirstWeb.pages
                     if (x.CheckVisaFunds(visanum, tot))
                     {
                         if (x.Buy(visanum, tot))
-                            this.Label2.Text = "payment successed";
+                            this.lblStauts.Text = "           <div runat=\"server\" style=\"font-family: 'Poppins', sans-serif;\" id=\"notfi\" class=\"notification\" visible=\"false\">\r\n            <div style=\"font-family: 'Poppins', sans-serif;\" class=\"notification__body\">\r\n                <img\r\n                    src=\"../Images/check-circle.svg\"\r\n                    alt=\"Success\"\r\n                    class=\"notification__icon\"\r\n                />\r\n                payment successed! &#128640; \r\n            </div>\r\n            <div class=\"notification__progress\"></div>\r\n        </div>";
                         foreach (GridViewRow row in GridView1.Rows)
                         {
                             if (row != null)
@@ -70,20 +92,16 @@ namespace MyFirstWeb.pages
                             }
 
                         }
-
-
-
                     }
                     else
-                        this.Label2.Text = "no confirm";
+                        this.lblStauts.Text = "           <div runat=\"server\" style=\"font-family: 'Poppins', sans-serif; background-color:#FF0000;\" id=\"notfi\" class=\"notification\" visible=\"false\">\r\n            <div style=\"font-family: 'Poppins', sans-serif;\" class=\"notification__body\">\r\n                <img\r\n                    src=\"../Images/decline.png\"\r\n                    alt=\"Reject\"\r\n                    class=\"notification__icon\"\r\n                />\r\n               no confirm! ; \r\n            </div>\r\n            <div class=\"notification__progress\"></div>\r\n        </div>";
                 else
-                    this.Label2.Text = "date not valid";
+                    this.lblStauts.Text = "           <div runat=\"server\" style=\"font-family: 'Poppins', sans-serif;  background-color:#FF0000;\" id=\"Div1\" class=\"notification\" visible=\"false\">\r\n            <div style=\"font-family: 'Poppins', sans-serif;\" class=\"notification__body\">\r\n                <img\r\n                    src=\"../Images/decline.png\"\r\n                    alt=\"Reject\"\r\n                    class=\"notification__icon\"\r\n                />\r\n               date not valid! ; \r\n            </div>\r\n            <div class=\"notification__progress\"></div>\r\n        </div>";
             else
-
-                this.Label2.Text = "wrong data";
-
-
-
+                this.lblStauts.Text = "           <div runat=\"server\" style=\"font-family: 'Poppins', sans-serif;  background-color:#FF0000;\" id=\"Div2\" class=\"notification\" visible=\"false\">\r\n            <div style=\"font-family: 'Poppins', sans-serif;\" class=\"notification__body\">\r\n                <img\r\n                    src=\"../Images/decline.png\"\r\n                    alt=\"Reject\"\r\n                    class=\"notification__icon\"\r\n                />\r\n               wrong data! ; \r\n            </div>\r\n            <div class=\"notification__progress\"></div>\r\n        </div>";
         }
+
+
+
     }
 }

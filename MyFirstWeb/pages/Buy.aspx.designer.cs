@@ -24,6 +24,15 @@ namespace MyFirstWeb.pages
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
+        /// lblStauts control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblStauts;
+
+        /// <summary>
         /// DataList1 control.
         /// </summary>
         /// <remarks>
@@ -33,13 +42,22 @@ namespace MyFirstWeb.pages
         protected global::System.Web.UI.WebControls.DataList DataList1;
 
         /// <summary>
-        /// Label2 control.
+        /// lblOrderSubtotal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lblOrderSubtotal;
+
+        /// <summary>
+        /// lblTax control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTax;
 
         /// <summary>
         /// lblDilvery control.

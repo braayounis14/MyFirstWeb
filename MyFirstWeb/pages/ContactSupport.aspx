@@ -142,7 +142,9 @@
            <div class="chat">
 
                <div class="contact bar">
-                   <div class="pic stark"></div>
+                   <div class="pic">
+                       <img id="ContentPlaceHolder1_DataList2_Image1_0" alt="" src="https://lh3.googleusercontent.com/a/ACg8ocKZbWPOdHmjWfk4JEYzOeuEoOgYnExgYuzsFrdFSWvnoptnSKY=s360-c-no" style="height: 64px; width: 64px; border-radius: 50%;">
+                   </div>
                    <div id="lblUserName" runat="server" class="name">
                     
      

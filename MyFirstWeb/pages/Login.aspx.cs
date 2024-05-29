@@ -20,11 +20,8 @@ namespace MyFirstWeb.pages
 
         protected void BtnSubmit_Click(object sender, EventArgs e)
         {
-
-
-            String Email = this.user_txt.Text;
-            String Password = this.psw_txt.Text;
-
+            string Email = this.user_txt.Text;
+            string Password = this.psw_txt.Text;
 
             User userObj = new User();
             userObj.UserEmail = this.user_txt.Text;
@@ -35,9 +32,8 @@ namespace MyFirstWeb.pages
                 Session["email"] = Email;
                 Response.Redirect("AdminDashboard.aspx");
             }
-           
-            
-            if (userObj.IsExistUser())
+         
+         
             if (userObj.PassCheck())
             {
                 Session["email"] = Email;
@@ -47,9 +43,6 @@ namespace MyFirstWeb.pages
             {
                 this.Label1.Text = "<h5>Forget Your Password?<a href=\"ForgetPassword.aspx\"><span>Forget Password</span></a> </h5>\r\n";
             }
-                
-
-
         }
 
 

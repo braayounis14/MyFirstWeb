@@ -62,7 +62,7 @@
 
             <div>
                 <p>Delivery:</p>
-                <p>Free standard shipping on orders over ₪500, plus free returns.</p>
+                <p>Free standard shipping on orders over ₪600, plus free returns.</p>
                 <div class="delivery">
                     <p>TYPE</p> <p>HOW LONG</p> <p>HOW MUCH</p>
                 </div>

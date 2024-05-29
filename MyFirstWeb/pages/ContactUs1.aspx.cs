@@ -18,9 +18,6 @@ namespace MyFirstWeb.pages
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
-
-
             string Email = Session["email"].ToString();
             string Subject = this.Txt_Subject.Text.Replace("'", "''");
             string Body = this.Txt_Body.Text.Replace("'", "''");

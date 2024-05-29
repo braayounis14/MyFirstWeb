@@ -12,15 +12,12 @@ namespace MyFirstWeb.pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["email"] = "dsa@g.dsa";
+           
         }
-
-
         protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
         {
             string st = this.DataList1.DataKeys[e.Item.ItemIndex].ToString();
             string selectCommand = "SELECT * FROM [UserMessages]";
-
 
             selectCommand += $" WHERE [Key] = '" + st + "' ";
 
@@ -79,7 +76,8 @@ namespace MyFirstWeb.pages
 
             if (Session["Key"] != null && Body != null)
             {
-                string st = "insert into [UserMessages] ([MessageDate],[Email],[Subject],[Key],[Body],[Read]) values (#" + DateTime.Now + "#,'" + Email + "','" + Subject + "','" + Session["Key"] + "','" + Body + "'," + false + ")";
+                string st = "insert into [UserMessages] ([MessageDate],[Email],[Subject],[Key],[Body],[Read]) values" +
+                    " (#" + DateTime.Now + "#,'" + Email + "','" + Subject + "','" + Session["Key"] + "','" + Body + "'," + false + ")";
                 DBFunction.ChangeTable(st, "DB.accdb");
             }
             this.txt_send.Text = "";

@@ -24,58 +24,58 @@
         </div>
         <div class="col-lg-6">
           <div class="main-button">
-            <a href="shop.html">View All</a>
+            <a href="Login.aspx">View All</a>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="item">
             <div class="thumb">
-              <a href="ProductsMotherboard.aspx"><img class="categoryImg TrendImg" src="https://www.gigabyte.com/Image/2a0b3af92d42cc09236c06c389d0a032/Product/32146/webp/2000" /></a>
+              <a href="Login.aspx"><img class="categoryImg TrendImg" src="https://www.gigabyte.com/Image/2a0b3af92d42cc09236c06c389d0a032/Product/32146/webp/2000" /></a>
              
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="ProductsMotherboard.aspx"><i class="fa fa-shopping-bag"></i></a>
+              <span class="category">MotherBoard</span>
+              <h4>Pc MotherBoards</h4>
+              <a href="Login.aspx"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="item">
             <div class="thumb">
-              <a href="ProductsPowerSupply.aspx"><img class="categoryImg TrendImg" src="../Images/Power_Supply.png" alt=""></a>
+              <a href="Login.aspx"><img class="categoryImg TrendImg" src="../Images/Power_Supply.png" alt=""></a>
              
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="ProductsPowerSupply.aspx"><i class="fa fa-shopping-bag"></i></a>
+              <span class="category">PowerSupply</span>
+              <h4>Pc PowerSupplies</h4>
+              <a href="Login.aspx"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="item">
             <div class="thumb">
-              <a href="ProductsCase.aspx"><img class="categoryImg TrendImg" src="https://d1q3zw97enxzq2.cloudfront.net/images/3000D_RGB_Main_Visual.width-1000.format-webp.webp" /></a>
+              <a href="Login.aspx"><img class="categoryImg TrendImg" src="https://d1q3zw97enxzq2.cloudfront.net/images/3000D_RGB_Main_Visual.width-1000.format-webp.webp" /></a>
              
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="ProductsCase.aspx"><i class="fa fa-shopping-bag"></i></a>
+              <span class="category">Case</span>
+              <h4>Pc Cases</h4>
+              <a href="Login.aspx"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="item">
             <div class="thumb">
-              <a href="ProductsGpu.aspx"><img class="categoryImg TrendImg" src="https://dlcdnwebimgs.asus.com/gain/2808AAB9-285F-4F07-A8B9-43C783E92377/w1000/h732" /></a>
+              <a href="Login.aspx"><img class="categoryImg TrendImg" src="https://dlcdnwebimgs.asus.com/gain/2808AAB9-285F-4F07-A8B9-43C783E92377/w1000/h732" /></a>
               
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
-              <a href="ProductsGpu.aspx"><i class="fa fa-shopping-bag"></i></a>
+              <span class="category">Video Card</span>
+              <h4>Pc Gpu's</h4>
+              <a href="Login.aspx"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
         </div>
@@ -95,42 +95,42 @@
         </div>
         <div class="col-lg-6">
           <div class="main-button">
-            <a href="shop.html">View All</a>
+            <a href="Login.aspx">View All</a>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"> <img class="categoryImg" src="../Images/Monitor_Category.png" /> </a>
+              <a href="Login.aspx"> <img class="categoryImg" src="../Images/Monitor_Category.png" /> </a>
             </div>
             <div class="down-content">
                 <span class="category">Monitor</span>
                 <h4 class="categoryText">Pc Monitors</h4>
-                <a href="product-details.html">Explore</a>
+                <a href="Login.aspx">Explore</a>
             </div>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"> <img class="categoryImg" src="../images/B1MBS2111150RBMI5BC[1].jpg" /> </a>
+              <a href="Login.aspx"> <img class="categoryImg" src="../images/B1MBS2111150RBMI5BC[1].jpg" /> </a>
             </div>
             <div class="down-content">
                 <span class="category">Processors</span>
                 <h4 class="categoryText">Amd&Intel Cpu's</h4>
-                <a href="product-details.html">Explore</a>
+                <a href="Login.aspx">Explore</a>
             </div>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"> <img class="categoryImg" style="height: 120px;" src="../Images/CpuCoolerCategory.png" /> </a>
+              <a href="Login.aspx"> <img class="categoryImg" style="height: 120px;" src="../Images/CpuCoolerCategory.png" /> </a>
             </div>
             <div class="down-content">
                 <span class="category">Coolers</span>
                 <h4 class="categoryText">Cpu Coolers & Fans</h4>
-                <a href="product-details.html">Explore</a>
+                <a href="Login.aspx">Explore</a>
             </div>
           </div>
         </div>
@@ -138,12 +138,12 @@
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="ProductsOperatingSystem.aspx"> <img class="categoryImg" src="../Images/32-351-749-V06.jpg" /> </a>
+              <a href="Login.aspx"> <img class="categoryImg" src="../Images/32-351-749-V06.jpg" /> </a>
             </div>
             <div class="down-content">
                 <span class="category">Operating System</span>
                 <h4 class="categoryText">Laptop&Pc OperatingSystem</h4>
-                <a href="ProductsOperatingSystem.aspx">Explore</a>
+                <a href="Login.aspx">Explore</a>
             </div>
           </div>
         </div>
@@ -152,12 +152,12 @@
                   <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="ProductsStorage.aspx"> <img class="categoryImg" src="../Images/SamsungStorage.jpg" /> </a>
+              <a href="Login.aspx"> <img class="categoryImg" src="../Images/SamsungStorage.jpg" /> </a>
             </div>
             <div class="down-content">
                 <span class="category">Storage</span>
                 <h4 class="categoryText">Pc Storage</h4>
-                <a href="ProductsStorage.aspx">Explore</a>
+                <a href="Login.aspx">Explore</a>
             </div>
           </div>
         </div>
@@ -165,15 +165,16 @@
                   <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"> <img class="categoryImg" style="height: 127px;" src="../Images/CorsairMemory.jpg" /> </a>
+              <a href="Login.aspx"> <img class="categoryImg" style="height: 127px;" src="../Images/CorsairMemory.jpg" /> </a>
             </div>
             <div class="down-content">
                 <span class="category">Memory</span>
                 <h4 class="categoryText">Pc Memories</h4>
-                <a href="ProductsMemory.aspx">Explore</a>
+                <a href="Login.aspx">Explore</a>
             </div>
           </div>
         </div>
+
 
       </div>
     </div>

@@ -16,9 +16,6 @@ namespace MyFirstWeb.pages
            
         }
 
-
-
-
         protected void Button1_Click(object sender, EventArgs e)
         {
 
@@ -26,9 +23,6 @@ namespace MyFirstWeb.pages
             string Subject = this.Txt_Subject.Text.Replace("'", "''");
             string Body = this.Txt_Body.Text.Replace("'", "''");
             //   String file = this.Txt_file.Text;
-
-
-
             DateTime now = DateTime.Now;
             string st = "insert into [Messages] ([MessageDate],[Email],[Subject],[Body],[Read]) values (#" + now + "#,'" + Email + "','" + Subject + "','" + Body + "'," + false + ")";
             DBFunction.ChangeTable(st, "DB.accdb");

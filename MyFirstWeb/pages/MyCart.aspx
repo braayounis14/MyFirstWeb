@@ -53,7 +53,7 @@
                                 <asp:Image ID="Image1" ImageUrl='<%# Eval("Image") %>' alt="" class="img-fluid rounded shadow-sm" style="box-shadow:unset !important;" runat="server" />
                                 <div class="ml-3 d-inline-block align-middle">
                                     <h5 class="mb-0"><a href="#" class="text-dark d-inline-block line"><%# Eval("ProductName") %></a></h5>
-                                    <span class="text-muted font-weight-normal font-italic">Category: Category</span>
+                                    <span class="text-muted font-weight-normal font-italic"></span>
                                 </div>
                             </div>
                         </th>

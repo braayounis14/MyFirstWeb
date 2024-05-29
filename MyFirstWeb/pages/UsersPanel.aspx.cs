@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,7 +12,13 @@ namespace MyFirstWeb.pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["email"] = "dsa@g.sda";
+            String Sql = "select * from [USERS]";
+            DataTable dt = DBFunction.SelectFromTable(Sql, "DB.accdb");
+            this.Member.InnerText = ""+dt.Rows.Count;
+
         }
+
+
+
     }
 }

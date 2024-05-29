@@ -11,61 +11,61 @@ namespace MyFirstWeb.pages
 {
 
 
-    public partial class WebForm1
+    public partial class MyAccount1
     {
 
         /// <summary>
-        /// UserName control.
+        /// Txt_FullName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl UserName;
+        protected global::System.Web.UI.WebControls.TextBox Txt_FullName;
 
         /// <summary>
-        /// EmailSigned control.
+        /// Txt_Email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl EmailSigned;
+        protected global::System.Web.UI.WebControls.TextBox Txt_Email;
 
         /// <summary>
-        /// OrdersPlacedNumber control.
+        /// DpPassQuestion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl OrdersPlacedNumber;
+        protected global::System.Web.UI.WebControls.DropDownList DpPassQuestion;
 
         /// <summary>
-        /// ItemsCartNumber control.
+        /// txt_PassAnswer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ItemsCartNumber;
+        protected global::System.Web.UI.WebControls.TextBox txt_PassAnswer;
 
         /// <summary>
-        /// DataList1 control.
+        /// notfi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList DataList1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl notfi;
 
         /// <summary>
-        /// AccessDataSource1 control.
+        /// Btn_Cancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.AccessDataSource AccessDataSource1;
+        protected global::System.Web.UI.WebControls.Button Btn_Cancel;
     }
 }

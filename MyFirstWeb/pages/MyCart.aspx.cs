@@ -15,10 +15,6 @@ namespace MyFirstWeb.pages
         }
 
 
-
-
-
-
         public int InfoByEmailSession()
         {
             // it checks if the user is exist at the Database, and returns true if exist and false if not exist /
@@ -37,8 +33,6 @@ namespace MyFirstWeb.pages
                     Quantity = int.Parse(dt.Rows[row.RowIndex][1].ToString());
                     Sum += (Price * Quantity);
                 }
-
-
             }
 
             return Sum;
@@ -52,11 +46,7 @@ namespace MyFirstWeb.pages
             int OrderPrice = InfoByEmailSession();
             double OrderTax = OrderPrice * 0.17;
             this.Order_Price.InnerText = $" {OrderPrice - OrderTax:C}";
-
-
-
-
-            if (OrderPrice < 600 && OrderPrice != 0)
+            if (OrderPrice <= 600 && OrderPrice != 0)
             {
                 this.Shipping_Price.InnerText = $" {50:C}";
                 this.Order_Total.InnerText = $" {OrderPrice + 50:C}";
@@ -74,8 +64,6 @@ namespace MyFirstWeb.pages
 
 
         }
-
-
         protected void BtnCheckOut_Click(object sender, EventArgs e)
         {
            

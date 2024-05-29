@@ -13,5 +13,10 @@ namespace MyFirstWeb.pages
         {
 
         }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+         GridView1.DataSourceID = DropDownList1.SelectedValue;
+        }
     }
 }

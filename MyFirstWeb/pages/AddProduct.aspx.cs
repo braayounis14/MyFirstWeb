@@ -12,10 +12,7 @@ namespace MyFirstWeb.pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            //     BtnAdd.Visible = false;
-            BtnCheck.Visible = false;
-
+         
         }
 
         protected void BtnAdd_Click(object sender, EventArgs e)
@@ -46,12 +43,11 @@ namespace MyFirstWeb.pages
                     this.txtDetails.Text = "";
 
                 }
-
-
             }
             else
-                lblMsg.Text = "this file is empty";
-           // this.Image1.ImageUrl = "~/images/Screenshot 2023-12-06 120541.png";
+                lblMsg.Text = "this file is empty"; 
         }
+
+
     }
 }

@@ -54,13 +54,13 @@
                     <i class="uil uil-user"></i>
                     <span class="link-name">UsersPanel</span>
                 </a></li>
-                <li><a href="#">
-                    <i class="uil uil-thumbs-up"></i>
-                    <span class="link-name">Like</span>
+                <li><a href="ManageProducts.aspx">
+                      <i class="uil"> <img style="width: 24px;height: 24px;" src="../Images/productsIcon.png" alt="Alternate Text"> </i>
+                    <span class="link-name">ManageProducts</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="ClientContact.aspx">
                     <i class="uil uil-comments"></i>
-                    <span class="link-name">Comment</span>
+                    <span class="link-name">Contact Users</span>
                 </a></li>
                 <li><a href="Home1.aspx">
                      <i class="uil uil-estate"></i>

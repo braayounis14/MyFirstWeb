@@ -69,15 +69,6 @@ namespace MyFirstWeb.pages
         protected global::System.Web.UI.WebControls.Button BtnAdd;
 
         /// <summary>
-        /// BtnCheck control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnCheck;
-
-        /// <summary>
         /// lblMsg control.
         /// </summary>
         /// <remarks>

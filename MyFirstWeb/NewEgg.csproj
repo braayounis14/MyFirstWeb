@@ -117,6 +117,7 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="Images\CorsairMemory.jpg" />
     <Content Include="Images\CpuCoolerCategory.png" />
+    <Content Include="Images\decline.png" />
     <Content Include="Images\Monitor_Category.png" />
     <Content Include="Images\MotherBoard.png" />
     <Content Include="Images\1920x120v2%402x.png" />
@@ -137,6 +138,7 @@
     <Content Include="Images\OperatingSystemPic.jpg" />
     <Content Include="Images\operative-system.png" />
     <Content Include="Images\Power_Supply.png" />
+    <Content Include="Images\productsIcon.png" />
     <Content Include="Images\SamsungStorage.jpg" />
     <Content Include="Images\ssdIcon.png" />
     <Content Include="obj\Debug\MyFirstWeb.csproj.FileListAbsolute.txt" />
@@ -153,35 +155,39 @@
     <Content Include="pages\ContactSupport.aspx" />
     <Content Include="pages\ContactUs.aspx" />
     <Content Include="pages\ContactUs1.aspx" />
+    <Content Include="pages\DeleteAcount.aspx" />
     <Content Include="pages\ForgetPassword.aspx" />
+    <Content Include="pages\ForgetPassword2.aspx" />
     <Content Include="pages\Home.aspx" />
     <Content Include="pages\Home1.aspx" />
     <Content Include="pages\Login.aspx" />
     <Content Include="pages\ManageProducts.aspx" />
+    <Content Include="pages\MyAccount.aspx" />
+    <Content Include="pages\MyOrders.aspx" />
     <Content Include="pages\MyProfile.aspx" />
     <Content Include="pages\MyCart.aspx" />
     <Content Include="pages\Notifications.aspx" />
     <Content Include="pages\ProductsCase.aspx" />
+    <Content Include="pages\ProductsCaseFans.aspx" />
     <Content Include="pages\ProductsCpu.aspx" />
     <Content Include="pages\ProductsCpuCooler.aspx" />
     <Content Include="pages\ProductsMemory.aspx" />
     <Content Include="pages\ProductsMonitor.aspx" />
     <Content Include="pages\ProductsGpu.aspx" />
-    <Content Include="pages\Products1Details.aspx" />
     <Content Include="pages\ProductsMotherboard.aspx" />
     <Content Include="pages\ProductsOperatingSystem.aspx" />
     <Content Include="pages\ProductsPowerSupply.aspx" />
     <Content Include="pages\ProductsStorage.aspx" />
+    <Content Include="pages\ResetPassword.aspx" />
     <Content Include="pages\SignUp.aspx" />
     <Content Include="pages\UsersPanel.aspx" />
-    <Content Include="pages\MyAccount.aspx" />
-    <Content Include="pages\WebForm2.aspx" />
     <Content Include="pages\ProductsAllDetails.aspx" />
     <Content Include="scripts\birthdatecheck.js" />
     <Content Include="scripts\main.js" />
     <Content Include="scripts\Script.js" />
     <Content Include="scripts\Script1.js" />
     <Content Include="scripts\Scripts.js" />
+    <Content Include="styles\AboutUs.css" />
     <Content Include="styles\AdminClientes.css" />
     <Content Include="styles\AdminDash.css" />
     <Content Include="styles\Chat.css" />
@@ -280,12 +286,40 @@
     <Compile Include="pages\ContactUs1.aspx.designer.cs">
       <DependentUpon>ContactUs1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pages\DeleteAcount.aspx.cs">
+      <DependentUpon>DeleteAcount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\DeleteAcount.aspx.designer.cs">
+      <DependentUpon>DeleteAcount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ForgetPassword2.aspx.cs">
+      <DependentUpon>ForgetPassword2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ForgetPassword2.aspx.designer.cs">
+      <DependentUpon>ForgetPassword2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pages\ManageProducts.aspx.cs">
       <DependentUpon>ManageProducts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="pages\ManageProducts.aspx.designer.cs">
       <DependentUpon>ManageProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\MyAccount.aspx.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\MyAccount.aspx.designer.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\MyOrders.aspx.cs">
+      <DependentUpon>MyOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\MyOrders.aspx.designer.cs">
+      <DependentUpon>MyOrders.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\MyProfile.aspx.cs">
       <DependentUpon>MyProfile.aspx</DependentUpon>
@@ -314,6 +348,13 @@
     </Compile>
     <Compile Include="pages\ProductsCase.aspx.designer.cs">
       <DependentUpon>ProductsCase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ProductsCaseFans.aspx.cs">
+      <DependentUpon>ProductsCaseFans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ProductsCaseFans.aspx.designer.cs">
+      <DependentUpon>ProductsCaseFans.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\ProductsCpu.aspx.cs">
       <DependentUpon>ProductsCpu.aspx</DependentUpon>
@@ -350,13 +391,6 @@
     <Compile Include="pages\ProductsGpu.aspx.designer.cs">
       <DependentUpon>ProductsGpu.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\Products1Details.aspx.cs">
-      <DependentUpon>Products1Details.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\Products1Details.aspx.designer.cs">
-      <DependentUpon>Products1Details.aspx</DependentUpon>
-    </Compile>
     <Compile Include="pages\ProductsMotherboard.aspx.cs">
       <DependentUpon>ProductsMotherboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -384,6 +418,13 @@
     </Compile>
     <Compile Include="pages\ProductsStorage.aspx.designer.cs">
       <DependentUpon>ProductsStorage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\SiteAdminPage.Master.cs">
       <DependentUpon>SiteAdminPage.Master</DependentUpon>
@@ -463,20 +504,6 @@
     </Compile>
     <Compile Include="pages\UsersPanel.aspx.designer.cs">
       <DependentUpon>UsersPanel.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="pages\MyAccount.aspx.cs">
-      <DependentUpon>MyAccount.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\MyAccount.aspx.designer.cs">
-      <DependentUpon>MyAccount.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="pages\WebForm2.aspx.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\WebForm2.aspx.designer.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\ProductsAllDetails.aspx.cs">
       <DependentUpon>ProductsAllDetails.aspx</DependentUpon>

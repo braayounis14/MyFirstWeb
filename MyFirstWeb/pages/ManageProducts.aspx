@@ -10,31 +10,50 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/56446077d3.js" crossorigin="anonymous"></script>
             
+    <style>
+
+        .custom-select {
+
+    width: 100%;
+    border: none;
+    color: #acc6de;
+    height: 50px;
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    padding: 15px;
+    background: url(../img/arrow-down.png) 98% no-repeat #50657b;
+        
+        height: 50px;
+    border-radius: 0;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+    </style>
 
 
      <div class="dash-content">
          <div class="overview">
-             <div class="title">
-                 <i class="uil uil-tachometer-fast-alt"></i>
-                 <span class="text">Dashboard</span>
-             </div>
-             <div class="boxes">
-                 <div class="box box1">
-                     <i class="uil uil-thumbs-up"></i>
-                     <span class="text">Total Likes</span>
-                     <span id="Like" runat="server" class="number">50,120</span>
-                 </div>
-                 <div class="box box2">
-                     <i class="uil uil-comments"></i>
-                     <span class="text">Comments</span>
-                     <span id="Comment" runat="server" class="number">50,120</span>
-                 </div>
-                 <div class="box box3">
-                     <i class="uil uil-user"></i>
-                     <span class="text">Total Members</span>
-                     <span id="Member" runat="server" class="number">50,120</span>
-                 </div>
-             </div>
+                  <div class="form-group mb-3">
+                    <label for="category">Category</label>
+
+            <asp:DropDownList required="true" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" class="custom-select tm-select-accounts" ID="DropDownList1" runat="server">
+    <asp:ListItem Text="Select a Category" Value="0" Disabled="true" style="color: #0000FF; font-weight: bold;"></asp:ListItem>
+                 <asp:ListItem Text="CPU category" Value="CPU"></asp:ListItem>
+                 <asp:ListItem Text="CPU Cooler category" Value="CPUCooler"></asp:ListItem>
+                 <asp:ListItem Text="Motherboard category" Value="Motherboard"></asp:ListItem>
+                 <asp:ListItem Text="Memory category" Value="Memory"></asp:ListItem>
+                 <asp:ListItem Text="Storage category" Value="Storage"></asp:ListItem>
+                 <asp:ListItem Text="GPU category" Value="GPU"></asp:ListItem>
+                 <asp:ListItem Text="Case category" Value="Case"></asp:ListItem>
+                 <asp:ListItem Text="Power Supply category" Value="PowerSupply"></asp:ListItem>
+                 <asp:ListItem Text="Operating System category" Value="OperatingSystem"></asp:ListItem>
+                 <asp:ListItem Text="Monitor category" Value="Monitor"></asp:ListItem>
+            </asp:DropDownList>
+
+                  </div>
+
+
          </div>
 
 
@@ -50,7 +69,7 @@
               <tbody>
 
 
-                  <asp:GridView ID="GridView1" GridLines="Both" Style="margin-top: -30px;" class="table" runat="server" DataSourceID="AccessDataSource1" AutoGenerateColumns="False" DataKeyNames="Image">
+                  <asp:GridView ID="GridView1" GridLines="Both" Style="margin-top: -30px;" class="table" runat="server" DataSourceID="CPU" AutoGenerateColumns="False" DataKeyNames="Image">
 
                       <Columns>
 
@@ -123,7 +142,123 @@
 
 
 
-    <asp:AccessDataSource ID="AccessDataSource1" runat="server" ConflictDetection="CompareAllValues" DataFile="~/App_Data/DB.accdb" DeleteCommand="DELETE FROM [CPU] WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))" InsertCommand="INSERT INTO [CPU] ([Price], [ProductName], [Details], [Image]) VALUES (?, ?, ?, ?)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [CPU]" UpdateCommand="UPDATE [CPU] SET [Price] = ?, [ProductName] = ?, [Details] = ? WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))">
+    <asp:AccessDataSource ID="CPU" runat="server" ConflictDetection="CompareAllValues" DataFile="~/App_Data/DB.accdb" DeleteCommand="DELETE FROM [CPU] WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))" InsertCommand="INSERT INTO [CPU] ([Price], [ProductName], [Details], [Image]) VALUES (?, ?, ?, ?)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [CPU]" UpdateCommand="UPDATE [CPU] SET [Price] = ?, [ProductName] = ?, [Details] = ? WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))">
+        <DeleteParameters>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Image" Type="String"></asp:Parameter>
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </UpdateParameters>
+    </asp:AccessDataSource>
+
+
+
+    <asp:AccessDataSource ID="CPUCooler" runat="server" ConflictDetection="CompareAllValues" DataFile="~/App_Data/DB.accdb" DeleteCommand="DELETE FROM [CPUCooler] WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))" InsertCommand="INSERT INTO [CPUCooler] ([Price], [ProductName], [Details], [Image]) VALUES (?, ?, ?, ?)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [CPUCooler]" UpdateCommand="UPDATE [CPUCooler] SET [Price] = ?, [ProductName] = ?, [Details] = ? WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))">
+        <DeleteParameters>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Image" Type="String"></asp:Parameter>
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </UpdateParameters>
+    </asp:AccessDataSource>
+
+    <asp:AccessDataSource ID="Motherboard" runat="server" ConflictDetection="CompareAllValues" DataFile="~/App_Data/DB.accdb" DeleteCommand="DELETE FROM [Motherboard] WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))" InsertCommand="INSERT INTO [Motherboard] ([Price], [ProductName], [Details], [Image]) VALUES (?, ?, ?, ?)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Motherboard]" UpdateCommand="UPDATE [Motherboard] SET [Price] = ?, [ProductName] = ?, [Details] = ? WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))">
+        <DeleteParameters>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Image" Type="String"></asp:Parameter>
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </UpdateParameters>
+    </asp:AccessDataSource>
+
+    <asp:AccessDataSource ID="Memory" runat="server" ConflictDetection="CompareAllValues" DataFile="~/App_Data/DB.accdb" DeleteCommand="DELETE FROM [Memory] WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))" InsertCommand="INSERT INTO [Memory] ([Price], [ProductName], [Details], [Image]) VALUES (?, ?, ?, ?)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Memory]" UpdateCommand="UPDATE [Memory] SET [Price] = ?, [ProductName] = ?, [Details] = ? WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))">
+        <DeleteParameters>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Image" Type="String"></asp:Parameter>
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </UpdateParameters>
+    </asp:AccessDataSource>
+
+
+
+    <asp:AccessDataSource ID="Storage" runat="server" ConflictDetection="CompareAllValues" DataFile="~/App_Data/DB.accdb" DeleteCommand="DELETE FROM [Storage] WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))" InsertCommand="INSERT INTO [Storage] ([Price], [ProductName], [Details], [Image]) VALUES (?, ?, ?, ?)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Storage]" UpdateCommand="UPDATE [Storage] SET [Price] = ?, [ProductName] = ?, [Details] = ? WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))">
         <DeleteParameters>
             <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
             <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
@@ -154,6 +289,153 @@
 
 
 
+    <asp:AccessDataSource ID="GPU" runat="server" ConflictDetection="CompareAllValues" DataFile="~/App_Data/DB.accdb" DeleteCommand="DELETE FROM [GPU] WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))" InsertCommand="INSERT INTO [GPU] ([Price], [ProductName], [Details], [Image]) VALUES (?, ?, ?, ?)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [GPU]" UpdateCommand="UPDATE [GPU] SET [Price] = ?, [ProductName] = ?, [Details] = ? WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))">
+        <DeleteParameters>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Image" Type="String"></asp:Parameter>
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </UpdateParameters>
+    </asp:AccessDataSource>
+
+
+
+
+    <asp:AccessDataSource ID="Case" runat="server" ConflictDetection="CompareAllValues" DataFile="~/App_Data/DB.accdb" DeleteCommand="DELETE FROM [Case] WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))" InsertCommand="INSERT INTO [Case] ([Price], [ProductName], [Details], [Image]) VALUES (?, ?, ?, ?)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Case]" UpdateCommand="UPDATE [Case] SET [Price] = ?, [ProductName] = ?, [Details] = ? WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))">
+        <DeleteParameters>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Image" Type="String"></asp:Parameter>
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </UpdateParameters>
+    </asp:AccessDataSource>
+
+
+
+    <asp:AccessDataSource ID="PowerSupply" runat="server" ConflictDetection="CompareAllValues" DataFile="~/App_Data/DB.accdb" DeleteCommand="DELETE FROM [PowerSupply] WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))" InsertCommand="INSERT INTO [PowerSupply] ([Price], [ProductName], [Details], [Image]) VALUES (?, ?, ?, ?)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [PowerSupply]" UpdateCommand="UPDATE [PowerSupply] SET [Price] = ?, [ProductName] = ?, [Details] = ? WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))">
+        <DeleteParameters>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Image" Type="String"></asp:Parameter>
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </UpdateParameters>
+    </asp:AccessDataSource>
+
+
+
+    <asp:AccessDataSource ID="OperatingSystem" runat="server" ConflictDetection="CompareAllValues" DataFile="~/App_Data/DB.accdb" DeleteCommand="DELETE FROM [OperatingSystem] WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))" InsertCommand="INSERT INTO [OperatingSystem] ([Price], [ProductName], [Details], [Image]) VALUES (?, ?, ?, ?)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [OperatingSystem]" UpdateCommand="UPDATE [OperatingSystem] SET [Price] = ?, [ProductName] = ?, [Details] = ? WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))">
+        <DeleteParameters>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Image" Type="String"></asp:Parameter>
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </UpdateParameters>
+    </asp:AccessDataSource>
+
+
+        <asp:AccessDataSource ID="Monitor" runat="server" ConflictDetection="CompareAllValues" DataFile="~/App_Data/DB.accdb" DeleteCommand="DELETE FROM [Monitor] WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))" InsertCommand="INSERT INTO [Monitor] ([Price], [ProductName], [Details], [Image]) VALUES (?, ?, ?, ?)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Monitor]" UpdateCommand="UPDATE [Monitor] SET [Price] = ?, [ProductName] = ?, [Details] = ? WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))">
+        <DeleteParameters>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Image" Type="String"></asp:Parameter>
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </UpdateParameters>
+    </asp:AccessDataSource>
 
         <style>
 

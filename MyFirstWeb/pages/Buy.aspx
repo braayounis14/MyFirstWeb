@@ -21,6 +21,8 @@
 </script>
 
 
+    <link href="../styles/Notifications.css" rel="stylesheet" />
+
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -30,6 +32,9 @@
 
 
     <div class='container1'>
+
+        <asp:Label ID="lblStauts" runat="server" Text=""></asp:Label>
+      
   <div class='window'>
     <div class='order-info'>
             <div class='order-info-content'>
@@ -50,13 +55,13 @@
       </td>
       <td>
         <br> <span style="font-weight: bold;" class='thin line1'><%# Eval("ProductName") %></span>
-        <br> <span class="line1" > <%# Eval("Info") %></span> <br> <span class='thin small'> Color: Pink, Size: Medium</span>
+       
       </td>
 
     </tr>
     <tr>
       <td>
-        <div class='price'>$<%# Eval("Price") %></div>
+        <div class='price'><%# String.Format("{0:N0}", Convert.ToInt32(Eval("Price"))) %></div>
       </td>
     </tr>
   </tbody>
@@ -77,29 +82,35 @@
 
 
 
-        <div class='line'></div>
-        <div class='total'>
-          <span style='float:left;'>
-            <div class='thin dense'>VAT 19%</div>
-            <div class='thin dense'>Delivery</div>
-            TOTAL
-          </span>
-          <span style='float:right; text-align:right;'>
-              <div class='thin dense'>
+                <div class='line'></div>
+                <div class='total'>
+                    <span style='float: left;'>
+                        <div class='thin dense'>Order Subtotal</div>
+                        <div class='thin dense'>Shipping and handling</div>
+                        <div class='thin dense'>Tax 17%</div>
+                        TOTAL
+                    </span>
+                    <span style='float: right; text-align: right;'>
+                        <div class='thin dense'>
 
-                  <asp:Label ID="Label2" runat="server" Text="$68.75"></asp:Label>
+                            ₪<asp:Label ID="lblOrderSubtotal" runat="server" Text="68.75"></asp:Label>
 
-              </div>
-            <div class='thin dense'>   
+                        </div>
+                        <div class='thin dense'>
 
-                <asp:Label ID="lblDilvery" runat="server" Text="$4.95"></asp:Label>
+                            ₪<asp:Label ID="lblTax" runat="server" Text="68.75"></asp:Label>
 
+                        </div>
+                        <div class='thin dense'>
+
+                           ₪ <asp:Label ID="lblDilvery" runat="server" Text="4.95"></asp:Label>
+
+                        </div>
+                       ₪ <asp:Label ID="lblPrice" runat="server" Text="$435.55"></asp:Label>
+                    </span>
+                </div>
             </div>
-           <asp:Label ID="lblPrice" runat="server" Text="$435.55"></asp:Label>
-          </span>
-        </div>
-</div>
-</div>
+    </div>
         <div class='credit-info'>
           <div class='credit-info-content'>
             <table class='half-input-table'>
@@ -151,7 +162,7 @@
 </asp:AccessDataSource>
 
 
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Email,dateBuy,Code" DataSourceID="AccessDataSource1">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" Visible="false" DataKeyNames="Email,dateBuy,Code" DataSourceID="AccessDataSource1">
             <Columns>
                 <asp:BoundField DataField="Email" HeaderText="Email" ReadOnly="True" SortExpression="Email" />
                 <asp:BoundField DataField="price" HeaderText="price" SortExpression="price" />
@@ -221,9 +232,7 @@ ul {
   padding:0;
 }
 
-ul li:hover {
-  background:rgba(255,255,255,0.1);
-}
+
 .dropdown-select {
   position:absolute;
   background:#77aaee;
@@ -528,6 +537,11 @@ ul li:hover {
 
 
     </script>
+
+
+
+
+
 
 
 

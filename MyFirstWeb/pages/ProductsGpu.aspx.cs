@@ -30,8 +30,6 @@ namespace MyFirstWeb.pages
             else
                 this.DataList1.RepeatColumns = 6;
 
-
-
         }
 
         protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
@@ -57,8 +55,6 @@ namespace MyFirstWeb.pages
         {
             BindData();
         }
-
-
         protected void BindData()
         {
             string selectCommand = AccessDataSource1.SelectCommand;

@@ -23,7 +23,7 @@
   </section>
 
 
-          <div style="margin-top:40px" class="section trending">
+      <div style="margin-top:40px" class="section trending">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -44,8 +44,8 @@
              
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <span class="category">MotherBoard</span>
+              <h4>Pc MotherBoards</h4>
               <a href="ProductsMotherboard.aspx"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
@@ -57,8 +57,8 @@
              
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <span class="category">PowerSupply</span>
+              <h4>Pc PowerSupplies</h4>
               <a href="ProductsPowerSupply.aspx"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
@@ -70,8 +70,8 @@
              
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <span class="category">Case</span>
+              <h4>Pc Cases</h4>
               <a href="ProductsCase.aspx"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>
@@ -83,8 +83,8 @@
               
             </div>
             <div class="down-content">
-              <span class="category">Action</span>
-              <h4>Assasin Creed</h4>
+              <span class="category">Video Card</span>
+              <h4>Pc Gpu's</h4>
               <a href="ProductsGpu.aspx"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>

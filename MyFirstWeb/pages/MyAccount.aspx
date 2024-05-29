@@ -1,17 +1,21 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/Site1AfterSign.Master" AutoEventWireup="true" CodeBehind="MyAccount.aspx.cs" Inherits="MyFirstWeb.pages.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pages/Site1AfterSign.Master" AutoEventWireup="true" CodeBehind="MyAccount.aspx.cs" Inherits="MyFirstWeb.pages.MyAccount1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+
+      
     <link href="../styles/Orders.css" rel="stylesheet" />
-    
-     <div class="container containerCont  mt-4" style="padding-top: 100px;">
+    <link href="../styles/MyProfile.css" rel="stylesheet" />
+
+
+  <div class="container containerCont  mt-4" style="padding-top: 100px; max-width: 1320px;">
       <div class="row">
           <div class="col-lg-3 my-lg-0 my-md-1">
               <div id="sidebar" class="bg-purple">
                   <div class="h4 text-white">Account</div>
                   <ul>
-                      <li>
+                      <li class="active">
                           <a href="MyProfile.aspx" class="text-decoration-none d-flex align-items-start">
                               <div class="far fa-user pt-2 me-3" aria-hidden="true"></div>
                               <div class="d-flex flex-column">
@@ -21,7 +25,16 @@
                           </a>
                       </li>
                       <li>
-                          <a href="#" class="text-decoration-none d-flex align-items-start">
+                          <a href="MyOrders.aspx" class="text-decoration-none d-flex align-items-start">
+                              <div class="fas fa-box-open pt-2 me-3" aria-hidden="true"></div>
+                              <div class="d-flex flex-column">
+                                  <div class="link">My Orders</div>
+                                  <div class="link-desc">View &amp; Manage orders and returns</div>
+                              </div>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="MyAccount.aspx" class="text-decoration-none d-flex align-items-start">
                               <div class="fas fa-box-open pt-2 me-3"></div>
                               <div class="d-flex flex-column">
                                   <div class="link">My Orders</div>
@@ -30,28 +43,10 @@
                           </a>
                       </li>
                       <li>
-                          <a href="#" class="text-decoration-none d-flex align-items-start">
-                              <div class="far fa-address-book pt-2 me-3"></div>
-                              <div class="d-flex flex-column">
-                                  <div class="link">Address Book</div>
-                                  <div class="link-desc">View & Manage Addresses</div>
-                              </div>
-                          </a>
-                      </li>
-                      <li class="active">
-                          <a href="MyAccount.aspx" class="text-decoration-none d-flex align-items-start">
-                              <div class="fas fa-box pt-2 me-3"></div>
-                              <div class="d-flex flex-column">
-                                  <div class="link">My Account</div>
-                                  <div class="link-desc">View & Manage orders and returns</div>
-                              </div>
-                          </a>
-                      </li>
-                      <li>
                           <a href="ContactSupport.aspx" class="text-decoration-none d-flex align-items-start">
-                              <div class="fas fa-headset pt-2 me-3"></div>
+                              <div class="fas fa-headset pt-2 me-3" aria-hidden="true"></div>
                               <div class="d-flex flex-column">
-                                  <div class="link">Help & Support</div>
+                                  <div class="link">Help &amp; Support</div>
                                   <div class="link-desc">Contact Us for help and support</div>
                               </div>
                           </a>
@@ -61,103 +56,124 @@
           </div>
           <div class="col-lg-9 my-lg-0 my-1">
               <div id="main-content" class="bg-white border">
-                  <div class="d-flex flex-column">
-                      <div class="h5" runat="server" id="UserName">Hello Jhon,</div>
-                      <div runat="server" id="EmailSigned">Logged in as: someone@gmail.com</div>
-                  </div>
-                  <div class="d-flex my-4 flex-wrap">
-                      <div class="box me-4 my-1 bg-light">
-                          <img src="https://www.freepnglogos.com/uploads/box-png/cardboard-box-brown-vector-graphic-pixabay-2.png"
-                              alt="">
-                          <div class="d-flex align-items-center mt-2">
-                              <div class="tag">Orders placed</div>
-                              <div class="ms-auto number" runat="server" id="OrdersPlacedNumber">10</div>
-                          </div>
-                      </div>
-                      <div class="box me-4 my-1 bg-light">
-                          <img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-campus-recreation-university-nebraska-lincoln-30.png"
-                              alt="">
-                          <div class="d-flex align-items-center mt-2">
-                              <div class="tag">Items in Cart</div>
-                              <div class="ms-auto number" runat="server" id="ItemsCartNumber">10</div>
-                          </div>
-                      </div>
-                      <div class="box me-4 my-1 bg-light">
-                          <img src="https://www.freepnglogos.com/uploads/love-png/love-png-heart-symbol-wikipedia-11.png"
-                              alt="">
-                          <div class="d-flex align-items-center mt-2">
-                              <div class="tag">Wishlist</div>
-                              <div class="ms-auto number">10</div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="text-uppercase">My recent orders</div>
-                 
+               <div class="col-md-9">
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="account-general">
+                            <div class="card-body media align-items-center">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="d-block ui-w-80">
+                                <div class="media-body ml-4">
+                                    <label class="btn btn-outline-primary">
+                                        Upload new photo
+                                        <input type="file" class="account-settings-fileinput">
+                                    </label> &nbsp;
+                                    <button type="button" class="btn btn-default md-btn-flat">Reset</button>
+                                    <div class="text-light small mt-1">Allowed JPG, GIF or PNG. Max size of 800K</div>
+                                </div>
+                            </div>
+                            <hr class="border-light m-0">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label class="form-label">FullName</label>
+                             <asp:TextBox type="text" class="form-control" AutoCompleteType="DisplayName" placeholder="Put Your Full Name" ID="Txt_FullName" runat="server"></asp:TextBox>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">E-mail</label>
+                              <asp:TextBox type="email" class="form-control" AutoCompleteType="Email" placeholder="Put Your Email Address" ID="Txt_Email" runat="server"></asp:TextBox>
+                                    <div class="alert alert-warning mt-3">
+                                        Your email is not confirmed. Please check your inbox.<br>
+                                        <a href="javascript:void(0)">Resend confirmation</a>
+                                    </div>
+                                </div>
 
 
-                  <asp:DataList ID="DataList1" runat="server" DataKeyField="image" style="border-collapse:collapse; width: 500px;" DataSourceID="AccessDataSource1" RepeatLayout="Flow" RepeatDirection="Horizontal" OnItemCommand="DataList1_ItemCommand">
-                      <ItemTemplate>
+                 <label class="form-label">Your Password Question</label>
+                        <asp:DropDownList class="form-control" title="Password Quastion to recover your Password" required="true" ID="DpPassQuestion" runat="server">
+                         <asp:ListItem Text="Choose Your Password Quastion" Value="0" style="font-weight: bold; color:blue"></asp:ListItem>
+                            <asp:ListItem>What is your mother's maiden name?</asp:ListItem>
+                            <asp:ListItem>What is the name of your first pet?</asp:ListItem>
+                            <asp:ListItem>What elementary school did you attend?</asp:ListItem>
+                            <asp:ListItem>What is the name of the town where you were born?</asp:ListItem>
+                            <asp:ListItem>Who was your childhood hero?</asp:ListItem>
+                            <asp:ListItem>Where was your best family vacation as a kid?</asp:ListItem>
+                            <asp:ListItem>What was your favorite food as a child?</asp:ListItem>
+                                   <asp:ListItem>What year was your father (or mother) born?</asp:ListItem>
+                        </asp:DropDownList>
+                                       <span id="QuestionError" style="color: red; display: none;">Please select a country.</span>
+                                   
+                                      <br />
+                                <div class="form-group">
+                                    <label class="form-label">Your Password Question Answer</label>
+                             <asp:TextBox type="text" class="form-control" AutoCompleteType="DisplayName" placeholder="Put Your Your Password Question Answer" ID="txt_PassAnswer" runat="server"></asp:TextBox>
+                                </div>
 
-                 <div class="order my-3 bg-light">
-                      <div class="row">
-                          <div class="col-lg-4">
-                              <div class="d-flex flex-column justify-content-between order-summary">
-                                  <div class="d-flex align-items-center">
-                                      <div class="text-uppercase">Order #<%# Eval("Code") %></div>
-                                      <div class="blue-label ms-auto text-uppercase">paid</div>
-                                  </div>
-                                  <div class="fs-8">Products Quantity:#<%# Eval("Quantity") %></div>
-                                  <div class="fs-8"> <i class="fa-solid fa-calendar-days fa-xl" style="color: #000000;"></i> <%# Convert.ToDateTime(Eval("BuyDate")).ToString("dd MMMM, yyyy | hh:mm tt", new System.Globalization.CultureInfo("en-US")) %></div>
-                                  <div class="rating d-flex align-items-center pt-1">
-                                      <span class=""> <i class="fa-solid fa-sack-dollar fa-xl" style="color: #005eff;"></i> Price: <%# Convert.ToDecimal(Eval("Quantity")) * Convert.ToDecimal(Eval("Price")) %>$</span>
-
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-lg-8">
-                              <div class="d-sm-flex align-items-sm-start justify-content-sm-between">
-                                  <div class="status">Status : Delivered</div>
-                                  
-                                   <asp:Button class="btn btn-primary text-uppercase" ID="Button1" runat="server" Text="Product Info" />
-                              </div>
-                              <div class="progressbar-track">
-                                  <ul class="progressbar">
-                                      <li id="step-1" class="text-muted green">
-                                          <span class="fas fa-gift"></span>
-                                      </li>
-                                      <li id="step-2" class="<%# Eval("DeliveryStatus").ToString() == "Delivered" || Eval("DeliveryStatus").ToString() == "Shipped" || Eval("DeliveryStatus").ToString() == "Packed" || Eval("DeliveryStatus").ToString() == "Accepted" ? "text-muted green" : "text-muted" %>">
-                                          <span class="fas fa-check"></span>
-                                      </li>
-                                      <li id="step-3" class="<%# Eval("DeliveryStatus").ToString() == "Delivered" || Eval("DeliveryStatus").ToString() == "Shipped" || Eval("DeliveryStatus").ToString() == "Packed" ? "text-muted green" : "text-muted" %>">
-                                          <span class="fas fa-box"></span>
-                                      </li>
-                                      <li id="step-4" class="<%# Eval("DeliveryStatus").ToString() == "Delivered" || Eval("DeliveryStatus").ToString() == "Shipped" ? "text-muted green" : "text-muted" %>">
-                                          <span class="fas fa-truck"></span>
-                                      </li>
-                                      <li id="step-5" class="<%# Eval("DeliveryStatus").ToString() == "Delivered" ? "text-muted green" : "text-muted" %>">
-                                          <span class="fas fa-box-open"></span>
-                                      </li>
-                                  </ul>
-                                  <div id="tracker"></div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="account-change-password">
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    <label class="form-label">Current password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">New password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Repeat new password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                            </div>
+                        </div>
 
 
 
-                      </ItemTemplate>
-                  </asp:DataList> 
-               
+                    </div>
+                </div>  
               </div>
           </div>
       </div>
+
+
+        <div runat="server" style="" id="notfi" class="notification" visible="false">
+        <div style="font-family: 'Poppins', sans-serif;" class="notification__body">
+            <i class="fas fa-solid fa-check check" style="    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    min-width: 35px;
+    background-color: #4070f4;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;"></i>
+
+
+    <div class="message">
+      <span class="text text-1">Success</span>
+      <span class="text text-2">Your changes has been saved</span>
+    </div>
+
+
+        </div>
+        <div class="notification__progress"></div>
+    </div>
+
+      <link href="../styles/Notifications.css" rel="stylesheet" />
+
+<div class="text-right mt-3">
+
+     <asp:Button ID="Btn_Cancel" type="button" class="btn btn-default" runat="server" Text="Cancel" OnClick="Btn_Cancel_Click" />
+          
+        </div>
 
   </div>
 
 
 
 
+
+
+   
 
 
     <style>
@@ -180,8 +196,25 @@
         column-gap: 1rem!important; 
     }
 }
-body{
-    background-color:#f5f5f5;
+
+
+.notification {
+    font-family: 'Poppins', sans-serif; 
+    position: fixed; 
+    transform: translateX(-50%); 
+    padding: 10px;
+    background-color:#fff;
+    color:black;
+    box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+}   
+.notification__progress{
+    background: #4070f4;
+}
+
+.message{
+        display: flex;
+    flex-direction: column;
+    margin: 0 20px;
 }
     </style>
 
@@ -220,9 +253,4 @@ body{
 
 
     </script> 
-    <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/DB.accdb" SelectCommand="SELECT * FROM [Orders] WHERE ([Email] = ?)" >
-                <SelectParameters>
-            <asp:SessionParameter SessionField="Email" Name="Email" Type="String"></asp:SessionParameter>
-        </SelectParameters>
-    </asp:AccessDataSource>
 </asp:Content>
