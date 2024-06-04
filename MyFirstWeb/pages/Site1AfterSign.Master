@@ -123,7 +123,7 @@
                            <ul class="dropdown__submenu">
                               <li>
                                  <a href="#" class="dropdown__sublink">
-                                    <i class="ri-file-list-line"></i> Documents
+                                     <i><img alt="CpuFan" src="../Images/PcFan.png" class="iconNav"/></i> PcFan
                                  </a>
                               </li>
       
@@ -133,11 +133,7 @@
                                  </a>
                               </li>
       
-                              <li>
-                                 <a href="#" class="dropdown__sublink">
-                                    <i class="ri-refund-2-line"></i> Refunds
-                                 </a>
-                              </li>
+
                            </ul>
                         </li>
 
@@ -173,6 +169,11 @@
                                <li>
                                  <a href="ProductsMemory.aspx" class="dropdown__sublink">
                                    <i><img alt="Memory" src="https://c1.neweggimages.com/ProductImageCompressAll1280/20-374-436-07.png" class="iconNav"/></i> <span style="display: inline-block;">Memory RAM</span>
+                                 </a>
+                              </li>
+                               <li>
+                                 <a href="ProductsPowerSupply.aspx" class="dropdown__sublink">
+                                   <i><img alt="PowerSupply" src="../Images/PowerSupplyIcon.png" class="iconNav"/></i> <span style="display: inline-block;">PowerSupply</span>
                                  </a>
                               </li>
                            </ul>

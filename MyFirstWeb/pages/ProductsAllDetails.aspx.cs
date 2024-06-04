@@ -16,7 +16,15 @@ namespace MyFirstWeb.pages
 
             string category = "";
             category = categoryChoosed(Session["Im"].ToString());
-            //   string sql = "select * from [GPU] where ([image]='" + (Session["Im"].ToString()) + "')";
+            if(category== "OperatingSystem")
+                  href.InnerText = "Home > Products > OperatingSystem >";
+            else if (category==""|| category== "CPUCooler")
+                href.InnerText = "Home > Products > Cooler&Fans >" + category;
+            else
+            href.InnerText = "Home > Products > PcParts >" + category;
+
+            Session["category"] = category;
+
             string sql = "select * from [" + category + "] where ([image]='" + Session["Im"].ToString() + "')";
             DataTable dt = DBFunction.SelectFromTable(sql, "DB.accdb");
             if (dt != null)
@@ -44,13 +52,13 @@ namespace MyFirstWeb.pages
  + this.Label4.Text + "'," + int.Parse(this.TextBox1.Text) + ",#" + DateTime.Now + "#,'" + Session["Im"].ToString() + "')";
 
             DBFunction.ChangeTable(st, "DB.accdb");
-            Response.Redirect("Products.aspx");
+            Response.Redirect("Products"+ Session["category"].ToString()+".aspx");
         }
         private string categoryChoosed (string Image)
          {
            
             string[] categories = new string[]
-            { "Case", "CPU", "CPUCooler", "GPU", "Memory", "Monitor", "Motherboard", "OperatingSystem", "PowerSupply", "Storage" };
+            { "Case", "CPU", "CPUCooler", "GPU", "Memory", "Monitor", "Motherboard", "OperatingSystem", "PowerSupply", "Storage", "CaseFans" };
 
             for (int i=0; i < categories.Length; i++) {   
             string st = "select * from [" + categories[i] + "] where [Image]='" + Image + "'";

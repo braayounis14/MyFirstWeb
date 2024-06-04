@@ -137,6 +137,8 @@
     <Content Include="Images\Newegg_full_color_logo_RGB.SVG" />
     <Content Include="Images\OperatingSystemPic.jpg" />
     <Content Include="Images\operative-system.png" />
+    <Content Include="Images\PcFan.png" />
+    <Content Include="Images\PowerSupplyIcon.png" />
     <Content Include="Images\Power_Supply.png" />
     <Content Include="Images\productsIcon.png" />
     <Content Include="Images\SamsungStorage.jpg" />

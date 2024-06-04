@@ -105,42 +105,42 @@
         </div>
         <div class="col-lg-6">
           <div class="main-button">
-            <a href="shop.html">View All</a>
+            <a href="Home1.aspx">View All</a>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"> <img class="categoryImg" src="../Images/Monitor_Category.png" /> </a>
+              <a href="ProductsMonitor.aspx"> <img class="categoryImg" src="../Images/Monitor_Category.png" /> </a>
             </div>
             <div class="down-content">
                 <span class="category">Monitor</span>
                 <h4 class="categoryText">Pc Monitors</h4>
-                <a href="product-details.html">Explore</a>
+                <a href="ProductsMonitor.aspx">Explore</a>
             </div>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"> <img class="categoryImg" src="../images/B1MBS2111150RBMI5BC[1].jpg" /> </a>
+              <a href="ProductsCpu.aspx"> <img class="categoryImg" src="../images/B1MBS2111150RBMI5BC[1].jpg" /> </a>
             </div>
             <div class="down-content">
                 <span class="category">Processors</span>
                 <h4 class="categoryText">Amd&Intel Cpu's</h4>
-                <a href="product-details.html">Explore</a>
+                <a href="ProductsCpu.aspx">Explore</a>
             </div>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"> <img class="categoryImg" style="height: 120px;" src="../Images/CpuCoolerCategory.png" /> </a>
+              <a href="ProductsCpuCooler.aspx"> <img class="categoryImg" style="height: 120px;" src="../Images/CpuCoolerCategory.png" /> </a>
             </div>
             <div class="down-content">
                 <span class="category">Coolers</span>
                 <h4 class="categoryText">Cpu Coolers & Fans</h4>
-                <a href="product-details.html">Explore</a>
+                <a href="ProductsCpuCooler.aspx">Explore</a>
             </div>
           </div>
         </div>
@@ -175,7 +175,7 @@
                   <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"> <img class="categoryImg" style="height: 127px;" src="../Images/CorsairMemory.jpg" /> </a>
+              <a href="ProductsMemory.aspx"> <img class="categoryImg" style="height: 127px;" src="../Images/CorsairMemory.jpg" /> </a>
             </div>
             <div class="down-content">
                 <span class="category">Memory</span>
