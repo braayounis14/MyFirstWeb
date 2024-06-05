@@ -57,7 +57,7 @@
 
 
 
-        <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/DB.accdb" SelectCommand="SELECT * FROM [CPU]"></asp:AccessDataSource>
+        <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/DB.accdb" SelectCommand="SELECT * FROM [PowerSupply]"></asp:AccessDataSource>
 
 
         <asp:DataList ID="DataList1" runat="server" Style="" DataSourceID="AccessDataSource1" DataKeyField="image" RepeatColumns="6" OnItemCommand="DataList1_ItemCommand" RepeatDirection="Horizontal" CellPadding="40" CellSpacing="40">
