@@ -87,6 +87,8 @@ namespace MyFirstWeb.pages
                                     sql = "Delete * from [Cart] where ([Email] = '" + this.Label1.Text + "' and [Code]=" + row.Cells[6].Text + ")";
 
                                     DBFunction.ChangeTable(sql, "DB.accdb");
+                                        
+                                    ClientScript.RegisterStartupScript(this.GetType(), "redirect", "setTimeout(function(){ window.location.href = 'home1.aspx'; }, 5000);", true);
                                 }
 
                             }
@@ -94,11 +96,11 @@ namespace MyFirstWeb.pages
                         }
                     }
                     else
-                        this.lblStauts.Text = "           <div runat=\"server\" style=\"font-family: 'Poppins', sans-serif; background-color:#FF0000;\" id=\"notfi\" class=\"notification\" visible=\"false\">\r\n            <div style=\"font-family: 'Poppins', sans-serif;\" class=\"notification__body\">\r\n                <img\r\n                    src=\"../Images/decline.png\"\r\n                    alt=\"Reject\"\r\n                    class=\"notification__icon\"\r\n                />\r\n               no confirm! ; \r\n            </div>\r\n            <div class=\"notification__progress\"></div>\r\n        </div>";
+                        this.lblStauts.Text = "           <div runat=\"server\" style=\"font-family: 'Poppins', sans-serif; background-color:#FF0000;\" id=\"notfi\" class=\"notification\" visible=\"false\">\r\n            <div style=\"font-family: 'Poppins', sans-serif;\" class=\"notification__body\">\r\n                <img\r\n                    src=\"../Images/decline.png\"\r\n                    alt=\"Reject\"\r\n                    class=\"notification__icon\"\r\n                />\r\n               payment not confirmed ; \r\n            </div>\r\n            <div class=\"notification__progress\"></div>\r\n        </div>";
                 else
-                    this.lblStauts.Text = "           <div runat=\"server\" style=\"font-family: 'Poppins', sans-serif;  background-color:#FF0000;\" id=\"Div1\" class=\"notification\" visible=\"false\">\r\n            <div style=\"font-family: 'Poppins', sans-serif;\" class=\"notification__body\">\r\n                <img\r\n                    src=\"../Images/decline.png\"\r\n                    alt=\"Reject\"\r\n                    class=\"notification__icon\"\r\n                />\r\n               date not valid! ; \r\n            </div>\r\n            <div class=\"notification__progress\"></div>\r\n        </div>";
+                    this.lblStauts.Text = "           <div runat=\"server\" style=\"font-family: 'Poppins', sans-serif;  background-color:#FF0000;\" id=\"Div1\" class=\"notification\" visible=\"false\">\r\n            <div style=\"font-family: 'Poppins', sans-serif;\" class=\"notification__body\">\r\n                <img\r\n                    src=\"../Images/decline.png\"\r\n                    alt=\"Reject\"\r\n                    class=\"notification__icon\"\r\n                />\r\n               credit card date is expired \r\n            </div>\r\n            <div class=\"notification__progress\"></div>\r\n        </div>";
             else
-                this.lblStauts.Text = "           <div runat=\"server\" style=\"font-family: 'Poppins', sans-serif;  background-color:#FF0000;\" id=\"Div2\" class=\"notification\" visible=\"false\">\r\n            <div style=\"font-family: 'Poppins', sans-serif;\" class=\"notification__body\">\r\n                <img\r\n                    src=\"../Images/decline.png\"\r\n                    alt=\"Reject\"\r\n                    class=\"notification__icon\"\r\n                />\r\n               wrong data! ; \r\n            </div>\r\n            <div class=\"notification__progress\"></div>\r\n        </div>";
+                this.lblStauts.Text = "           <div runat=\"server\" style=\"font-family: 'Poppins', sans-serif;  background-color:#FF0000;\" id=\"Div2\" class=\"notification\" visible=\"false\">\r\n            <div style=\"font-family: 'Poppins', sans-serif;\" class=\"notification__body\">\r\n                <img\r\n                    src=\"../Images/decline.png\"\r\n                    alt=\"Reject\"\r\n                    class=\"notification__icon\"\r\n                />\r\n               Payment Not Completed \r\n            </div>\r\n            <div class=\"notification__progress\"></div>\r\n        </div>";
         }
 
 

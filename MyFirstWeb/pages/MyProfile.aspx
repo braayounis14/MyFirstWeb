@@ -33,10 +33,10 @@
                       </li>
                       <li>
                           <a href="MyAccount.aspx" class="text-decoration-none d-flex align-items-start">
-                              <div class="fas fa-box-open pt-2 me-3"></div>
+                              <div class="far fa-user pt-2 me-3"></div>
                               <div class="d-flex flex-column">
-                                  <div class="link">My Orders</div>
-                                  <div class="link-desc">View & Manage orders and returns</div>
+                                  <div class="link">My Account</div>
+                                  <div class="link-desc">Manage your Account Security Options</div>
                               </div>
                           </a>
                       </li>
@@ -58,7 +58,7 @@
                     <div class="tab-content">
                         <div class="tab-pane fade active show" id="account-general">
                             <div class="card-body media align-items-center">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="d-block ui-w-80">
+                                <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D" alt="" class="d-block ui-w-80">
                                 <div class="media-body ml-4">
                                     <label class="btn btn-outline-primary">
                                         Upload new photo

@@ -15,7 +15,7 @@ namespace MyFirstWeb.pages
 
             if (!IsPostBack)
             {
-                Session["Email"] = "dsa@g.dsa";
+              
                 this.txt_PassAnswer.Text = InfoByEmailSession("PassAnswer");
                 this.Txt_FullName.Text = InfoByEmailSession("FullName");
                 this.Txt_Email.Text = InfoByEmailSession("Email");

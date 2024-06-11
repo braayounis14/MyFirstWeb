@@ -15,7 +15,7 @@
               <div id="sidebar" class="bg-purple">
                   <div class="h4 text-white">Account</div>
                   <ul>
-                      <li class="active">
+                      <li >
                           <a href="MyProfile.aspx" class="text-decoration-none d-flex align-items-start">
                               <div class="far fa-user pt-2 me-3" aria-hidden="true"></div>
                               <div class="d-flex flex-column">
@@ -33,12 +33,12 @@
                               </div>
                           </a>
                       </li>
-                      <li>
+                      <li class="active">
                           <a href="MyAccount.aspx" class="text-decoration-none d-flex align-items-start">
-                              <div class="fas fa-box-open pt-2 me-3"></div>
+                              <div class="far fa-user pt-2 me-3"></div>
                               <div class="d-flex flex-column">
-                                  <div class="link">My Orders</div>
-                                  <div class="link-desc">View & Manage orders and returns</div>
+                                  <div class="link">My Account</div>
+                                  <div class="link-desc">Manage your Account Security Options</div>
                               </div>
                           </a>
                       </li>
@@ -59,52 +59,17 @@
                <div class="col-md-9">
                     <div class="tab-content">
                         <div class="tab-pane fade active show" id="account-general">
-                            <div class="card-body media align-items-center">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="d-block ui-w-80">
-                                <div class="media-body ml-4">
-                                    <label class="btn btn-outline-primary">
-                                        Upload new photo
-                                        <input type="file" class="account-settings-fileinput">
-                                    </label> &nbsp;
-                                    <button type="button" class="btn btn-default md-btn-flat">Reset</button>
-                                    <div class="text-light small mt-1">Allowed JPG, GIF or PNG. Max size of 800K</div>
-                                </div>
-                            </div>
+
                             <hr class="border-light m-0">
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label class="form-label">FullName</label>
-                             <asp:TextBox type="text" class="form-control" AutoCompleteType="DisplayName" placeholder="Put Your Full Name" ID="Txt_FullName" runat="server"></asp:TextBox>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label">E-mail</label>
-                              <asp:TextBox type="email" class="form-control" AutoCompleteType="Email" placeholder="Put Your Email Address" ID="Txt_Email" runat="server"></asp:TextBox>
-                                    <div class="alert alert-warning mt-3">
-                                        Your email is not confirmed. Please check your inbox.<br>
-                                        <a href="javascript:void(0)">Resend confirmation</a>
-                                    </div>
+                                    <label class="form-label">Do you want to change your password?</label>
+                                    <asp:Button ID="btnChange" class="btn1" runat="server" Text="ChangePassword" OnClick="btnChange_Click" />
+                     
                                 </div>
 
 
-                 <label class="form-label">Your Password Question</label>
-                        <asp:DropDownList class="form-control" title="Password Quastion to recover your Password" required="true" ID="DpPassQuestion" runat="server">
-                         <asp:ListItem Text="Choose Your Password Quastion" Value="0" style="font-weight: bold; color:blue"></asp:ListItem>
-                            <asp:ListItem>What is your mother's maiden name?</asp:ListItem>
-                            <asp:ListItem>What is the name of your first pet?</asp:ListItem>
-                            <asp:ListItem>What elementary school did you attend?</asp:ListItem>
-                            <asp:ListItem>What is the name of the town where you were born?</asp:ListItem>
-                            <asp:ListItem>Who was your childhood hero?</asp:ListItem>
-                            <asp:ListItem>Where was your best family vacation as a kid?</asp:ListItem>
-                            <asp:ListItem>What was your favorite food as a child?</asp:ListItem>
-                                   <asp:ListItem>What year was your father (or mother) born?</asp:ListItem>
-                        </asp:DropDownList>
-                                       <span id="QuestionError" style="color: red; display: none;">Please select a country.</span>
-                                   
-                                      <br />
-                                <div class="form-group">
-                                    <label class="form-label">Your Password Question Answer</label>
-                             <asp:TextBox type="text" class="form-control" AutoCompleteType="DisplayName" placeholder="Put Your Your Password Question Answer" ID="txt_PassAnswer" runat="server"></asp:TextBox>
-                                </div>
+
 
                                 </div>
                             </div>
@@ -215,6 +180,21 @@
         display: flex;
     flex-direction: column;
     margin: 0 20px;
+}
+
+.btn1 {
+    display: block;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
 }
     </style>
 

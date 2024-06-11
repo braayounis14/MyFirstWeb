@@ -52,7 +52,10 @@
                      <asp:Button ID="Btn_Check" class="form-control button" runat="server" Text="Send a recovery Link to Email" OnClick="Btn_Check_Click1" />
                      
                      </div>
-            
+                                 </div>
+            <div class="form-group">    
+                <a href="ForgetPassword.aspx">Back to previous Method?</a>
+                  </div>
      
          </div>
      </div>

@@ -13,5 +13,15 @@ namespace MyFirstWeb.pages
         {
 
         }
+
+        protected void Btn_Cancel_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Home1.aspx");        
+        }
+
+        protected void btnChange_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ChangePassword.aspx");
+        }
     }
 }

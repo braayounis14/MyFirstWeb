@@ -30,12 +30,12 @@
                               </div>
                           </a>
                       </li>
-                      <li>
+                      <li >
                           <a href="MyAccount.aspx" class="text-decoration-none d-flex align-items-start">
-                              <div class="fas fa-box-open pt-2 me-3"></div>
+                              <div class="far fa-user pt-2 me-3"></div>
                               <div class="d-flex flex-column">
-                                  <div class="link">My Orders</div>
-                                  <div class="link-desc">View & Manage orders and returns</div>
+                                  <div class="link">My Account</div>
+                                  <div class="link-desc">Manage your Account Security Options</div>
                               </div>
                           </a>
                       </li>

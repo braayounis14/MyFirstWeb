@@ -15,40 +15,13 @@ namespace MyFirstWeb.pages
     {
 
         /// <summary>
-        /// Txt_FullName control.
+        /// btnChange control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt_FullName;
-
-        /// <summary>
-        /// Txt_Email control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt_Email;
-
-        /// <summary>
-        /// DpPassQuestion control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DpPassQuestion;
-
-        /// <summary>
-        /// txt_PassAnswer control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_PassAnswer;
+        protected global::System.Web.UI.WebControls.Button btnChange;
 
         /// <summary>
         /// notfi control.

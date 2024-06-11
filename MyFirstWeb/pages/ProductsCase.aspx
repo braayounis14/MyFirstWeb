@@ -11,7 +11,7 @@
 
    <section class="headline">
        <div class="page-content-inner">
-           <img src="https://promotions.newegg.com/nepro/24-0299/1920x120@2x.jpg" class="banner-flexible-img" alt="Video Cards" title="" style="">
+           <img src="https://promotions.newegg.com/group5/24-0609/1920x120V2@2x.jpg" class="banner-flexible-img" alt="Video Cards" title="" style="">
        </div>
    </section>
 
@@ -57,7 +57,7 @@
 
 
 
-       <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/DB.accdb" SelectCommand="SELECT * FROM [CPU]"></asp:AccessDataSource>
+       <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/DB.accdb" SelectCommand="SELECT * FROM [Case]"></asp:AccessDataSource>
 
 
        <asp:DataList ID="DataList1" runat="server" Style="" DataSourceID="AccessDataSource1" DataKeyField="image" RepeatColumns="6" OnItemCommand="DataList1_ItemCommand" RepeatDirection="Horizontal" CellPadding="40" CellSpacing="40">

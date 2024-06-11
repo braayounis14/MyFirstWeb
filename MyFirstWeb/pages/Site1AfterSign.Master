@@ -98,9 +98,9 @@
             <!--=============== NAV MENU ===============-->
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
-                  <li><a href="#" class="nav__link">Home</a></li>
+                  <li><a href="Home1.aspx" class="nav__link">Home</a></li>
 
-                  <li><a href="ContactUs1.aspx" class="nav__link">Company</a></li>
+                  <li><a href="AboutUs1.aspx" class="nav__link">Company</a></li>
 
                   <!--=============== DROPDOWN 1 ===============-->
                   <li class="dropdown__item">
@@ -208,8 +208,8 @@
                        <ul class="dropdown__menu">
 
                            <li>
-                               <a href="#" class="dropdown__link">
-                                   <i class="ri-lock-line"></i>Accou
+                               <a href="Myprofile.aspx" class="dropdown__link">
+                                   <i class="ri-user-line"></i>My Profile
                                </a>
                            </li>
 
@@ -220,28 +220,24 @@
 
                            <ul class="dropdown__submenu">
                               <li>
-                                 <a href="#" class="dropdown__sublink">
+                                 <a href="My.account" class="dropdown__sublink">
                                     <i class="ri-lock-line"></i> Security
                                  </a>
                               </li>
       
                               <li>
-                                 <a href="#" class="dropdown__sublink">
-                                    <i class="ri-cash-line"></i> Payments
+                                 <a href="MyOrders.aspx" class="dropdown__sublink">
+                                    <i> <img alt="Order" src="../Images/shopping-bag.png" class="iconNav"/></i> Orders
                                  </a>
                               </li>
+                             
       
-                              <li>
-                                 <a href="#" class="dropdown__sublink">
-                                    <i class="ri-refund-2-line"></i> Refunds
-                                 </a>
-                              </li>
                            </ul>
                         </li>
 
 
                            <li>
-                               <a href="#" class="dropdown__link">
+                               <a href="ContactSupport.aspx" class="dropdown__link">
                                    <i class="ri-message-3-line"></i>Messages
                                </a>
                            </li>

@@ -52,6 +52,6 @@ C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\bin\roslyn\VBCSCo
 C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\obj\Debug\NewEgg.csproj.AssemblyReference.cache
 C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\obj\Debug\NewEgg.csproj.CoreCompileInputs.cache
-C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\obj\Debug\NewEgg.csproj.CopyComplete
 C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\obj\Debug\MyFirstWeb.dll
 C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\obj\Debug\MyFirstWeb.pdb
+C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\obj\Debug\NewEgg.csproj.Up2Date

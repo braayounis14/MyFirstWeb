@@ -55,7 +55,9 @@
                      <asp:Button ID="Btn_Submit" class="form-control button" runat="server" Text="Submit" OnClick="Btn_Submit_Click" />
                      
                      </div>
-            
+            <div class="form-group">    
+                <a href="ForgetPassword2.aspx">Other method to recover your account?</a>
+                  </div>
      
          </div>
      </div>
