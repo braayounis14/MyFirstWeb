@@ -39,6 +39,7 @@
     <asp:ListItem Text="Select a Category" Value="0" Disabled="true" style="color: #0000FF; font-weight: bold;"></asp:ListItem>
                  <asp:ListItem Text="CPU category" Value="CPU"></asp:ListItem>
                  <asp:ListItem Text="CPU Cooler category" Value="CPUCooler"></asp:ListItem>
+                 <asp:ListItem Text="Pc Fans category" Value="CaseFans"></asp:ListItem>
                  <asp:ListItem Text="Motherboard category" Value="Motherboard"></asp:ListItem>
                  <asp:ListItem Text="Memory category" Value="Memory"></asp:ListItem>
                  <asp:ListItem Text="Storage category" Value="Storage"></asp:ListItem>

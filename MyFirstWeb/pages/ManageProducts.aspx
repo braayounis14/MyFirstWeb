@@ -41,6 +41,7 @@
     <asp:ListItem Text="Select a Category" Value="0" Disabled="true" style="color: #0000FF; font-weight: bold;"></asp:ListItem>
                  <asp:ListItem Text="CPU category" Value="CPU"></asp:ListItem>
                  <asp:ListItem Text="CPU Cooler category" Value="CPUCooler"></asp:ListItem>
+                 <asp:ListItem Text="Pc Fans category" Value="CaseFans"></asp:ListItem>
                  <asp:ListItem Text="Motherboard category" Value="Motherboard"></asp:ListItem>
                  <asp:ListItem Text="Memory category" Value="Memory"></asp:ListItem>
                  <asp:ListItem Text="Storage category" Value="Storage"></asp:ListItem>
@@ -410,6 +411,34 @@
 
 
         <asp:AccessDataSource ID="Monitor" runat="server" ConflictDetection="CompareAllValues" DataFile="~/App_Data/DB.accdb" DeleteCommand="DELETE FROM [Monitor] WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))" InsertCommand="INSERT INTO [Monitor] ([Price], [ProductName], [Details], [Image]) VALUES (?, ?, ?, ?)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Monitor]" UpdateCommand="UPDATE [Monitor] SET [Price] = ?, [ProductName] = ?, [Details] = ? WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))">
+        <DeleteParameters>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Image" Type="String"></asp:Parameter>
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_ProductName" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+            <asp:Parameter Name="original_Details" Type="String"></asp:Parameter>
+        </UpdateParameters>
+    </asp:AccessDataSource>
+
+        <asp:AccessDataSource ID="CaseFans" runat="server" ConflictDetection="CompareAllValues" DataFile="~/App_Data/DB.accdb" DeleteCommand="DELETE FROM [CaseFans] WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))" InsertCommand="INSERT INTO [CaseFans] ([Price], [ProductName], [Details], [Image]) VALUES (?, ?, ?, ?)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [CaseFans]" UpdateCommand="UPDATE [CaseFans] SET [Price] = ?, [ProductName] = ?, [Details] = ? WHERE [Image] = ? AND [Price] = ? AND (([ProductName] = ?) OR ([ProductName] IS NULL AND ? IS NULL)) AND (([Details] = ?) OR ([Details] IS NULL AND ? IS NULL))">
         <DeleteParameters>
             <asp:Parameter Name="original_Image" Type="String"></asp:Parameter>
             <asp:Parameter Name="original_Price" Type="Int32"></asp:Parameter>

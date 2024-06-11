@@ -128,21 +128,16 @@
                            </div>
 
                            <ul class="dropdown__submenu">
+                           <ul class="dropdown__submenu">
                               <li>
-                                 <a href="#" class="dropdown__sublink">
-                                    <i class="ri-file-list-line"></i> Documents
+                                 <a href="Login.aspx" class="dropdown__sublink">
+                                     <i><img alt="CpuFan" src="../Images/PcFan.png" class="iconNav"/></i> PcFan
                                  </a>
                               </li>
       
                               <li>
-                                 <a href="#" class="dropdown__sublink">
+                                 <a href="Login.aspx" class="dropdown__sublink">
                                     <i><img alt="CpuFan" src="../Images/cpuFan.png" class="iconNav"/></i> CpuFan
-                                 </a>
-                              </li>
-      
-                              <li>
-                                 <a href="#" class="dropdown__sublink">
-                                    <i class="ri-refund-2-line"></i> Refunds
                                  </a>
                               </li>
                            </ul>
