@@ -127,7 +127,7 @@
                                   <img src="../Images/fan.png" class="iconNav" alt="Cooler&Fans" /></i> Cooler&Fans  <i class="ri-add-line dropdown__add"></i>
                            </div>
 
-                           <ul class="dropdown__submenu">
+                          
                            <ul class="dropdown__submenu">
                               <li>
                                  <a href="Login.aspx" class="dropdown__sublink">
