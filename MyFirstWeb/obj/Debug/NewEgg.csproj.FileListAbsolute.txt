@@ -35,8 +35,6 @@ C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\bin\roslyn\System
 C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\bin\roslyn\System.Reflection.Metadata.dll
 C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
 C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
 C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
 C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
 C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\bin\roslyn\System.Threading.Tasks.Extensions.dll
@@ -55,3 +53,8 @@ C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\obj\Debug\NewEgg.
 C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\obj\Debug\MyFirstWeb.dll
 C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\obj\Debug\MyFirstWeb.pdb
 C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\obj\Debug\NewEgg.csproj.Up2Date
+C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\bin\System.Net.Http.dll
+C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\bin\System.Security.Cryptography.Algorithms.dll
+C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\bin\System.Security.Cryptography.Encoding.dll
+C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\bin\System.Security.Cryptography.Primitives.dll
+C:\Users\braag\OneDrive\Documents\GitHub\MyFirstWeb\MyFirstWeb\bin\System.Security.Cryptography.X509Certificates.dll
