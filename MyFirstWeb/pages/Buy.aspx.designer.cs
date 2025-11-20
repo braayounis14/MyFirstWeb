@@ -51,15 +51,6 @@ namespace MyFirstWeb.pages
         protected global::System.Web.UI.WebControls.Label lblOrderSubtotal;
 
         /// <summary>
-        /// lblTax control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTax;
-
-        /// <summary>
         /// lblDilvery control.
         /// </summary>
         /// <remarks>
@@ -67,6 +58,15 @@ namespace MyFirstWeb.pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDilvery;
+
+        /// <summary>
+        /// lblTax control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTax;
 
         /// <summary>
         /// lblPrice control.

@@ -93,17 +93,17 @@
                     <span style='float: right; text-align: right;'>
                         <div class='thin dense'>
 
-                            ₪<asp:Label ID="lblOrderSubtotal" runat="server" Text="68.75"></asp:Label>
+                            ₪<asp:Label ID="lblOrderSubtotal" runat="server" ></asp:Label>
 
                         </div>
                         <div class='thin dense'>
 
-                            ₪<asp:Label ID="lblTax" runat="server" Text="68.75"></asp:Label>
+                            ₪<asp:Label ID="lblDilvery" runat="server" ></asp:Label>
 
                         </div>
                         <div class='thin dense'>
 
-                           ₪ <asp:Label ID="lblDilvery" runat="server" Text="4.95"></asp:Label>
+                           ₪ <asp:Label ID="lblTax" runat="server"></asp:Label>
 
                         </div>
                        ₪ <asp:Label ID="lblPrice" runat="server" Text="$435.55"></asp:Label>

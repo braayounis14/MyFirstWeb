@@ -14,35 +14,23 @@ namespace MyFirstWeb.pages
         protected void Page_Load(object sender, EventArgs e)
         {
             this.Label1.Text = Session["email"].ToString();
-            this.lblPrice.Text = Session["price"].ToString();
-        }
+            Prices();
 
+        }
 
         public void Prices()
         {
+            double price = int.Parse(Session["price"].ToString());
+            double Shipping = int.Parse(Session["Shipping"].ToString());
+            double Tax = (price - Shipping) * 0.17;
+            double OrderSubtotal =price-Tax;
 
-            int OrderPrice = int.Parse(Session["price"].ToString());
-            if (OrderPrice < 650 && OrderPrice != 0)
-            {
-                this.lblDilvery.Text = $" {50:C}";
-
-                OrderPrice = OrderPrice - 50;
-                double OrderTax = OrderPrice * 0.17;
-                this.lblOrderSubtotal.Text = $" {OrderPrice - OrderTax:C}";
-                this.lblPrice.Text = $" {OrderPrice + 50:C}";
-            }
-            else
-
-            {
-                this.lblDilvery.Text = $" {0:C}";
-                double OrderTax = OrderPrice * 0.17;
-                this.lblOrderSubtotal.Text = $" {OrderPrice - OrderTax:C}";
-                this.lblPrice.Text = $" {OrderPrice:C}";
-            }
-
+            this.lblPrice.Text = price.ToString();
+            this.lblOrderSubtotal.Text = OrderSubtotal.ToString();
+            this.lblTax.Text = Tax.ToString();
+            this.lblDilvery.Text = Shipping.ToString(); ;
 
         }
-
 
         protected void Button1_Click(object sender, EventArgs e)
         {

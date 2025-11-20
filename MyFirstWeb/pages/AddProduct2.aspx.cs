@@ -1,16 +1,12 @@
 ﻿using System;
 using System.IO;
-using System.Net.Http;
 using System.Threading.Tasks;
-using System.Web.Script.Serialization;
 using System.Web.UI.WebControls;
 
 namespace MyFirstWeb.pages
 {
     public partial class AddProduct2 : System.Web.UI.Page
     {
-        private const string ImgbbApiKey = "55cb66d245f67cccd1a7ef9b349bcf82";
-
         protected void Page_Load(object sender, EventArgs e)
         {
         }
@@ -24,12 +20,13 @@ namespace MyFirstWeb.pages
 
                 try
                 {
-                    var uploadResult = await UploadImageToImgbb(fileBytes, fileName);
+                    var uploader = new ImgbbUploader();
+                    var uploadResult = await uploader.UploadImage(fileBytes, fileName);
 
                     if (uploadResult.Success)
                     {
                         lblMsg.Text = $"Image uploaded successfully! URL: {uploadResult.Data.Url}";
-
+                        // Store the URL in your database if needed
 
 
                         string category = this.DropDownList1.SelectedValue;
@@ -44,7 +41,6 @@ namespace MyFirstWeb.pages
                         this.txtPrice.Text = "";
                         this.txtName.Text = "";
                         this.txtDetails.Text = "";
-                        // Store the URL in your database if needed
                     }
                     else
                     {
@@ -61,38 +57,5 @@ namespace MyFirstWeb.pages
                 lblMsg.Text = "Please select a file to upload.";
             }
         }
-
-        private async Task<ImgbbResponse> UploadImageToImgbb(byte[] fileBytes, string fileName)
-        {
-            using (var httpClient = new HttpClient())
-            {
-                using (var content = new MultipartFormDataContent())
-                {
-                    content.Add(new StringContent(ImgbbApiKey), "key");
-                    content.Add(new ByteArrayContent(fileBytes), "image", fileName);
-
-                    HttpResponseMessage response = await httpClient.PostAsync("https://api.imgbb.com/1/upload", content);
-                    string responseBody = await response.Content.ReadAsStringAsync();
-
-                    var serializer = new JavaScriptSerializer();
-                    return serializer.Deserialize<ImgbbResponse>(responseBody);
-                }
-            }
-        }
-    }
-
-    public class ImgbbResponse
-    {
-        public ImgbbData Data { get; set; }
-        public bool Success { get; set; }
-        public int Status { get; set; }
-    }
-
-    public class ImgbbData
-    {
-        public string Id { get; set; }
-        public string Url { get; set; }
-        public string DisplayUrl { get; set; }
-        public string DeleteUrl { get; set; }
     }
 }

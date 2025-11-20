@@ -52,6 +52,7 @@ namespace MyFirstWeb.pages
                 this.Order_Total.InnerText = $" {OrderPrice + 50:C}";
                 this.Tax_Price.InnerText = $" {OrderTax:C}";
                 Session["Price"] = OrderPrice + 50;
+                Session["Shipping"] = 50;
             }
             else
 
@@ -60,6 +61,7 @@ namespace MyFirstWeb.pages
                 this.Order_Total.InnerText = $" {OrderPrice:C}";
                 this.Tax_Price.InnerText = $" {OrderTax:C}";
                 Session["Price"] = OrderPrice;
+                Session["Shipping"] = 0;
             }
 
 
