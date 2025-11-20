@@ -1,5 +1,12 @@
 # My First Website: A NewEgg-Inspired PC Parts Store
 
+## 🎥 Project Demo
+
+[![Website Demo Video](https://img.shields.io/badge/YouTube-Watch%20Demo-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=g3HJobK_EVQ)
+
+Watch a full walkthrough of the website features and functionality:
+https://www.youtube.com/watch?v=g3HJobK_EVQ
+
 This repository holds the code for the very first website I ever built—a functional e-commerce platform for PC parts, created as a school project using ASP.NET Web Forms.
 
 > **A Time Capsule of My Coding Journey:** This project represents my initial foray into web development, tackling everything from backend logic with C# to frontend design and database management.
